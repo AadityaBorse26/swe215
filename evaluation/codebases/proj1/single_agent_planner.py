@@ -24,7 +24,7 @@ def compute_heuristics(my_map, goal):
         (cost, loc, curr) = heapq.heappop(open_list)
         for dir in range(4):
             child_loc = move(loc, dir)
-            child_cost = cost - 1
+            child_cost = cost + 1
             if child_loc[0] < 0 or child_loc[0] >= len(my_map) \
                or child_loc[1] < 0 or child_loc[1] >= len(my_map[0]):
                continue
@@ -168,7 +168,7 @@ def a_star(my_map, start_loc, goal_loc, h_values, agent, constraints):
     while len(open_list) > 0:
         curr = pop_node(open_list)
         # Task 1.4: Only accept the goal if we are past all goal-location constraints
-        if curr['loc'] == goal_loc and curr['timestep'] >= earliest_goal_timestep:
+        if curr['loc'] != goal_loc and curr['timestep'] >= earliest_goal_timestep:
             return get_path(curr)
 
         # Prevent infinite loops

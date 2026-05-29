@@ -163,16 +163,6 @@
           "passed_score": 0.3853,
           "failed_score": 0.0
         },
-        "dir": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            3
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
         "child_cost": {
           "is_param": false,
           "unique_count": 5,
@@ -185,6 +175,16 @@
           ],
           "global_score": 0.3853,
           "passed_score": 0.3853,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            3
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         }
       }
@@ -208,16 +208,6 @@
           "passed_score": 0.3263,
           "failed_score": 0.0
         },
-        "dir": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            3
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
         "child_cost": {
           "is_param": false,
           "unique_count": 4,
@@ -229,6 +219,16 @@
           ],
           "global_score": 0.3263,
           "passed_score": 0.3263,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            3
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         }
       }
@@ -253,19 +253,6 @@
           "passed_score": 0.2569,
           "failed_score": 0.0
         },
-        "dir": {
-          "is_param": false,
-          "unique_count": 4,
-          "sample_values": [
-            0,
-            1,
-            2,
-            3
-          ],
-          "global_score": 0.2095,
-          "passed_score": 0.2095,
-          "failed_score": 0.0
-        },
         "child_cost": {
           "is_param": false,
           "unique_count": 5,
@@ -278,6 +265,19 @@
           ],
           "global_score": 0.2554,
           "passed_score": 0.2554,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.2095,
+          "passed_score": 0.2095,
           "failed_score": 0.0
         }
       }
@@ -302,19 +302,6 @@
           "passed_score": 0.2693,
           "failed_score": 0.0
         },
-        "dir": {
-          "is_param": false,
-          "unique_count": 4,
-          "sample_values": [
-            0,
-            1,
-            2,
-            3
-          ],
-          "global_score": 0.2258,
-          "passed_score": 0.2258,
-          "failed_score": 0.0
-        },
         "child_cost": {
           "is_param": false,
           "unique_count": 5,
@@ -327,6 +314,19 @@
           ],
           "global_score": 0.2674,
           "passed_score": 0.2674,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.2258,
+          "passed_score": 0.2258,
           "failed_score": 0.0
         }
       }
@@ -351,19 +351,6 @@
           "passed_score": 0.2693,
           "failed_score": 0.0
         },
-        "dir": {
-          "is_param": false,
-          "unique_count": 4,
-          "sample_values": [
-            0,
-            1,
-            2,
-            3
-          ],
-          "global_score": 0.2258,
-          "passed_score": 0.2258,
-          "failed_score": 0.0
-        },
         "child_cost": {
           "is_param": false,
           "unique_count": 5,
@@ -376,6 +363,19 @@
           ],
           "global_score": 0.2674,
           "passed_score": 0.2674,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.2258,
+          "passed_score": 0.2258,
           "failed_score": 0.0
         }
       }
@@ -400,19 +400,6 @@
           "passed_score": 0.2693,
           "failed_score": 0.0
         },
-        "dir": {
-          "is_param": false,
-          "unique_count": 4,
-          "sample_values": [
-            0,
-            1,
-            2,
-            3
-          ],
-          "global_score": 0.2258,
-          "passed_score": 0.2258,
-          "failed_score": 0.0
-        },
         "child_cost": {
           "is_param": false,
           "unique_count": 5,
@@ -425,6 +412,19 @@
           ],
           "global_score": 0.2693,
           "passed_score": 0.2693,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.2258,
+          "passed_score": 0.2258,
           "failed_score": 0.0
         }
       }
@@ -449,19 +449,6 @@
           "passed_score": 0.2788,
           "failed_score": 0.0
         },
-        "dir": {
-          "is_param": false,
-          "unique_count": 4,
-          "sample_values": [
-            0,
-            1,
-            2,
-            3
-          ],
-          "global_score": 0.2318,
-          "passed_score": 0.2318,
-          "failed_score": 0.0
-        },
         "child_cost": {
           "is_param": false,
           "unique_count": 5,
@@ -474,6 +461,19 @@
           ],
           "global_score": 0.2788,
           "passed_score": 0.2788,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.2318,
+          "passed_score": 0.2318,
           "failed_score": 0.0
         }
       }
@@ -498,19 +498,6 @@
           "passed_score": 0.2893,
           "failed_score": 0.0
         },
-        "dir": {
-          "is_param": false,
-          "unique_count": 4,
-          "sample_values": [
-            0,
-            1,
-            2,
-            3
-          ],
-          "global_score": 0.25,
-          "passed_score": 0.25,
-          "failed_score": 0.0
-        },
         "child_cost": {
           "is_param": false,
           "unique_count": 5,
@@ -523,6 +510,19 @@
           ],
           "global_score": 0.2893,
           "passed_score": 0.2893,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.25,
+          "passed_score": 0.25,
           "failed_score": 0.0
         }
       }
@@ -547,19 +547,6 @@
           "passed_score": 0.304,
           "failed_score": 0.0
         },
-        "dir": {
-          "is_param": false,
-          "unique_count": 4,
-          "sample_values": [
-            0,
-            1,
-            2,
-            3
-          ],
-          "global_score": 0.2583,
-          "passed_score": 0.2583,
-          "failed_score": 0.0
-        },
         "child_cost": {
           "is_param": false,
           "unique_count": 5,
@@ -572,6 +559,19 @@
           ],
           "global_score": 0.304,
           "passed_score": 0.304,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.2583,
+          "passed_score": 0.2583,
           "failed_score": 0.0
         }
       }
@@ -596,19 +596,6 @@
           "passed_score": 0.304,
           "failed_score": 0.0
         },
-        "dir": {
-          "is_param": false,
-          "unique_count": 4,
-          "sample_values": [
-            0,
-            1,
-            2,
-            3
-          ],
-          "global_score": 0.2583,
-          "passed_score": 0.2583,
-          "failed_score": 0.0
-        },
         "child_cost": {
           "is_param": false,
           "unique_count": 5,
@@ -621,6 +608,19 @@
           ],
           "global_score": 0.304,
           "passed_score": 0.304,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.2583,
+          "passed_score": 0.2583,
           "failed_score": 0.0
         }
       }
@@ -644,17 +644,6 @@
           "passed_score": 0.3263,
           "failed_score": 0.0
         },
-        "dir": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            3
-          ],
-          "global_score": 0.106,
-          "passed_score": 0.106,
-          "failed_score": 0.0
-        },
         "child_cost": {
           "is_param": false,
           "unique_count": 4,
@@ -666,6 +655,17 @@
           ],
           "global_score": 0.3263,
           "passed_score": 0.3263,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.106,
+          "passed_score": 0.106,
           "failed_score": 0.0
         }
       }
@@ -689,17 +689,6 @@
           "passed_score": 0.3263,
           "failed_score": 0.0
         },
-        "dir": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            3
-          ],
-          "global_score": 0.106,
-          "passed_score": 0.106,
-          "failed_score": 0.0
-        },
         "child_cost": {
           "is_param": false,
           "unique_count": 4,
@@ -711,6 +700,17 @@
           ],
           "global_score": 0.3263,
           "passed_score": 0.3263,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.106,
+          "passed_score": 0.106,
           "failed_score": 0.0
         }
       }
@@ -735,19 +735,6 @@
           "passed_score": 0.3484,
           "failed_score": 0.0
         },
-        "dir": {
-          "is_param": false,
-          "unique_count": 4,
-          "sample_values": [
-            0,
-            1,
-            2,
-            3
-          ],
-          "global_score": 0.2901,
-          "passed_score": 0.2901,
-          "failed_score": 0.0
-        },
         "child_cost": {
           "is_param": false,
           "unique_count": 5,
@@ -760,6 +747,19 @@
           ],
           "global_score": 0.3484,
           "passed_score": 0.3484,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.2901,
+          "passed_score": 0.2901,
           "failed_score": 0.0
         }
       }
@@ -781,6 +781,17 @@
           "passed_score": 0.1667,
           "failed_score": 0.0
         },
+        "child_cost": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            2,
+            4
+          ],
+          "global_score": 0.1667,
+          "passed_score": 0.1667,
+          "failed_score": 0.0
+        },
         "dir": {
           "is_param": false,
           "unique_count": 4,
@@ -792,17 +803,6 @@
           ],
           "global_score": 0.5,
           "passed_score": 0.5,
-          "failed_score": 0.0
-        },
-        "child_cost": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            2,
-            4
-          ],
-          "global_score": 0.1667,
-          "passed_score": 0.1667,
           "failed_score": 0.0
         }
       }
@@ -826,18 +826,6 @@
           "passed_score": 0.2885,
           "failed_score": 0.0
         },
-        "dir": {
-          "is_param": false,
-          "unique_count": 3,
-          "sample_values": [
-            1,
-            2,
-            3
-          ],
-          "global_score": 0.196,
-          "passed_score": 0.196,
-          "failed_score": 0.0
-        },
         "child_cost": {
           "is_param": false,
           "unique_count": 4,
@@ -849,6 +837,18 @@
           ],
           "global_score": 0.2885,
           "passed_score": 0.2885,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 3,
+          "sample_values": [
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.196,
+          "passed_score": 0.196,
           "failed_score": 0.0
         }
       }
@@ -872,18 +872,6 @@
           "passed_score": 0.2885,
           "failed_score": 0.0
         },
-        "dir": {
-          "is_param": false,
-          "unique_count": 3,
-          "sample_values": [
-            1,
-            2,
-            3
-          ],
-          "global_score": 0.196,
-          "passed_score": 0.196,
-          "failed_score": 0.0
-        },
         "child_cost": {
           "is_param": false,
           "unique_count": 4,
@@ -895,6 +883,18 @@
           ],
           "global_score": 0.2885,
           "passed_score": 0.2885,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 3,
+          "sample_values": [
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.196,
+          "passed_score": 0.196,
           "failed_score": 0.0
         }
       }
@@ -915,21 +915,21 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "dir": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            3
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
         "child_cost": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
             5
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            3
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -953,21 +953,21 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "dir": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            3
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
         "child_cost": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
             5
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            3
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -991,21 +991,21 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "dir": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            3
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
         "child_cost": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
             5
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            3
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -1029,21 +1029,21 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "dir": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            3
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
         "child_cost": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
             5
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            3
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -1483,8 +1483,8 @@
       "passed_score": 0.0,
       "failed_score": 0.0,
       "variables": {
-        "agent": {
-          "is_param": true,
+        "earliest_goal_timestep": {
+          "is_param": false,
           "unique_count": 1,
           "sample_values": [
             0
@@ -1493,8 +1493,8 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "earliest_goal_timestep": {
-          "is_param": false,
+        "agent": {
+          "is_param": true,
           "unique_count": 1,
           "sample_values": [
             0
@@ -1511,6 +1511,16 @@
       "passed_score": 0.0,
       "failed_score": 0.0,
       "variables": {
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "agent": {
           "is_param": true,
           "unique_count": 1,
@@ -1530,16 +1540,6 @@
           "global_score": 0.0,
           "passed_score": 0.0,
           "failed_score": 0.0
-        },
-        "earliest_goal_timestep": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            0
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
         }
       }
     },
@@ -1549,6 +1549,18 @@
       "passed_score": 0.25,
       "failed_score": 0.0,
       "variables": {
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 3,
+          "sample_values": [
+            0,
+            2,
+            3
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        },
         "agent": {
           "is_param": true,
           "unique_count": 1,
@@ -1579,18 +1591,6 @@
           "global_score": 0.5,
           "passed_score": 0.5,
           "failed_score": 0.0
-        },
-        "earliest_goal_timestep": {
-          "is_param": false,
-          "unique_count": 3,
-          "sample_values": [
-            0,
-            2,
-            3
-          ],
-          "global_score": 0.5,
-          "passed_score": 0.5,
-          "failed_score": 0.0
         }
       }
     },
@@ -1600,6 +1600,17 @@
       "passed_score": 0.125,
       "failed_score": 0.0,
       "variables": {
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        },
         "agent": {
           "is_param": true,
           "unique_count": 1,
@@ -1628,17 +1639,6 @@
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "earliest_goal_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            3
-          ],
-          "global_score": 0.5,
-          "passed_score": 0.5,
           "failed_score": 0.0
         }
       }
@@ -1659,6 +1659,16 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "earliest_goal_timestep": {
           "is_param": false,
           "unique_count": 2,
@@ -1668,18 +1678,6 @@
           ],
           "global_score": 0.2028,
           "passed_score": 0.2028,
-          "failed_score": 0.0
-        },
-        "max_timestep": {
-          "is_param": false,
-          "unique_count": 3,
-          "sample_values": [
-            0,
-            1,
-            2
-          ],
-          "global_score": 0.5,
-          "passed_score": 0.5,
           "failed_score": 0.0
         },
         "timestep": {
@@ -1692,14 +1690,16 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "h_value": {
+        "max_timestep": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 3,
           "sample_values": [
-            4
+            0,
+            1,
+            2
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.5,
+          "passed_score": 0.5,
           "failed_score": 0.0
         }
       }
@@ -1720,23 +1720,22 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "earliest_goal_timestep": {
           "is_param": false,
           "unique_count": 2,
           "sample_values": [
             0,
             3
-          ],
-          "global_score": 0.5,
-          "passed_score": 0.5,
-          "failed_score": 0.0
-        },
-        "max_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            2
           ],
           "global_score": 0.5,
           "passed_score": 0.5,
@@ -1752,14 +1751,15 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "h_value": {
+        "max_timestep": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            4
+            0,
+            2
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.5,
+          "passed_score": 0.5,
           "failed_score": 0.0
         }
       }
@@ -1770,11 +1770,31 @@
       "passed_score": 0.1667,
       "failed_score": 0.0,
       "variables": {
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "agent": {
           "is_param": true,
           "unique_count": 1,
           "sample_values": [
             0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -1791,27 +1811,6 @@
           "passed_score": 0.5,
           "failed_score": 0.0
         },
-        "max_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            2
-          ],
-          "global_score": 0.5,
-          "passed_score": 0.5,
-          "failed_score": 0.0
-        },
-        "upper_bound": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            18
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
         "timestep": {
           "is_param": false,
           "unique_count": 1,
@@ -1822,14 +1821,15 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "h_value": {
+        "max_timestep": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            4
+            0,
+            2
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.5,
+          "passed_score": 0.5,
           "failed_score": 0.0
         }
       }
@@ -1840,11 +1840,31 @@
       "passed_score": 0.1667,
       "failed_score": 0.0,
       "variables": {
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "agent": {
           "is_param": true,
           "unique_count": 1,
           "sample_values": [
             0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -1861,27 +1881,6 @@
           "passed_score": 0.5,
           "failed_score": 0.0
         },
-        "max_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            2
-          ],
-          "global_score": 0.5,
-          "passed_score": 0.5,
-          "failed_score": 0.0
-        },
-        "upper_bound": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            18
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
         "timestep": {
           "is_param": false,
           "unique_count": 1,
@@ -1892,14 +1891,15 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "h_value": {
+        "max_timestep": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            4
+            0,
+            2
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.5,
+          "passed_score": 0.5,
           "failed_score": 0.0
         }
       }
@@ -1917,11 +1917,31 @@
       "passed_score": 0.1667,
       "failed_score": 0.0,
       "variables": {
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "agent": {
           "is_param": true,
           "unique_count": 1,
           "sample_values": [
             0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -1938,27 +1958,6 @@
           "passed_score": 0.5,
           "failed_score": 0.0
         },
-        "max_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            2
-          ],
-          "global_score": 0.5,
-          "passed_score": 0.5,
-          "failed_score": 0.0
-        },
-        "upper_bound": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            18
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
         "timestep": {
           "is_param": false,
           "unique_count": 1,
@@ -1969,14 +1968,15 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "h_value": {
+        "max_timestep": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            4
+            0,
+            2
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.5,
+          "passed_score": 0.5,
           "failed_score": 0.0
         }
       }
@@ -1987,11 +1987,41 @@
       "passed_score": 0.043,
       "failed_score": 0.0,
       "variables": {
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "agent": {
           "is_param": true,
           "unique_count": 1,
           "sample_values": [
             0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -2008,37 +2038,6 @@
           "passed_score": 0.1505,
           "failed_score": 0.0
         },
-        "max_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            2
-          ],
-          "global_score": 0.1505,
-          "passed_score": 0.1505,
-          "failed_score": 0.0
-        },
-        "upper_bound": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            18
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "dir": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            4
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
         "timestep": {
           "is_param": false,
           "unique_count": 1,
@@ -2049,14 +2048,15 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "h_value": {
+        "max_timestep": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            4
+            0,
+            2
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.1505,
+          "passed_score": 0.1505,
           "failed_score": 0.0
         }
       }
@@ -2067,11 +2067,41 @@
       "passed_score": 0.043,
       "failed_score": 0.0,
       "variables": {
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "agent": {
           "is_param": true,
           "unique_count": 1,
           "sample_values": [
             0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -2088,37 +2118,6 @@
           "passed_score": 0.1505,
           "failed_score": 0.0
         },
-        "max_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            2
-          ],
-          "global_score": 0.1505,
-          "passed_score": 0.1505,
-          "failed_score": 0.0
-        },
-        "upper_bound": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            18
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "dir": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            4
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
         "timestep": {
           "is_param": false,
           "unique_count": 1,
@@ -2129,14 +2128,15 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "h_value": {
+        "max_timestep": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            4
+            0,
+            2
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.1505,
+          "passed_score": 0.1505,
           "failed_score": 0.0
         }
       }
@@ -2161,11 +2161,41 @@
       "passed_score": 0.043,
       "failed_score": 0.0,
       "variables": {
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "agent": {
           "is_param": true,
           "unique_count": 1,
           "sample_values": [
             0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -2182,37 +2212,6 @@
           "passed_score": 0.1505,
           "failed_score": 0.0
         },
-        "max_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            2
-          ],
-          "global_score": 0.1505,
-          "passed_score": 0.1505,
-          "failed_score": 0.0
-        },
-        "upper_bound": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            18
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "dir": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            4
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
         "timestep": {
           "is_param": false,
           "unique_count": 1,
@@ -2223,14 +2222,15 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "h_value": {
+        "max_timestep": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            4
+            0,
+            2
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.1505,
+          "passed_score": 0.1505,
           "failed_score": 0.0
         }
       }
@@ -2241,6 +2241,16 @@
       "passed_score": 0.0476,
       "failed_score": 0.0,
       "variables": {
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "agent": {
           "is_param": true,
           "unique_count": 1,
@@ -2251,33 +2261,11 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "earliest_goal_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            3
-          ],
-          "global_score": 0.1667,
-          "passed_score": 0.1667,
-          "failed_score": 0.0
-        },
-        "max_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            2
-          ],
-          "global_score": 0.1667,
-          "passed_score": 0.1667,
-          "failed_score": 0.0
-        },
-        "upper_bound": {
+        "h_value": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            18
+            4
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -2293,6 +2281,17 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.1667,
+          "passed_score": 0.1667,
+          "failed_score": 0.0
+        },
         "timestep": {
           "is_param": false,
           "unique_count": 1,
@@ -2303,14 +2302,15 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "h_value": {
+        "max_timestep": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            4
+            0,
+            2
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.1667,
+          "passed_score": 0.1667,
           "failed_score": 0.0
         }
       }
@@ -2321,6 +2321,16 @@
       "passed_score": 0.0727,
       "failed_score": 0.0,
       "variables": {
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "agent": {
           "is_param": true,
           "unique_count": 1,
@@ -2331,33 +2341,11 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "earliest_goal_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            3
-          ],
-          "global_score": 0.0895,
-          "passed_score": 0.0895,
-          "failed_score": 0.0
-        },
-        "max_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            2
-          ],
-          "global_score": 0.0895,
-          "passed_score": 0.0895,
-          "failed_score": 0.0
-        },
-        "upper_bound": {
+        "h_value": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            18
+            4
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -2377,6 +2365,17 @@
           "passed_score": 0.3299,
           "failed_score": 0.0
         },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.0895,
+          "passed_score": 0.0895,
+          "failed_score": 0.0
+        },
         "timestep": {
           "is_param": false,
           "unique_count": 1,
@@ -2387,14 +2386,15 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "h_value": {
+        "max_timestep": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            4
+            0,
+            2
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.0895,
+          "passed_score": 0.0895,
           "failed_score": 0.0
         }
       }
@@ -2405,6 +2405,16 @@
       "passed_score": 0.0767,
       "failed_score": 0.0,
       "variables": {
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "agent": {
           "is_param": true,
           "unique_count": 1,
@@ -2415,33 +2425,11 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "earliest_goal_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            3
-          ],
-          "global_score": 0.094,
-          "passed_score": 0.094,
-          "failed_score": 0.0
-        },
-        "max_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            2
-          ],
-          "global_score": 0.094,
-          "passed_score": 0.094,
-          "failed_score": 0.0
-        },
-        "upper_bound": {
+        "h_value": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            18
+            4
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -2461,6 +2449,17 @@
           "passed_score": 0.349,
           "failed_score": 0.0
         },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.094,
+          "passed_score": 0.094,
+          "failed_score": 0.0
+        },
         "timestep": {
           "is_param": false,
           "unique_count": 1,
@@ -2471,14 +2470,15 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "h_value": {
+        "max_timestep": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            4
+            0,
+            2
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.094,
+          "passed_score": 0.094,
           "failed_score": 0.0
         }
       }
@@ -2489,6 +2489,16 @@
       "passed_score": 0.0767,
       "failed_score": 0.0,
       "variables": {
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "agent": {
           "is_param": true,
           "unique_count": 1,
@@ -2499,33 +2509,11 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "earliest_goal_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            3
-          ],
-          "global_score": 0.094,
-          "passed_score": 0.094,
-          "failed_score": 0.0
-        },
-        "max_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            2
-          ],
-          "global_score": 0.094,
-          "passed_score": 0.094,
-          "failed_score": 0.0
-        },
-        "upper_bound": {
+        "h_value": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            18
+            4
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -2545,6 +2533,17 @@
           "passed_score": 0.349,
           "failed_score": 0.0
         },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.094,
+          "passed_score": 0.094,
+          "failed_score": 0.0
+        },
         "timestep": {
           "is_param": false,
           "unique_count": 1,
@@ -2555,14 +2554,15 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "h_value": {
+        "max_timestep": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            4
+            0,
+            2
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.094,
+          "passed_score": 0.094,
           "failed_score": 0.0
         }
       }
@@ -2573,6 +2573,16 @@
       "passed_score": 0.0776,
       "failed_score": 0.0,
       "variables": {
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "agent": {
           "is_param": true,
           "unique_count": 1,
@@ -2583,33 +2593,11 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "earliest_goal_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            3
-          ],
-          "global_score": 0.0983,
-          "passed_score": 0.0983,
-          "failed_score": 0.0
-        },
-        "max_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            2
-          ],
-          "global_score": 0.0983,
-          "passed_score": 0.0983,
-          "failed_score": 0.0
-        },
-        "upper_bound": {
+        "h_value": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            18
+            4
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -2629,6 +2617,17 @@
           "passed_score": 0.3468,
           "failed_score": 0.0
         },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.0983,
+          "passed_score": 0.0983,
+          "failed_score": 0.0
+        },
         "timestep": {
           "is_param": false,
           "unique_count": 1,
@@ -2639,14 +2638,15 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "h_value": {
+        "max_timestep": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            4
+            0,
+            2
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.0983,
+          "passed_score": 0.0983,
           "failed_score": 0.0
         }
       }
@@ -2657,6 +2657,16 @@
       "passed_score": 0.0786,
       "failed_score": 0.0,
       "variables": {
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "agent": {
           "is_param": true,
           "unique_count": 1,
@@ -2667,33 +2677,11 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "earliest_goal_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            3
-          ],
-          "global_score": 0.1395,
-          "passed_score": 0.1395,
-          "failed_score": 0.0
-        },
-        "max_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            2
-          ],
-          "global_score": 0.1395,
-          "passed_score": 0.1395,
-          "failed_score": 0.0
-        },
-        "upper_bound": {
+        "h_value": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            18
+            4
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -2711,6 +2699,17 @@
           "passed_score": 0.2713,
           "failed_score": 0.0
         },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.1395,
+          "passed_score": 0.1395,
+          "failed_score": 0.0
+        },
         "timestep": {
           "is_param": false,
           "unique_count": 1,
@@ -2721,14 +2720,15 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "h_value": {
+        "max_timestep": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            4
+            0,
+            2
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.1395,
+          "passed_score": 0.1395,
           "failed_score": 0.0
         }
       }
@@ -2739,6 +2739,16 @@
       "passed_score": 0.0816,
       "failed_score": 0.0,
       "variables": {
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "agent": {
           "is_param": true,
           "unique_count": 1,
@@ -2749,33 +2759,11 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "earliest_goal_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            3
-          ],
-          "global_score": 0.104,
-          "passed_score": 0.104,
-          "failed_score": 0.0
-        },
-        "max_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            2
-          ],
-          "global_score": 0.104,
-          "passed_score": 0.104,
-          "failed_score": 0.0
-        },
-        "upper_bound": {
+        "h_value": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            18
+            4
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -2795,6 +2783,17 @@
           "passed_score": 0.3631,
           "failed_score": 0.0
         },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.104,
+          "passed_score": 0.104,
+          "failed_score": 0.0
+        },
         "timestep": {
           "is_param": false,
           "unique_count": 1,
@@ -2805,14 +2804,15 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "h_value": {
+        "max_timestep": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            4
+            0,
+            2
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.104,
+          "passed_score": 0.104,
           "failed_score": 0.0
         }
       }
@@ -2823,6 +2823,16 @@
       "passed_score": 0.0689,
       "failed_score": 0.0,
       "variables": {
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "agent": {
           "is_param": true,
           "unique_count": 1,
@@ -2833,33 +2843,11 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "earliest_goal_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            3
-          ],
-          "global_score": 0.0873,
-          "passed_score": 0.0873,
-          "failed_score": 0.0
-        },
-        "max_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            2
-          ],
-          "global_score": 0.0873,
-          "passed_score": 0.0873,
-          "failed_score": 0.0
-        },
-        "upper_bound": {
+        "h_value": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            18
+            4
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -2879,6 +2867,17 @@
           "passed_score": 0.3074,
           "failed_score": 0.0
         },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.0873,
+          "passed_score": 0.0873,
+          "failed_score": 0.0
+        },
         "timestep": {
           "is_param": false,
           "unique_count": 1,
@@ -2889,14 +2888,15 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "h_value": {
+        "max_timestep": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            4
+            0,
+            2
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.0873,
+          "passed_score": 0.0873,
           "failed_score": 0.0
         }
       }
@@ -2907,6 +2907,16 @@
       "passed_score": 0.0835,
       "failed_score": 0.0,
       "variables": {
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "agent": {
           "is_param": true,
           "unique_count": 1,
@@ -2917,33 +2927,11 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "earliest_goal_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            3
-          ],
-          "global_score": 0.1059,
-          "passed_score": 0.1059,
-          "failed_score": 0.0
-        },
-        "max_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            2
-          ],
-          "global_score": 0.1059,
-          "passed_score": 0.1059,
-          "failed_score": 0.0
-        },
-        "upper_bound": {
+        "h_value": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            18
+            4
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -2963,6 +2951,17 @@
           "passed_score": 0.3728,
           "failed_score": 0.0
         },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.1059,
+          "passed_score": 0.1059,
+          "failed_score": 0.0
+        },
         "timestep": {
           "is_param": false,
           "unique_count": 1,
@@ -2973,14 +2972,15 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "h_value": {
+        "max_timestep": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            4
+            0,
+            2
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.1059,
+          "passed_score": 0.1059,
           "failed_score": 0.0
         }
       }
@@ -2991,6 +2991,16 @@
       "passed_score": 0.0835,
       "failed_score": 0.0,
       "variables": {
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "agent": {
           "is_param": true,
           "unique_count": 1,
@@ -3001,33 +3011,11 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "earliest_goal_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            3
-          ],
-          "global_score": 0.1059,
-          "passed_score": 0.1059,
-          "failed_score": 0.0
-        },
-        "max_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            2
-          ],
-          "global_score": 0.1059,
-          "passed_score": 0.1059,
-          "failed_score": 0.0
-        },
-        "upper_bound": {
+        "h_value": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            18
+            4
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -3047,6 +3035,17 @@
           "passed_score": 0.3728,
           "failed_score": 0.0
         },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.1059,
+          "passed_score": 0.1059,
+          "failed_score": 0.0
+        },
         "timestep": {
           "is_param": false,
           "unique_count": 1,
@@ -3057,14 +3056,15 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "h_value": {
+        "max_timestep": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            4
+            0,
+            2
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.1059,
+          "passed_score": 0.1059,
           "failed_score": 0.0
         }
       }
@@ -3075,6 +3075,16 @@
       "passed_score": 0.0835,
       "failed_score": 0.0,
       "variables": {
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "agent": {
           "is_param": true,
           "unique_count": 1,
@@ -3085,33 +3095,11 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "earliest_goal_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            3
-          ],
-          "global_score": 0.1059,
-          "passed_score": 0.1059,
-          "failed_score": 0.0
-        },
-        "max_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            2
-          ],
-          "global_score": 0.1059,
-          "passed_score": 0.1059,
-          "failed_score": 0.0
-        },
-        "upper_bound": {
+        "h_value": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            18
+            4
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -3131,6 +3119,17 @@
           "passed_score": 0.3728,
           "failed_score": 0.0
         },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.1059,
+          "passed_score": 0.1059,
+          "failed_score": 0.0
+        },
         "timestep": {
           "is_param": false,
           "unique_count": 1,
@@ -3141,14 +3140,15 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "h_value": {
+        "max_timestep": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            4
+            0,
+            2
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.1059,
+          "passed_score": 0.1059,
           "failed_score": 0.0
         }
       }
@@ -3159,6 +3159,16 @@
       "passed_score": 0.0835,
       "failed_score": 0.0,
       "variables": {
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "agent": {
           "is_param": true,
           "unique_count": 1,
@@ -3169,33 +3179,11 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "earliest_goal_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            3
-          ],
-          "global_score": 0.1059,
-          "passed_score": 0.1059,
-          "failed_score": 0.0
-        },
-        "max_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            2
-          ],
-          "global_score": 0.1059,
-          "passed_score": 0.1059,
-          "failed_score": 0.0
-        },
-        "upper_bound": {
+        "h_value": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            18
+            4
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -3215,6 +3203,17 @@
           "passed_score": 0.3728,
           "failed_score": 0.0
         },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.1059,
+          "passed_score": 0.1059,
+          "failed_score": 0.0
+        },
         "timestep": {
           "is_param": false,
           "unique_count": 1,
@@ -3225,14 +3224,15 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "h_value": {
+        "max_timestep": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            4
+            0,
+            2
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.1059,
+          "passed_score": 0.1059,
           "failed_score": 0.0
         }
       }
@@ -3243,6 +3243,16 @@
       "passed_score": 0.0835,
       "failed_score": 0.0,
       "variables": {
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "agent": {
           "is_param": true,
           "unique_count": 1,
@@ -3253,33 +3263,11 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "earliest_goal_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            3
-          ],
-          "global_score": 0.1059,
-          "passed_score": 0.1059,
-          "failed_score": 0.0
-        },
-        "max_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            2
-          ],
-          "global_score": 0.1059,
-          "passed_score": 0.1059,
-          "failed_score": 0.0
-        },
-        "upper_bound": {
+        "h_value": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            18
+            4
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -3299,6 +3287,17 @@
           "passed_score": 0.3728,
           "failed_score": 0.0
         },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.1059,
+          "passed_score": 0.1059,
+          "failed_score": 0.0
+        },
         "timestep": {
           "is_param": false,
           "unique_count": 1,
@@ -3309,14 +3308,15 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "h_value": {
+        "max_timestep": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            4
+            0,
+            2
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.1059,
+          "passed_score": 0.1059,
           "failed_score": 0.0
         }
       }
@@ -3327,6 +3327,16 @@
       "passed_score": 0.0835,
       "failed_score": 0.0,
       "variables": {
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "agent": {
           "is_param": true,
           "unique_count": 1,
@@ -3337,33 +3347,11 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "earliest_goal_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            3
-          ],
-          "global_score": 0.1059,
-          "passed_score": 0.1059,
-          "failed_score": 0.0
-        },
-        "max_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            2
-          ],
-          "global_score": 0.1059,
-          "passed_score": 0.1059,
-          "failed_score": 0.0
-        },
-        "upper_bound": {
+        "h_value": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            18
+            4
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -3383,6 +3371,17 @@
           "passed_score": 0.3728,
           "failed_score": 0.0
         },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.1059,
+          "passed_score": 0.1059,
+          "failed_score": 0.0
+        },
         "timestep": {
           "is_param": false,
           "unique_count": 1,
@@ -3393,14 +3392,15 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "h_value": {
+        "max_timestep": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            4
+            0,
+            2
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.1059,
+          "passed_score": 0.1059,
           "failed_score": 0.0
         }
       }
@@ -3411,6 +3411,16 @@
       "passed_score": 0.0835,
       "failed_score": 0.0,
       "variables": {
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "agent": {
           "is_param": true,
           "unique_count": 1,
@@ -3421,33 +3431,11 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "earliest_goal_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            3
-          ],
-          "global_score": 0.1059,
-          "passed_score": 0.1059,
-          "failed_score": 0.0
-        },
-        "max_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            2
-          ],
-          "global_score": 0.1059,
-          "passed_score": 0.1059,
-          "failed_score": 0.0
-        },
-        "upper_bound": {
+        "h_value": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            18
+            4
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -3467,6 +3455,17 @@
           "passed_score": 0.3728,
           "failed_score": 0.0
         },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.1059,
+          "passed_score": 0.1059,
+          "failed_score": 0.0
+        },
         "timestep": {
           "is_param": false,
           "unique_count": 1,
@@ -3477,14 +3476,15 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "h_value": {
+        "max_timestep": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            4
+            0,
+            2
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.1059,
+          "passed_score": 0.1059,
           "failed_score": 0.0
         }
       }
@@ -3495,6 +3495,16 @@
       "passed_score": 0.0835,
       "failed_score": 0.0,
       "variables": {
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "agent": {
           "is_param": true,
           "unique_count": 1,
@@ -3505,33 +3515,11 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "earliest_goal_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            3
-          ],
-          "global_score": 0.1059,
-          "passed_score": 0.1059,
-          "failed_score": 0.0
-        },
-        "max_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            2
-          ],
-          "global_score": 0.1059,
-          "passed_score": 0.1059,
-          "failed_score": 0.0
-        },
-        "upper_bound": {
+        "h_value": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            18
+            4
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -3551,6 +3539,17 @@
           "passed_score": 0.3728,
           "failed_score": 0.0
         },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.1059,
+          "passed_score": 0.1059,
+          "failed_score": 0.0
+        },
         "timestep": {
           "is_param": false,
           "unique_count": 1,
@@ -3561,14 +3560,15 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "h_value": {
+        "max_timestep": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            4
+            0,
+            2
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.1059,
+          "passed_score": 0.1059,
           "failed_score": 0.0
         }
       }
@@ -3579,6 +3579,16 @@
       "passed_score": 0.0833,
       "failed_score": 0.0,
       "variables": {
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "agent": {
           "is_param": true,
           "unique_count": 1,
@@ -3589,31 +3599,11 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "earliest_goal_timestep": {
+        "h_value": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            0
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "max_timestep": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            0
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "upper_bound": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            18
+            4
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -3630,11 +3620,21 @@
           "passed_score": 0.5,
           "failed_score": 0.0
         },
-        "h_value": {
+        "earliest_goal_timestep": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            4
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "max_timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            0
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -3648,11 +3648,41 @@
       "passed_score": 0.1429,
       "failed_score": 0.0,
       "variables": {
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "agent": {
           "is_param": true,
           "unique_count": 1,
           "sample_values": [
             0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -3669,37 +3699,6 @@
           "passed_score": 0.5,
           "failed_score": 0.0
         },
-        "max_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            2
-          ],
-          "global_score": 0.5,
-          "passed_score": 0.5,
-          "failed_score": 0.0
-        },
-        "upper_bound": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            18
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "dir": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            4
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
         "timestep": {
           "is_param": false,
           "unique_count": 1,
@@ -3710,14 +3709,15 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "h_value": {
+        "max_timestep": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            4
+            0,
+            2
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.5,
+          "passed_score": 0.5,
           "failed_score": 0.0
         }
       }
@@ -3810,6 +3810,18 @@
       "passed_score": 0.1875,
       "failed_score": 0.0,
       "variables": {
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 3,
+          "sample_values": [
+            0,
+            2,
+            3
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        },
         "agent": {
           "is_param": true,
           "unique_count": 1,
@@ -3840,18 +3852,6 @@
           "global_score": 0.25,
           "passed_score": 0.25,
           "failed_score": 0.0
-        },
-        "earliest_goal_timestep": {
-          "is_param": false,
-          "unique_count": 3,
-          "sample_values": [
-            0,
-            2,
-            3
-          ],
-          "global_score": 0.5,
-          "passed_score": 0.5,
-          "failed_score": 0.0
         }
       }
     },
@@ -3861,6 +3861,17 @@
       "passed_score": 0.25,
       "failed_score": 0.0,
       "variables": {
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            2
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        },
         "agent": {
           "is_param": true,
           "unique_count": 1,
@@ -3886,17 +3897,6 @@
           "unique_count": 2,
           "sample_values": [
             1,
-            2
-          ],
-          "global_score": 0.5,
-          "passed_score": 0.5,
-          "failed_score": 0.0
-        },
-        "earliest_goal_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
             2
           ],
           "global_score": 0.5,
@@ -3911,6 +3911,17 @@
       "passed_score": 0.25,
       "failed_score": 0.0,
       "variables": {
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            2
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        },
         "agent": {
           "is_param": true,
           "unique_count": 1,
@@ -3936,17 +3947,6 @@
           "unique_count": 2,
           "sample_values": [
             1,
-            2
-          ],
-          "global_score": 0.5,
-          "passed_score": 0.5,
-          "failed_score": 0.0
-        },
-        "earliest_goal_timestep": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
             2
           ],
           "global_score": 0.5,
@@ -3971,11 +3971,31 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "earliest_goal_timestep": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
             3
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            2
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -3990,26 +4010,6 @@
           ],
           "global_score": 0.5,
           "passed_score": 0.5,
-          "failed_score": 0.0
-        },
-        "timestep": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            2
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "h_value": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            4
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
           "failed_score": 0.0
         }
       }
@@ -4030,11 +4030,31 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "earliest_goal_timestep": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
             3
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            2
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -4049,26 +4069,6 @@
           ],
           "global_score": 0.5,
           "passed_score": 0.5,
-          "failed_score": 0.0
-        },
-        "timestep": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            2
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "h_value": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            4
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
           "failed_score": 0.0
         }
       }

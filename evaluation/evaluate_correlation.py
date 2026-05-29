@@ -140,11 +140,14 @@ def main():
                     
                 # Run pytest to check if mutant is killed (fails) or survives (passes)
                 test_cmd = ["python", "-m", "pytest", config["tests"]]
-                test_res = subprocess.run(test_cmd, capture_output=True, env=env)
-                
-                # If exit code is non-zero, the test suite failed, mutant is KILLED!
-                # If exit code is zero, the tests passed, mutant SURVIVED!
-                is_killed = (test_res.returncode != 0)
+                try:
+                    test_res = subprocess.run(test_cmd, capture_output=True, env=env, timeout=4.0)
+                    is_killed = (test_res.returncode != 0)
+                except subprocess.TimeoutExpired:
+                    # If the tests hang, it's because the mutant introduced an infinite loop/deadlock.
+                    # This is a strong indicator of a killed mutant!
+                    is_killed = True
+                    
                 if is_killed:
                     killed_count += 1
                     
