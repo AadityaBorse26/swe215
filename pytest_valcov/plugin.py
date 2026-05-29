@@ -1,4 +1,5 @@
 import os
+import json
 import pytest
 from pytest_valcov.tracer import ValueTracer
 from pytest_valcov.scorer import ValueScorer

@@ -1,0 +1,4077 @@
+{
+  "C:\\Users\\borse\\OneDrive\\Documents\\swe215\\evaluation\\codebases\\proj1\\single_agent_planner.py": {
+    "5": {
+      "hits": 145,
+      "global_score": 0.2464,
+      "passed_score": 0.2464,
+      "failed_score": 0.0,
+      "variables": {
+        "dir": {
+          "is_param": true,
+          "unique_count": 5,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.2464,
+          "passed_score": 0.2464,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "6": {
+      "hits": 145,
+      "global_score": 0.2464,
+      "passed_score": 0.2464,
+      "failed_score": 0.0,
+      "variables": {
+        "dir": {
+          "is_param": true,
+          "unique_count": 5,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.2464,
+          "passed_score": 0.2464,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "10": {
+      "hits": 1,
+      "global_score": 0.2,
+      "passed_score": 0.2,
+      "failed_score": 0.0,
+      "variables": {}
+    },
+    "11": {
+      "hits": 3,
+      "global_score": 0.6667,
+      "passed_score": 0.6667,
+      "failed_score": 0.0,
+      "variables": {
+        "rst": {
+          "is_param": false,
+          "unique_count": 3,
+          "sample_values": [
+            0,
+            2,
+            4
+          ],
+          "global_score": 0.6667,
+          "passed_score": 0.6667,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "12": {
+      "hits": 2,
+      "global_score": 0.5,
+      "passed_score": 0.5,
+      "failed_score": 0.0,
+      "variables": {
+        "rst": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            2
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "13": {
+      "hits": 1,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "rst": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "18": {
+      "hits": 3,
+      "global_score": 0.6,
+      "passed_score": 0.6,
+      "failed_score": 0.0,
+      "variables": {}
+    },
+    "19": {
+      "hits": 3,
+      "global_score": 0.6,
+      "passed_score": 0.6,
+      "failed_score": 0.0,
+      "variables": {}
+    },
+    "20": {
+      "hits": 3,
+      "global_score": 0.6,
+      "passed_score": 0.6,
+      "failed_score": 0.0,
+      "variables": {}
+    },
+    "21": {
+      "hits": 3,
+      "global_score": 0.6,
+      "passed_score": 0.6,
+      "failed_score": 0.0,
+      "variables": {}
+    },
+    "22": {
+      "hits": 3,
+      "global_score": 0.6,
+      "passed_score": 0.6,
+      "failed_score": 0.0,
+      "variables": {}
+    },
+    "23": {
+      "hits": 28,
+      "global_score": 0.2569,
+      "passed_score": 0.2569,
+      "failed_score": 0.0,
+      "variables": {
+        "cost": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.3853,
+          "passed_score": 0.3853,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            3
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "child_cost": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "global_score": 0.3853,
+          "passed_score": 0.3853,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "24": {
+      "hits": 25,
+      "global_score": 0.2175,
+      "passed_score": 0.2175,
+      "failed_score": 0.0,
+      "variables": {
+        "cost": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.3263,
+          "passed_score": 0.3263,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            3
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "child_cost": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.3263,
+          "passed_score": 0.3263,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "25": {
+      "hits": 125,
+      "global_score": 0.2406,
+      "passed_score": 0.2406,
+      "failed_score": 0.0,
+      "variables": {
+        "cost": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.2569,
+          "passed_score": 0.2569,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.2095,
+          "passed_score": 0.2095,
+          "failed_score": 0.0
+        },
+        "child_cost": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "global_score": 0.2554,
+          "passed_score": 0.2554,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "26": {
+      "hits": 100,
+      "global_score": 0.2542,
+      "passed_score": 0.2542,
+      "failed_score": 0.0,
+      "variables": {
+        "cost": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.2693,
+          "passed_score": 0.2693,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.2258,
+          "passed_score": 0.2258,
+          "failed_score": 0.0
+        },
+        "child_cost": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "global_score": 0.2674,
+          "passed_score": 0.2674,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "27": {
+      "hits": 100,
+      "global_score": 0.2542,
+      "passed_score": 0.2542,
+      "failed_score": 0.0,
+      "variables": {
+        "cost": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.2693,
+          "passed_score": 0.2693,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.2258,
+          "passed_score": 0.2258,
+          "failed_score": 0.0
+        },
+        "child_cost": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "global_score": 0.2674,
+          "passed_score": 0.2674,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "28": {
+      "hits": 100,
+      "global_score": 0.2548,
+      "passed_score": 0.2548,
+      "failed_score": 0.0,
+      "variables": {
+        "cost": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.2693,
+          "passed_score": 0.2693,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.2258,
+          "passed_score": 0.2258,
+          "failed_score": 0.0
+        },
+        "child_cost": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "global_score": 0.2693,
+          "passed_score": 0.2693,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "29": {
+      "hits": 82,
+      "global_score": 0.2631,
+      "passed_score": 0.2631,
+      "failed_score": 0.0,
+      "variables": {
+        "cost": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.2788,
+          "passed_score": 0.2788,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.2318,
+          "passed_score": 0.2318,
+          "failed_score": 0.0
+        },
+        "child_cost": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "global_score": 0.2788,
+          "passed_score": 0.2788,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "31": {
+      "hits": 64,
+      "global_score": 0.2762,
+      "passed_score": 0.2762,
+      "failed_score": 0.0,
+      "variables": {
+        "cost": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.2893,
+          "passed_score": 0.2893,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.25,
+          "passed_score": 0.25,
+          "failed_score": 0.0
+        },
+        "child_cost": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "global_score": 0.2893,
+          "passed_score": 0.2893,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "33": {
+      "hits": 56,
+      "global_score": 0.2888,
+      "passed_score": 0.2888,
+      "failed_score": 0.0,
+      "variables": {
+        "cost": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.304,
+          "passed_score": 0.304,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.2583,
+          "passed_score": 0.2583,
+          "failed_score": 0.0
+        },
+        "child_cost": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "global_score": 0.304,
+          "passed_score": 0.304,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "34": {
+      "hits": 56,
+      "global_score": 0.2888,
+      "passed_score": 0.2888,
+      "failed_score": 0.0,
+      "variables": {
+        "cost": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.304,
+          "passed_score": 0.304,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.2583,
+          "passed_score": 0.2583,
+          "failed_score": 0.0
+        },
+        "child_cost": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "global_score": 0.304,
+          "passed_score": 0.304,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "41": {
+      "hits": 22,
+      "global_score": 0.2529,
+      "passed_score": 0.2529,
+      "failed_score": 0.0,
+      "variables": {
+        "cost": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.3263,
+          "passed_score": 0.3263,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.106,
+          "passed_score": 0.106,
+          "failed_score": 0.0
+        },
+        "child_cost": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.3263,
+          "passed_score": 0.3263,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "42": {
+      "hits": 22,
+      "global_score": 0.2529,
+      "passed_score": 0.2529,
+      "failed_score": 0.0,
+      "variables": {
+        "cost": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.3263,
+          "passed_score": 0.3263,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.106,
+          "passed_score": 0.106,
+          "failed_score": 0.0
+        },
+        "child_cost": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.3263,
+          "passed_score": 0.3263,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "30": {
+      "hits": 36,
+      "global_score": 0.329,
+      "passed_score": 0.329,
+      "failed_score": 0.0,
+      "variables": {
+        "cost": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.3484,
+          "passed_score": 0.3484,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.2901,
+          "passed_score": 0.2901,
+          "failed_score": 0.0
+        },
+        "child_cost": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "global_score": 0.3484,
+          "passed_score": 0.3484,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "32": {
+      "hits": 8,
+      "global_score": 0.2778,
+      "passed_score": 0.2778,
+      "failed_score": 0.0,
+      "variables": {
+        "cost": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            1,
+            3
+          ],
+          "global_score": 0.1667,
+          "passed_score": 0.1667,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        },
+        "child_cost": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            2,
+            4
+          ],
+          "global_score": 0.1667,
+          "passed_score": 0.1667,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "35": {
+      "hits": 34,
+      "global_score": 0.2577,
+      "passed_score": 0.2577,
+      "failed_score": 0.0,
+      "variables": {
+        "cost": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.2885,
+          "passed_score": 0.2885,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 3,
+          "sample_values": [
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.196,
+          "passed_score": 0.196,
+          "failed_score": 0.0
+        },
+        "child_cost": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "global_score": 0.2885,
+          "passed_score": 0.2885,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "36": {
+      "hits": 34,
+      "global_score": 0.2577,
+      "passed_score": 0.2577,
+      "failed_score": 0.0,
+      "variables": {
+        "cost": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.2885,
+          "passed_score": 0.2885,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 3,
+          "sample_values": [
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.196,
+          "passed_score": 0.196,
+          "failed_score": 0.0
+        },
+        "child_cost": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "global_score": 0.2885,
+          "passed_score": 0.2885,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "45": {
+      "hits": 3,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "cost": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            3
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "child_cost": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            5
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "46": {
+      "hits": 28,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "cost": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            3
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "child_cost": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            5
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "47": {
+      "hits": 25,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "cost": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            3
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "child_cost": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            5
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "48": {
+      "hits": 3,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "cost": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            3
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "child_cost": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            5
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "58": {
+      "hits": 3,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "59": {
+      "hits": 8,
+      "global_score": 0.1046,
+      "passed_score": 0.1046,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            1,
+            2
+          ],
+          "global_score": 0.2091,
+          "passed_score": 0.2091,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "60": {
+      "hits": 5,
+      "global_score": 0.1449,
+      "passed_score": 0.1449,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            1,
+            2
+          ],
+          "global_score": 0.2897,
+          "passed_score": 0.2897,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "61": {
+      "hits": 4,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            1
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "62": {
+      "hits": 4,
+      "global_score": 0.125,
+      "passed_score": 0.125,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            1,
+            2
+          ],
+          "global_score": 0.25,
+          "passed_score": 0.25,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "63": {
+      "hits": 4,
+      "global_score": 0.125,
+      "passed_score": 0.125,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            1,
+            2
+          ],
+          "global_score": 0.25,
+          "passed_score": 0.25,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "64": {
+      "hits": 4,
+      "global_score": 0.125,
+      "passed_score": 0.125,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            1,
+            2
+          ],
+          "global_score": 0.25,
+          "passed_score": 0.25,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "65": {
+      "hits": 3,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            2
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "96": {
+      "hits": 29,
+      "global_score": 0.3073,
+      "passed_score": 0.3073,
+      "failed_score": 0.0,
+      "variables": {
+        "next_time": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.3073,
+          "passed_score": 0.3073,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "97": {
+      "hits": 18,
+      "global_score": 0.1199,
+      "passed_score": 0.1199,
+      "failed_score": 0.0,
+      "variables": {
+        "next_time": {
+          "is_param": true,
+          "unique_count": 2,
+          "sample_values": [
+            1,
+            2
+          ],
+          "global_score": 0.1199,
+          "passed_score": 0.1199,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "98": {
+      "hits": 10,
+      "global_score": 0.1505,
+      "passed_score": 0.1505,
+      "failed_score": 0.0,
+      "variables": {
+        "next_time": {
+          "is_param": true,
+          "unique_count": 2,
+          "sample_values": [
+            1,
+            2
+          ],
+          "global_score": 0.1505,
+          "passed_score": 0.1505,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "100": {
+      "hits": 9,
+      "global_score": 0.1563,
+      "passed_score": 0.1563,
+      "failed_score": 0.0,
+      "variables": {
+        "next_time": {
+          "is_param": true,
+          "unique_count": 2,
+          "sample_values": [
+            1,
+            2
+          ],
+          "global_score": 0.1563,
+          "passed_score": 0.1563,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "101": {
+      "hits": 1,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "next_time": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            1
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "106": {
+      "hits": 27,
+      "global_score": 0.315,
+      "passed_score": 0.315,
+      "failed_score": 0.0,
+      "variables": {
+        "next_time": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.315,
+          "passed_score": 0.315,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "104": {
+      "hits": 1,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "next_time": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            2
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "105": {
+      "hits": 1,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "next_time": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            2
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "137": {
+      "hits": 2,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "138": {
+      "hits": 2,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "139": {
+      "hits": 2,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "140": {
+      "hits": 2,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "143": {
+      "hits": 2,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "149": {
+      "hits": 4,
+      "global_score": 0.25,
+      "passed_score": 0.25,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            1,
+            2
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 3,
+          "sample_values": [
+            0,
+            2,
+            3
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "157": {
+      "hits": 2,
+      "global_score": 0.125,
+      "passed_score": 0.125,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            2
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "158": {
+      "hits": 4,
+      "global_score": 0.1406,
+      "passed_score": 0.1406,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.2028,
+          "passed_score": 0.2028,
+          "failed_score": 0.0
+        },
+        "max_timestep": {
+          "is_param": false,
+          "unique_count": 3,
+          "sample_values": [
+            0,
+            1,
+            2
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            2
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "161": {
+      "hits": 2,
+      "global_score": 0.2,
+      "passed_score": 0.2,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        },
+        "max_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            2
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            2
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "164": {
+      "hits": 2,
+      "global_score": 0.1667,
+      "passed_score": 0.1667,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        },
+        "max_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            2
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        },
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            2
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "165": {
+      "hits": 2,
+      "global_score": 0.1667,
+      "passed_score": 0.1667,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        },
+        "max_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            2
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        },
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            2
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "110": {
+      "hits": 28,
+      "global_score": 1.0,
+      "passed_score": 1.0,
+      "failed_score": 0.0,
+      "variables": {}
+    },
+    "167": {
+      "hits": 2,
+      "global_score": 0.1667,
+      "passed_score": 0.1667,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        },
+        "max_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            2
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        },
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            2
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "168": {
+      "hits": 10,
+      "global_score": 0.043,
+      "passed_score": 0.043,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.1505,
+          "passed_score": 0.1505,
+          "failed_score": 0.0
+        },
+        "max_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            2
+          ],
+          "global_score": 0.1505,
+          "passed_score": 0.1505,
+          "failed_score": 0.0
+        },
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            2
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "169": {
+      "hits": 10,
+      "global_score": 0.043,
+      "passed_score": 0.043,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.1505,
+          "passed_score": 0.1505,
+          "failed_score": 0.0
+        },
+        "max_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            2
+          ],
+          "global_score": 0.1505,
+          "passed_score": 0.1505,
+          "failed_score": 0.0
+        },
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            2
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "114": {
+      "hits": 10,
+      "global_score": 1.0,
+      "passed_score": 1.0,
+      "failed_score": 0.0,
+      "variables": {}
+    },
+    "115": {
+      "hits": 10,
+      "global_score": 1.0,
+      "passed_score": 1.0,
+      "failed_score": 0.0,
+      "variables": {}
+    },
+    "171": {
+      "hits": 10,
+      "global_score": 0.043,
+      "passed_score": 0.043,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.1505,
+          "passed_score": 0.1505,
+          "failed_score": 0.0
+        },
+        "max_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            2
+          ],
+          "global_score": 0.1505,
+          "passed_score": 0.1505,
+          "failed_score": 0.0
+        },
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            2
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "175": {
+      "hits": 8,
+      "global_score": 0.0476,
+      "passed_score": 0.0476,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.1667,
+          "passed_score": 0.1667,
+          "failed_score": 0.0
+        },
+        "max_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            2
+          ],
+          "global_score": 0.1667,
+          "passed_score": 0.1667,
+          "failed_score": 0.0
+        },
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            2
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "179": {
+      "hits": 48,
+      "global_score": 0.0727,
+      "passed_score": 0.0727,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.0895,
+          "passed_score": 0.0895,
+          "failed_score": 0.0
+        },
+        "max_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            2
+          ],
+          "global_score": 0.0895,
+          "passed_score": 0.0895,
+          "failed_score": 0.0
+        },
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.3299,
+          "passed_score": 0.3299,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            2
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "180": {
+      "hits": 40,
+      "global_score": 0.0767,
+      "passed_score": 0.0767,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.094,
+          "passed_score": 0.094,
+          "failed_score": 0.0
+        },
+        "max_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            2
+          ],
+          "global_score": 0.094,
+          "passed_score": 0.094,
+          "failed_score": 0.0
+        },
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.349,
+          "passed_score": 0.349,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            2
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "182": {
+      "hits": 40,
+      "global_score": 0.0767,
+      "passed_score": 0.0767,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.094,
+          "passed_score": 0.094,
+          "failed_score": 0.0
+        },
+        "max_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            2
+          ],
+          "global_score": 0.094,
+          "passed_score": 0.094,
+          "failed_score": 0.0
+        },
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.349,
+          "passed_score": 0.349,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            2
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "183": {
+      "hits": 34,
+      "global_score": 0.0776,
+      "passed_score": 0.0776,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.0983,
+          "passed_score": 0.0983,
+          "failed_score": 0.0
+        },
+        "max_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            2
+          ],
+          "global_score": 0.0983,
+          "passed_score": 0.0983,
+          "failed_score": 0.0
+        },
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.3468,
+          "passed_score": 0.3468,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            2
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "184": {
+      "hits": 12,
+      "global_score": 0.0786,
+      "passed_score": 0.0786,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.1395,
+          "passed_score": 0.1395,
+          "failed_score": 0.0
+        },
+        "max_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            2
+          ],
+          "global_score": 0.1395,
+          "passed_score": 0.1395,
+          "failed_score": 0.0
+        },
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 3,
+          "sample_values": [
+            0,
+            2,
+            3
+          ],
+          "global_score": 0.2713,
+          "passed_score": 0.2713,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            2
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "185": {
+      "hits": 28,
+      "global_score": 0.0816,
+      "passed_score": 0.0816,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.104,
+          "passed_score": 0.104,
+          "failed_score": 0.0
+        },
+        "max_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            2
+          ],
+          "global_score": 0.104,
+          "passed_score": 0.104,
+          "failed_score": 0.0
+        },
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.3631,
+          "passed_score": 0.3631,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            2
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "187": {
+      "hits": 52,
+      "global_score": 0.0689,
+      "passed_score": 0.0689,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.0873,
+          "passed_score": 0.0873,
+          "failed_score": 0.0
+        },
+        "max_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            2
+          ],
+          "global_score": 0.0873,
+          "passed_score": 0.0873,
+          "failed_score": 0.0
+        },
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.3074,
+          "passed_score": 0.3074,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            2
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "188": {
+      "hits": 26,
+      "global_score": 0.0835,
+      "passed_score": 0.0835,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.1059,
+          "passed_score": 0.1059,
+          "failed_score": 0.0
+        },
+        "max_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            2
+          ],
+          "global_score": 0.1059,
+          "passed_score": 0.1059,
+          "failed_score": 0.0
+        },
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.3728,
+          "passed_score": 0.3728,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            2
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "189": {
+      "hits": 26,
+      "global_score": 0.0835,
+      "passed_score": 0.0835,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.1059,
+          "passed_score": 0.1059,
+          "failed_score": 0.0
+        },
+        "max_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            2
+          ],
+          "global_score": 0.1059,
+          "passed_score": 0.1059,
+          "failed_score": 0.0
+        },
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.3728,
+          "passed_score": 0.3728,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            2
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "190": {
+      "hits": 26,
+      "global_score": 0.0835,
+      "passed_score": 0.0835,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.1059,
+          "passed_score": 0.1059,
+          "failed_score": 0.0
+        },
+        "max_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            2
+          ],
+          "global_score": 0.1059,
+          "passed_score": 0.1059,
+          "failed_score": 0.0
+        },
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.3728,
+          "passed_score": 0.3728,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            2
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "191": {
+      "hits": 26,
+      "global_score": 0.0835,
+      "passed_score": 0.0835,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.1059,
+          "passed_score": 0.1059,
+          "failed_score": 0.0
+        },
+        "max_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            2
+          ],
+          "global_score": 0.1059,
+          "passed_score": 0.1059,
+          "failed_score": 0.0
+        },
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.3728,
+          "passed_score": 0.3728,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            2
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "194": {
+      "hits": 26,
+      "global_score": 0.0835,
+      "passed_score": 0.0835,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.1059,
+          "passed_score": 0.1059,
+          "failed_score": 0.0
+        },
+        "max_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            2
+          ],
+          "global_score": 0.1059,
+          "passed_score": 0.1059,
+          "failed_score": 0.0
+        },
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.3728,
+          "passed_score": 0.3728,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            2
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "197": {
+      "hits": 26,
+      "global_score": 0.0835,
+      "passed_score": 0.0835,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.1059,
+          "passed_score": 0.1059,
+          "failed_score": 0.0
+        },
+        "max_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            2
+          ],
+          "global_score": 0.1059,
+          "passed_score": 0.1059,
+          "failed_score": 0.0
+        },
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.3728,
+          "passed_score": 0.3728,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            2
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "203": {
+      "hits": 26,
+      "global_score": 0.0835,
+      "passed_score": 0.0835,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.1059,
+          "passed_score": 0.1059,
+          "failed_score": 0.0
+        },
+        "max_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            2
+          ],
+          "global_score": 0.1059,
+          "passed_score": 0.1059,
+          "failed_score": 0.0
+        },
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.3728,
+          "passed_score": 0.3728,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            2
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "204": {
+      "hits": 26,
+      "global_score": 0.0835,
+      "passed_score": 0.0835,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.1059,
+          "passed_score": 0.1059,
+          "failed_score": 0.0
+        },
+        "max_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            2
+          ],
+          "global_score": 0.1059,
+          "passed_score": 0.1059,
+          "failed_score": 0.0
+        },
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.3728,
+          "passed_score": 0.3728,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            2
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "186": {
+      "hits": 2,
+      "global_score": 0.0833,
+      "passed_score": 0.0833,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "max_timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            1
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "172": {
+      "hits": 2,
+      "global_score": 0.1429,
+      "passed_score": 0.1429,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            3
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        },
+        "max_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            2
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        },
+        "upper_bound": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            18
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "dir": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            2
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "78": {
+      "hits": 2,
+      "global_score": 0.4,
+      "passed_score": 0.4,
+      "failed_score": 0.0,
+      "variables": {}
+    },
+    "79": {
+      "hits": 2,
+      "global_score": 0.4,
+      "passed_score": 0.4,
+      "failed_score": 0.0,
+      "variables": {}
+    },
+    "80": {
+      "hits": 12,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "curr": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            null
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "81": {
+      "hits": 10,
+      "global_score": 1.0,
+      "passed_score": 1.0,
+      "failed_score": 0.0,
+      "variables": {}
+    },
+    "82": {
+      "hits": 10,
+      "global_score": 1.0,
+      "passed_score": 1.0,
+      "failed_score": 0.0,
+      "variables": {}
+    },
+    "83": {
+      "hits": 2,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "curr": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            null
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "84": {
+      "hits": 2,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "curr": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            null
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "150": {
+      "hits": 4,
+      "global_score": 0.1875,
+      "passed_score": 0.1875,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            1,
+            2
+          ],
+          "global_score": 0.25,
+          "passed_score": 0.25,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 3,
+          "sample_values": [
+            0,
+            2,
+            3
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "151": {
+      "hits": 2,
+      "global_score": 0.25,
+      "passed_score": 0.25,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            1,
+            2
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            2
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "152": {
+      "hits": 2,
+      "global_score": 0.25,
+      "passed_score": 0.25,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            1,
+            2
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            2
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "159": {
+      "hits": 2,
+      "global_score": 0.1,
+      "passed_score": 0.1,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            3
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "max_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            1
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            2
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "160": {
+      "hits": 2,
+      "global_score": 0.1,
+      "passed_score": 0.1,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "earliest_goal_timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            3
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "max_timestep": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            1
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        },
+        "timestep": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            2
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "h_value": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    }
+  }
+}

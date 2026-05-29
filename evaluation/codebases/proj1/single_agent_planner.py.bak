@@ -24,7 +24,7 @@ def compute_heuristics(my_map, goal):
         (cost, loc, curr) = heapq.heappop(open_list)
         for dir in range(4):
             child_loc = move(loc, dir)
-            child_cost = cost - 1
+            child_cost = cost + 1
             if child_loc[0] < 0 or child_loc[0] >= len(my_map) \
                or child_loc[1] < 0 or child_loc[1] >= len(my_map[0]):
                continue
