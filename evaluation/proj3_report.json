@@ -1,0 +1,3462 @@
+{
+  "C:\\Users\\borse\\OneDrive\\Documents\\swe215\\evaluation\\codebases\\proj3\\planner\\heuristics\\standard_time.py": {
+    "7": {
+      "hits": 1,
+      "global_score": 0.2,
+      "passed_score": 0.2,
+      "failed_score": 0.0,
+      "variables": {}
+    },
+    "8": {
+      "hits": 1,
+      "global_score": 0.2,
+      "passed_score": 0.2,
+      "failed_score": 0.0,
+      "variables": {}
+    },
+    "11": {
+      "hits": 1,
+      "global_score": 0.2,
+      "passed_score": 0.2,
+      "failed_score": 0.0,
+      "variables": {}
+    },
+    "13": {
+      "hits": 3,
+      "global_score": 0.5,
+      "passed_score": 0.5,
+      "failed_score": 0.0,
+      "variables": {
+        "a": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        },
+        "eps": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0.5678265357160515,
+            0.5961145888458272
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "14": {
+      "hits": 2,
+      "global_score": 0.25,
+      "passed_score": 0.25,
+      "failed_score": 0.0,
+      "variables": {
+        "a": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        },
+        "eps": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            0.5678265357160515
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "16": {
+      "hits": 2,
+      "global_score": 0.5,
+      "passed_score": 0.5,
+      "failed_score": 0.0,
+      "variables": {
+        "a": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        },
+        "eps": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0.5678265357160515,
+            0.5961145888458272
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "19": {
+      "hits": 2,
+      "global_score": 0.5,
+      "passed_score": 0.5,
+      "failed_score": 0.0,
+      "variables": {
+        "a": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        },
+        "eps": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0.5678265357160515,
+            0.5961145888458272
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "21": {
+      "hits": 2,
+      "global_score": 0.5,
+      "passed_score": 0.5,
+      "failed_score": 0.0,
+      "variables": {
+        "a": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        },
+        "eps": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0.5678265357160515,
+            0.5961145888458272
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "22": {
+      "hits": 2,
+      "global_score": 0.5,
+      "passed_score": 0.5,
+      "failed_score": 0.0,
+      "variables": {
+        "a": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        },
+        "eps": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0.5678265357160515,
+            0.5961145888458272
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "26": {
+      "hits": 12,
+      "global_score": 0.2925,
+      "passed_score": 0.2925,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.4184,
+          "passed_score": 0.4184,
+          "failed_score": 0.0
+        },
+        "a": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1667,
+          "passed_score": 0.1667,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "27": {
+      "hits": 8,
+      "global_score": 0.3333,
+      "passed_score": 0.3333,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        },
+        "a": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1667,
+          "passed_score": 0.1667,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "30": {
+      "hits": 8,
+      "global_score": 0.3333,
+      "passed_score": 0.3333,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        },
+        "a": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1667,
+          "passed_score": 0.1667,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "32": {
+      "hits": 4,
+      "global_score": 0.375,
+      "passed_score": 0.375,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.75,
+          "passed_score": 0.75,
+          "failed_score": 0.0
+        },
+        "a": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            "A2"
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    }
+  },
+  "C:\\Users\\borse\\OneDrive\\Documents\\swe215\\evaluation\\codebases\\proj3\\planner\\pibt.py": {
+    "3": {
+      "hits": 3,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "max_steps": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            50
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "4": {
+      "hits": 3,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "max_steps": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            50
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "5": {
+      "hits": 3,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "max_steps": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            50
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "6": {
+      "hits": 3,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "max_steps": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            50
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "8": {
+      "hits": 3,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "max_steps": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            50
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "9": {
+      "hits": 3,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "max_steps": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            50
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "11": {
+      "hits": 3,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "max_steps": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            50
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "12": {
+      "hits": 12,
+      "global_score": 0.0967,
+      "passed_score": 0.0967,
+      "failed_score": 0.0,
+      "variables": {
+        "max_steps": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            50
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "a": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1934,
+          "passed_score": 0.1934,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "15": {
+      "hits": 3,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "max_steps": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            50
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "16": {
+      "hits": 9,
+      "global_score": 0.0967,
+      "passed_score": 0.0967,
+      "failed_score": 0.0,
+      "variables": {
+        "max_steps": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            50
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "a": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1934,
+          "passed_score": 0.1934,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "17": {
+      "hits": 6,
+      "global_score": 0.0967,
+      "passed_score": 0.0967,
+      "failed_score": 0.0,
+      "variables": {
+        "max_steps": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            50
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "a": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1934,
+          "passed_score": 0.1934,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "20": {
+      "hits": 6,
+      "global_score": 1.0,
+      "passed_score": 1.0,
+      "failed_score": 0.0,
+      "variables": {}
+    },
+    "21": {
+      "hits": 6,
+      "global_score": 1.0,
+      "passed_score": 1.0,
+      "failed_score": 0.0,
+      "variables": {}
+    },
+    "22": {
+      "hits": 6,
+      "global_score": 1.0,
+      "passed_score": 1.0,
+      "failed_score": 0.0,
+      "variables": {}
+    },
+    "23": {
+      "hits": 60,
+      "global_score": 0.4057,
+      "passed_score": 0.4057,
+      "failed_score": 0.0,
+      "variables": {
+        "curr_dist": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.3054,
+          "passed_score": 0.3054,
+          "failed_score": 0.0
+        },
+        "head": {
+          "is_param": false,
+          "unique_count": 10,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "global_score": 0.5061,
+          "passed_score": 0.5061,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "24": {
+      "hits": 54,
+      "global_score": 0.3728,
+      "passed_score": 0.3728,
+      "failed_score": 0.0,
+      "variables": {
+        "curr_dist": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.2559,
+          "passed_score": 0.2559,
+          "failed_score": 0.0
+        },
+        "head": {
+          "is_param": false,
+          "unique_count": 9,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "global_score": 0.4896,
+          "passed_score": 0.4896,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "25": {
+      "hits": 54,
+      "global_score": 0.3728,
+      "passed_score": 0.3728,
+      "failed_score": 0.0,
+      "variables": {
+        "curr_dist": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.2559,
+          "passed_score": 0.2559,
+          "failed_score": 0.0
+        },
+        "head": {
+          "is_param": false,
+          "unique_count": 9,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "global_score": 0.4896,
+          "passed_score": 0.4896,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "26": {
+      "hits": 54,
+      "global_score": 0.3728,
+      "passed_score": 0.3728,
+      "failed_score": 0.0,
+      "variables": {
+        "curr_dist": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.2559,
+          "passed_score": 0.2559,
+          "failed_score": 0.0
+        },
+        "head": {
+          "is_param": false,
+          "unique_count": 9,
+          "sample_values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "global_score": 0.4896,
+          "passed_score": 0.4896,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "27": {
+      "hits": 198,
+      "global_score": 0.2959,
+      "passed_score": 0.2959,
+      "failed_score": 0.0,
+      "variables": {
+        "curr_dist": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.2253,
+          "passed_score": 0.2253,
+          "failed_score": 0.0
+        },
+        "head": {
+          "is_param": false,
+          "unique_count": 9,
+          "sample_values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "global_score": 0.3666,
+          "passed_score": 0.3666,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "28": {
+      "hits": 144,
+      "global_score": 0.3124,
+      "passed_score": 0.3124,
+      "failed_score": 0.0,
+      "variables": {
+        "curr_dist": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.2372,
+          "passed_score": 0.2372,
+          "failed_score": 0.0
+        },
+        "head": {
+          "is_param": false,
+          "unique_count": 9,
+          "sample_values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "global_score": 0.3875,
+          "passed_score": 0.3875,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "29": {
+      "hits": 48,
+      "global_score": 0.3145,
+      "passed_score": 0.3145,
+      "failed_score": 0.0,
+      "variables": {
+        "curr_dist": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.2559,
+          "passed_score": 0.2559,
+          "failed_score": 0.0
+        },
+        "head": {
+          "is_param": false,
+          "unique_count": 6,
+          "sample_values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "global_score": 0.373,
+          "passed_score": 0.373,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "30": {
+      "hits": 48,
+      "global_score": 0.3145,
+      "passed_score": 0.3145,
+      "failed_score": 0.0,
+      "variables": {
+        "curr_dist": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.2559,
+          "passed_score": 0.2559,
+          "failed_score": 0.0
+        },
+        "head": {
+          "is_param": false,
+          "unique_count": 6,
+          "sample_values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "global_score": 0.373,
+          "passed_score": 0.373,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "31": {
+      "hits": 6,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "curr_dist": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "head": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            9
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "34": {
+      "hits": 3,
+      "global_score": 0.6,
+      "passed_score": 0.6,
+      "failed_score": 0.0,
+      "variables": {}
+    },
+    "36": {
+      "hits": 15,
+      "global_score": 0.2377,
+      "passed_score": 0.2377,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.4755,
+          "passed_score": 0.4755,
+          "failed_score": 0.0
+        },
+        "a": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            "A2"
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "37": {
+      "hits": 36,
+      "global_score": 0.2132,
+      "passed_score": 0.2132,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": false,
+          "unique_count": 5,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.3484,
+          "passed_score": 0.3484,
+          "failed_score": 0.0
+        },
+        "a": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.0779,
+          "passed_score": 0.0779,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "40": {
+      "hits": 12,
+      "global_score": 0.2092,
+      "passed_score": 0.2092,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.4184,
+          "passed_score": 0.4184,
+          "failed_score": 0.0
+        },
+        "a": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            "A2"
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "41": {
+      "hits": 36,
+      "global_score": 0.256,
+      "passed_score": 0.256,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.4184,
+          "passed_score": 0.4184,
+          "failed_score": 0.0
+        },
+        "a": {
+          "is_param": true,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.0937,
+          "passed_score": 0.0937,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "42": {
+      "hits": 12,
+      "global_score": 0.2092,
+      "passed_score": 0.2092,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.4184,
+          "passed_score": 0.4184,
+          "failed_score": 0.0
+        },
+        "a": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            "A2"
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "43": {
+      "hits": 12,
+      "global_score": 0.2092,
+      "passed_score": 0.2092,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.4184,
+          "passed_score": 0.4184,
+          "failed_score": 0.0
+        },
+        "a": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            "A2"
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "45": {
+      "hits": 36,
+      "global_score": 0.1919,
+      "passed_score": 0.1919,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.2901,
+          "passed_score": 0.2901,
+          "failed_score": 0.0
+        },
+        "a": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.0937,
+          "passed_score": 0.0937,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "46": {
+      "hits": 24,
+      "global_score": 0.2182,
+      "passed_score": 0.2182,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.3272,
+          "passed_score": 0.3272,
+          "failed_score": 0.0
+        },
+        "a": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1091,
+          "passed_score": 0.1091,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "97": {
+      "hits": 96,
+      "global_score": 0.1518,
+      "passed_score": 0.1518,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.0759,
+          "passed_score": 0.0759,
+          "failed_score": 0.0
+        },
+        "index": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.2278,
+          "passed_score": 0.2278,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "98": {
+      "hits": 24,
+      "global_score": 0.2182,
+      "passed_score": 0.2182,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1091,
+          "passed_score": 0.1091,
+          "failed_score": 0.0
+        },
+        "index": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.3272,
+          "passed_score": 0.3272,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "47": {
+      "hits": 24,
+      "global_score": 0.2182,
+      "passed_score": 0.2182,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.3272,
+          "passed_score": 0.3272,
+          "failed_score": 0.0
+        },
+        "a": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1091,
+          "passed_score": 0.1091,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "48": {
+      "hits": 24,
+      "global_score": 0.2182,
+      "passed_score": 0.2182,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.3272,
+          "passed_score": 0.3272,
+          "failed_score": 0.0
+        },
+        "a": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1091,
+          "passed_score": 0.1091,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "58": {
+      "hits": 24,
+      "global_score": 0.1454,
+      "passed_score": 0.1454,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.3272,
+          "passed_score": 0.3272,
+          "failed_score": 0.0
+        },
+        "parent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            null
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "ai": {
+          "is_param": true,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1091,
+          "passed_score": 0.1091,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "59": {
+      "hits": 24,
+      "global_score": 0.1454,
+      "passed_score": 0.1454,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.3272,
+          "passed_score": 0.3272,
+          "failed_score": 0.0
+        },
+        "parent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            null
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "ai": {
+          "is_param": true,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1091,
+          "passed_score": 0.1091,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "60": {
+      "hits": 24,
+      "global_score": 0.1454,
+      "passed_score": 0.1454,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.3272,
+          "passed_score": 0.3272,
+          "failed_score": 0.0
+        },
+        "parent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            null
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "ai": {
+          "is_param": true,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1091,
+          "passed_score": 0.1091,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "61": {
+      "hits": 108,
+      "global_score": 0.1337,
+      "passed_score": 0.1337,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.3272,
+          "passed_score": 0.3272,
+          "failed_score": 0.0
+        },
+        "parent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            null
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "ai": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.074,
+          "passed_score": 0.074,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "101": {
+      "hits": 84,
+      "global_score": 0.0782,
+      "passed_score": 0.0782,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": true,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.0782,
+          "passed_score": 0.0782,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "63": {
+      "hits": 24,
+      "global_score": 0.1454,
+      "passed_score": 0.1454,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.3272,
+          "passed_score": 0.3272,
+          "failed_score": 0.0
+        },
+        "parent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            null
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "ai": {
+          "is_param": true,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1091,
+          "passed_score": 0.1091,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "65": {
+      "hits": 24,
+      "global_score": 0.1454,
+      "passed_score": 0.1454,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.3272,
+          "passed_score": 0.3272,
+          "failed_score": 0.0
+        },
+        "parent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            null
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "ai": {
+          "is_param": true,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1091,
+          "passed_score": 0.1091,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "69": {
+      "hits": 24,
+      "global_score": 0.1454,
+      "passed_score": 0.1454,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.3272,
+          "passed_score": 0.3272,
+          "failed_score": 0.0
+        },
+        "parent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            null
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "ai": {
+          "is_param": true,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1091,
+          "passed_score": 0.1091,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "72": {
+      "hits": 24,
+      "global_score": 0.1454,
+      "passed_score": 0.1454,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.3272,
+          "passed_score": 0.3272,
+          "failed_score": 0.0
+        },
+        "parent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            null
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "ai": {
+          "is_param": true,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1091,
+          "passed_score": 0.1091,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "73": {
+      "hits": 24,
+      "global_score": 0.1454,
+      "passed_score": 0.1454,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.3272,
+          "passed_score": 0.3272,
+          "failed_score": 0.0
+        },
+        "parent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            null
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "ai": {
+          "is_param": true,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1091,
+          "passed_score": 0.1091,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "74": {
+      "hits": 24,
+      "global_score": 0.1454,
+      "passed_score": 0.1454,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.3272,
+          "passed_score": 0.3272,
+          "failed_score": 0.0
+        },
+        "parent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            null
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "ai": {
+          "is_param": true,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1091,
+          "passed_score": 0.1091,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "75": {
+      "hits": 24,
+      "global_score": 0.1454,
+      "passed_score": 0.1454,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.3272,
+          "passed_score": 0.3272,
+          "failed_score": 0.0
+        },
+        "parent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            null
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "ai": {
+          "is_param": true,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1091,
+          "passed_score": 0.1091,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "104": {
+      "hits": 72,
+      "global_score": 0.1663,
+      "passed_score": 0.1663,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.2431,
+          "passed_score": 0.2431,
+          "failed_score": 0.0
+        },
+        "a": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.0895,
+          "passed_score": 0.0895,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "105": {
+      "hits": 48,
+      "global_score": 0.179,
+      "passed_score": 0.179,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.2686,
+          "passed_score": 0.2686,
+          "failed_score": 0.0
+        },
+        "a": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.0895,
+          "passed_score": 0.0895,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "107": {
+      "hits": 24,
+      "global_score": 0.1636,
+      "passed_score": 0.1636,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.3272,
+          "passed_score": 0.3272,
+          "failed_score": 0.0
+        },
+        "a": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            "A2"
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "77": {
+      "hits": 24,
+      "global_score": 0.1091,
+      "passed_score": 0.1091,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.3272,
+          "passed_score": 0.3272,
+          "failed_score": 0.0
+        },
+        "parent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            null
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "blocker": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            null
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "ai": {
+          "is_param": true,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1091,
+          "passed_score": 0.1091,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "85": {
+      "hits": 24,
+      "global_score": 0.1091,
+      "passed_score": 0.1091,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.3272,
+          "passed_score": 0.3272,
+          "failed_score": 0.0
+        },
+        "parent": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            null
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "blocker": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            null
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "ai": {
+          "is_param": true,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1091,
+          "passed_score": 0.1091,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "50": {
+      "hits": 36,
+      "global_score": 0.193,
+      "passed_score": 0.193,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.2901,
+          "passed_score": 0.2901,
+          "failed_score": 0.0
+        },
+        "a": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.0959,
+          "passed_score": 0.0959,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "51": {
+      "hits": 24,
+      "global_score": 0.2182,
+      "passed_score": 0.2182,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.3272,
+          "passed_score": 0.3272,
+          "failed_score": 0.0
+        },
+        "a": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1091,
+          "passed_score": 0.1091,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "52": {
+      "hits": 24,
+      "global_score": 0.2182,
+      "passed_score": 0.2182,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.3272,
+          "passed_score": 0.3272,
+          "failed_score": 0.0
+        },
+        "a": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1091,
+          "passed_score": 0.1091,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "54": {
+      "hits": 12,
+      "global_score": 0.2092,
+      "passed_score": 0.2092,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.4184,
+          "passed_score": 0.4184,
+          "failed_score": 0.0
+        },
+        "a": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            "A2"
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "38": {
+      "hits": 3,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "a": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            "A2"
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "55": {
+      "hits": 3,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "t": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "a": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            "A2"
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    }
+  },
+  "C:\\Users\\borse\\OneDrive\\Documents\\swe215\\evaluation\\codebases\\proj3\\planner\\heuristics\\wait_time.py": {
+    "12": {
+      "hits": 1,
+      "global_score": 0.2,
+      "passed_score": 0.2,
+      "failed_score": 0.0,
+      "variables": {}
+    },
+    "13": {
+      "hits": 1,
+      "global_score": 0.2,
+      "passed_score": 0.2,
+      "failed_score": 0.0,
+      "variables": {}
+    },
+    "14": {
+      "hits": 1,
+      "global_score": 0.2,
+      "passed_score": 0.2,
+      "failed_score": 0.0,
+      "variables": {}
+    },
+    "17": {
+      "hits": 3,
+      "global_score": 0.5,
+      "passed_score": 0.5,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "18": {
+      "hits": 2,
+      "global_score": 0.5,
+      "passed_score": 0.5,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "19": {
+      "hits": 2,
+      "global_score": 0.5,
+      "passed_score": 0.5,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "20": {
+      "hits": 2,
+      "global_score": 0.5,
+      "passed_score": 0.5,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "23": {
+      "hits": 12,
+      "global_score": 0.2925,
+      "passed_score": 0.2925,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1667,
+          "passed_score": 0.1667,
+          "failed_score": 0.0
+        },
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.4184,
+          "passed_score": 0.4184,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "26": {
+      "hits": 8,
+      "global_score": 0.3333,
+      "passed_score": 0.3333,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1667,
+          "passed_score": 0.1667,
+          "failed_score": 0.0
+        },
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "31": {
+      "hits": 8,
+      "global_score": 0.3333,
+      "passed_score": 0.3333,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1667,
+          "passed_score": 0.1667,
+          "failed_score": 0.0
+        },
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "32": {
+      "hits": 2,
+      "global_score": 0.25,
+      "passed_score": 0.25,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        },
+        "t": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "33": {
+      "hits": 2,
+      "global_score": 0.25,
+      "passed_score": 0.25,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        },
+        "t": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "46": {
+      "hits": 4,
+      "global_score": 0.375,
+      "passed_score": 0.375,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            "A2"
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.75,
+          "passed_score": 0.75,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "35": {
+      "hits": 6,
+      "global_score": 0.3011,
+      "passed_score": 0.3011,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1934,
+          "passed_score": 0.1934,
+          "failed_score": 0.0
+        },
+        "t": {
+          "is_param": true,
+          "unique_count": 3,
+          "sample_values": [
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.4088,
+          "passed_score": 0.4088,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "36": {
+      "hits": 6,
+      "global_score": 0.3011,
+      "passed_score": 0.3011,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1934,
+          "passed_score": 0.1934,
+          "failed_score": 0.0
+        },
+        "t": {
+          "is_param": true,
+          "unique_count": 3,
+          "sample_values": [
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.4088,
+          "passed_score": 0.4088,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "39": {
+      "hits": 6,
+      "global_score": 0.3011,
+      "passed_score": 0.3011,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1934,
+          "passed_score": 0.1934,
+          "failed_score": 0.0
+        },
+        "t": {
+          "is_param": true,
+          "unique_count": 3,
+          "sample_values": [
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.4088,
+          "passed_score": 0.4088,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "42": {
+      "hits": 6,
+      "global_score": 0.3011,
+      "passed_score": 0.3011,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1934,
+          "passed_score": 0.1934,
+          "failed_score": 0.0
+        },
+        "t": {
+          "is_param": true,
+          "unique_count": 3,
+          "sample_values": [
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.4088,
+          "passed_score": 0.4088,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "45": {
+      "hits": 6,
+      "global_score": 0.3011,
+      "passed_score": 0.3011,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1934,
+          "passed_score": 0.1934,
+          "failed_score": 0.0
+        },
+        "t": {
+          "is_param": true,
+          "unique_count": 3,
+          "sample_values": [
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.4088,
+          "passed_score": 0.4088,
+          "failed_score": 0.0
+        }
+      }
+    }
+  },
+  "C:\\Users\\borse\\OneDrive\\Documents\\swe215\\evaluation\\codebases\\proj3\\planner\\heuristics\\congestion.py": {
+    "14": {
+      "hits": 1,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "congestion_weight": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            1.0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "radius": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            1
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "15": {
+      "hits": 1,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "congestion_weight": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            1.0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "radius": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            1
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "17": {
+      "hits": 1,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "congestion_weight": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            1.0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "radius": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            1
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "18": {
+      "hits": 1,
+      "global_score": 0.0,
+      "passed_score": 0.0,
+      "failed_score": 0.0,
+      "variables": {
+        "congestion_weight": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            1.0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "radius": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            1
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "21": {
+      "hits": 3,
+      "global_score": 0.5,
+      "passed_score": 0.5,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "24": {
+      "hits": 2,
+      "global_score": 0.5,
+      "passed_score": 0.5,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "25": {
+      "hits": 2,
+      "global_score": 0.5,
+      "passed_score": 0.5,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "31": {
+      "hits": 28,
+      "global_score": 0.2185,
+      "passed_score": 0.2185,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.125,
+          "passed_score": 0.125,
+          "failed_score": 0.0
+        },
+        "t": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.312,
+          "passed_score": 0.312,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "33": {
+      "hits": 12,
+      "global_score": 0.2092,
+      "passed_score": 0.2092,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            "A1"
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "t": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.4184,
+          "passed_score": 0.4184,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "32": {
+      "hits": 8,
+      "global_score": 0.3333,
+      "passed_score": 0.3333,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1667,
+          "passed_score": 0.1667,
+          "failed_score": 0.0
+        },
+        "t": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "36": {
+      "hits": 12,
+      "global_score": 0.1463,
+      "passed_score": 0.1463,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1667,
+          "passed_score": 0.1667,
+          "failed_score": 0.0
+        },
+        "local_density": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "other_agent": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            "A2"
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.4184,
+          "passed_score": 0.4184,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "38": {
+      "hits": 8,
+      "global_score": 0.1667,
+      "passed_score": 0.1667,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1667,
+          "passed_score": 0.1667,
+          "failed_score": 0.0
+        },
+        "local_density": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "other_agent": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            "A2"
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "42": {
+      "hits": 8,
+      "global_score": 0.1667,
+      "passed_score": 0.1667,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1667,
+          "passed_score": 0.1667,
+          "failed_score": 0.0
+        },
+        "local_density": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "other_agent": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            "A2"
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "44": {
+      "hits": 24,
+      "global_score": 0.1371,
+      "passed_score": 0.1371,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1091,
+          "passed_score": 0.1091,
+          "failed_score": 0.0
+        },
+        "local_density": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "other_agent": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1123,
+          "passed_score": 0.1123,
+          "failed_score": 0.0
+        },
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.3272,
+          "passed_score": 0.3272,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "45": {
+      "hits": 16,
+      "global_score": 0.1562,
+      "passed_score": 0.1562,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.125,
+          "passed_score": 0.125,
+          "failed_score": 0.0
+        },
+        "local_density": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "other_agent": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.125,
+          "passed_score": 0.125,
+          "failed_score": 0.0
+        },
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.375,
+          "passed_score": 0.375,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "46": {
+      "hits": 8,
+      "global_score": 0.2083,
+      "passed_score": 0.2083,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1667,
+          "passed_score": 0.1667,
+          "failed_score": 0.0
+        },
+        "local_density": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "other_agent": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1667,
+          "passed_score": 0.1667,
+          "failed_score": 0.0
+        },
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "49": {
+      "hits": 8,
+      "global_score": 0.2083,
+      "passed_score": 0.2083,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1667,
+          "passed_score": 0.1667,
+          "failed_score": 0.0
+        },
+        "local_density": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "other_agent": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1667,
+          "passed_score": 0.1667,
+          "failed_score": 0.0
+        },
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "28": {
+      "hits": 8,
+      "global_score": 1.0,
+      "passed_score": 1.0,
+      "failed_score": 0.0,
+      "variables": {}
+    },
+    "56": {
+      "hits": 16,
+      "global_score": 0.125,
+      "passed_score": 0.125,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.125,
+          "passed_score": 0.125,
+          "failed_score": 0.0
+        },
+        "local_density": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "other_agent": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            "A2"
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.375,
+          "passed_score": 0.375,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "57": {
+      "hits": 8,
+      "global_score": 0.1667,
+      "passed_score": 0.1667,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1667,
+          "passed_score": 0.1667,
+          "failed_score": 0.0
+        },
+        "local_density": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "other_agent": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            "A2"
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "55": {
+      "hits": 8,
+      "global_score": 0.1667,
+      "passed_score": 0.1667,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            "A1",
+            "A2"
+          ],
+          "global_score": 0.1667,
+          "passed_score": 0.1667,
+          "failed_score": 0.0
+        },
+        "local_density": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "other_agent": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            "A2"
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.5,
+          "passed_score": 0.5,
+          "failed_score": 0.0
+        }
+      }
+    },
+    "59": {
+      "hits": 4,
+      "global_score": 0.1875,
+      "passed_score": 0.1875,
+      "failed_score": 0.0,
+      "variables": {
+        "agent": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            "A2"
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "local_density": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "other_agent": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            "A2"
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "t": {
+          "is_param": true,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.75,
+          "passed_score": 0.75,
+          "failed_score": 0.0
+        }
+      }
+    }
+  }
+}

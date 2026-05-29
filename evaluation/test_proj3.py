@@ -1,3 +1,7 @@
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__) + "/codebases/proj3"))
+
 import pytest
 from evaluation.codebases.proj3.planner import PIBTPlanner
 from evaluation.codebases.proj3.planner.heuristics import (

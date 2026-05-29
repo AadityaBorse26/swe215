@@ -34,6 +34,18 @@
       "passed_score": 0.2914,
       "failed_score": 0.0,
       "variables": {
+        "i": {
+          "is_param": false,
+          "unique_count": 3,
+          "sample_values": [
+            0,
+            1,
+            2
+          ],
+          "global_score": 0.1342,
+          "passed_score": 0.1342,
+          "failed_score": 0.0
+        },
         "cost": {
           "is_param": false,
           "unique_count": 21,
@@ -52,18 +64,6 @@
           "global_score": 0.4487,
           "passed_score": 0.4487,
           "failed_score": 0.0
-        },
-        "i": {
-          "is_param": false,
-          "unique_count": 3,
-          "sample_values": [
-            0,
-            1,
-            2
-          ],
-          "global_score": 0.1342,
-          "passed_score": 0.1342,
-          "failed_score": 0.0
         }
       }
     },
@@ -73,6 +73,18 @@
       "passed_score": 0.2939,
       "failed_score": 0.0,
       "variables": {
+        "i": {
+          "is_param": false,
+          "unique_count": 3,
+          "sample_values": [
+            0,
+            1,
+            2
+          ],
+          "global_score": 0.1473,
+          "passed_score": 0.1473,
+          "failed_score": 0.0
+        },
         "cost": {
           "is_param": false,
           "unique_count": 14,
@@ -91,18 +103,6 @@
           "global_score": 0.4406,
           "passed_score": 0.4406,
           "failed_score": 0.0
-        },
-        "i": {
-          "is_param": false,
-          "unique_count": 3,
-          "sample_values": [
-            0,
-            1,
-            2
-          ],
-          "global_score": 0.1473,
-          "passed_score": 0.1473,
-          "failed_score": 0.0
         }
       }
     },
@@ -112,6 +112,18 @@
       "passed_score": 0.2762,
       "failed_score": 0.0,
       "variables": {
+        "i": {
+          "is_param": false,
+          "unique_count": 3,
+          "sample_values": [
+            0,
+            1,
+            2
+          ],
+          "global_score": 0.1342,
+          "passed_score": 0.1342,
+          "failed_score": 0.0
+        },
         "cost": {
           "is_param": false,
           "unique_count": 16,
@@ -129,18 +141,6 @@
           ],
           "global_score": 0.4182,
           "passed_score": 0.4182,
-          "failed_score": 0.0
-        },
-        "i": {
-          "is_param": false,
-          "unique_count": 3,
-          "sample_values": [
-            0,
-            1,
-            2
-          ],
-          "global_score": 0.1342,
-          "passed_score": 0.1342,
           "failed_score": 0.0
         }
       }
@@ -223,29 +223,6 @@
       "passed_score": 0.3671,
       "failed_score": 0.0,
       "variables": {
-        "j": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            2,
-            3
-          ],
-          "global_score": 0.2897,
-          "passed_score": 0.2897,
-          "failed_score": 0.0
-        },
-        "best_cost": {
-          "is_param": false,
-          "unique_count": 3,
-          "sample_values": [
-            14,
-            16,
-            26
-          ],
-          "global_score": 0.6667,
-          "passed_score": 0.6667,
-          "failed_score": 0.0
-        },
         "n": {
           "is_param": false,
           "unique_count": 2,
@@ -278,6 +255,18 @@
           "passed_score": 0.2897,
           "failed_score": 0.0
         },
+        "best_cost": {
+          "is_param": false,
+          "unique_count": 3,
+          "sample_values": [
+            14,
+            16,
+            26
+          ],
+          "global_score": 0.6667,
+          "passed_score": 0.6667,
+          "failed_score": 0.0
+        },
         "cost": {
           "is_param": false,
           "unique_count": 3,
@@ -288,6 +277,17 @@
           ],
           "global_score": 0.6667,
           "passed_score": 0.6667,
+          "failed_score": 0.0
+        },
+        "j": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            2,
+            3
+          ],
+          "global_score": 0.2897,
+          "passed_score": 0.2897,
           "failed_score": 0.0
         }
       }
@@ -298,7 +298,28 @@
       "passed_score": 0.3671,
       "failed_score": 0.0,
       "variables": {
-        "j": {
+        "n": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            3,
+            4
+          ],
+          "global_score": 0.2897,
+          "passed_score": 0.2897,
+          "failed_score": 0.0
+        },
+        "trace": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            false
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "i": {
           "is_param": false,
           "unique_count": 2,
           "sample_values": [
@@ -321,38 +342,6 @@
           "passed_score": 0.6667,
           "failed_score": 0.0
         },
-        "n": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            3,
-            4
-          ],
-          "global_score": 0.2897,
-          "passed_score": 0.2897,
-          "failed_score": 0.0
-        },
-        "trace": {
-          "is_param": true,
-          "unique_count": 1,
-          "sample_values": [
-            false
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "i": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            2,
-            3
-          ],
-          "global_score": 0.2897,
-          "passed_score": 0.2897,
-          "failed_score": 0.0
-        },
         "cost": {
           "is_param": false,
           "unique_count": 3,
@@ -363,42 +352,27 @@
           ],
           "global_score": 0.6667,
           "passed_score": 0.6667,
+          "failed_score": 0.0
+        },
+        "j": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            2,
+            3
+          ],
+          "global_score": 0.2897,
+          "passed_score": 0.2897,
           "failed_score": 0.0
         }
       }
     },
     "35": {
       "hits": 18,
-      "global_score": 0.3115,
-      "passed_score": 0.3115,
+      "global_score": 0.3116,
+      "passed_score": 0.3116,
       "failed_score": 0.0,
       "variables": {
-        "j": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            2,
-            3
-          ],
-          "global_score": 0.2897,
-          "passed_score": 0.2897,
-          "failed_score": 0.0
-        },
-        "best_cost": {
-          "is_param": false,
-          "unique_count": 6,
-          "sample_values": [
-            12,
-            14,
-            16,
-            22,
-            26,
-            28
-          ],
-          "global_score": 0.3335,
-          "passed_score": 0.3335,
-          "failed_score": 0.0
-        },
         "n": {
           "is_param": false,
           "unique_count": 2,
@@ -431,6 +405,21 @@
           "passed_score": 0.2897,
           "failed_score": 0.0
         },
+        "best_cost": {
+          "is_param": false,
+          "unique_count": 6,
+          "sample_values": [
+            12,
+            14,
+            16,
+            22,
+            26,
+            28
+          ],
+          "global_score": 0.3335,
+          "passed_score": 0.3335,
+          "failed_score": 0.0
+        },
         "cost": {
           "is_param": false,
           "unique_count": 3,
@@ -441,42 +430,27 @@
           ],
           "global_score": 0.6667,
           "passed_score": 0.6667,
+          "failed_score": 0.0
+        },
+        "j": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            2,
+            3
+          ],
+          "global_score": 0.2897,
+          "passed_score": 0.2897,
           "failed_score": 0.0
         }
       }
     },
     "38": {
       "hits": 18,
-      "global_score": 0.3115,
-      "passed_score": 0.3115,
+      "global_score": 0.3116,
+      "passed_score": 0.3116,
       "failed_score": 0.0,
       "variables": {
-        "j": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            2,
-            3
-          ],
-          "global_score": 0.2897,
-          "passed_score": 0.2897,
-          "failed_score": 0.0
-        },
-        "best_cost": {
-          "is_param": false,
-          "unique_count": 6,
-          "sample_values": [
-            12,
-            14,
-            16,
-            22,
-            26,
-            28
-          ],
-          "global_score": 0.3335,
-          "passed_score": 0.3335,
-          "failed_score": 0.0
-        },
         "n": {
           "is_param": false,
           "unique_count": 2,
@@ -509,6 +483,21 @@
           "passed_score": 0.2897,
           "failed_score": 0.0
         },
+        "best_cost": {
+          "is_param": false,
+          "unique_count": 6,
+          "sample_values": [
+            12,
+            14,
+            16,
+            22,
+            26,
+            28
+          ],
+          "global_score": 0.3335,
+          "passed_score": 0.3335,
+          "failed_score": 0.0
+        },
         "cost": {
           "is_param": false,
           "unique_count": 3,
@@ -519,6 +508,17 @@
           ],
           "global_score": 0.6667,
           "passed_score": 0.6667,
+          "failed_score": 0.0
+        },
+        "j": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            2,
+            3
+          ],
+          "global_score": 0.2897,
+          "passed_score": 0.2897,
           "failed_score": 0.0
         }
       }
@@ -529,33 +529,6 @@
       "passed_score": 0.1922,
       "failed_score": 0.0,
       "variables": {
-        "j": {
-          "is_param": false,
-          "unique_count": 3,
-          "sample_values": [
-            1,
-            2,
-            3
-          ],
-          "global_score": 0.1683,
-          "passed_score": 0.1683,
-          "failed_score": 0.0
-        },
-        "best_cost": {
-          "is_param": false,
-          "unique_count": 6,
-          "sample_values": [
-            12,
-            14,
-            16,
-            22,
-            26,
-            28
-          ],
-          "global_score": 0.2495,
-          "passed_score": 0.2495,
-          "failed_score": 0.0
-        },
         "n": {
           "is_param": false,
           "unique_count": 3,
@@ -591,6 +564,21 @@
           "passed_score": 0.2408,
           "failed_score": 0.0
         },
+        "best_cost": {
+          "is_param": false,
+          "unique_count": 6,
+          "sample_values": [
+            12,
+            14,
+            16,
+            22,
+            26,
+            28
+          ],
+          "global_score": 0.2495,
+          "passed_score": 0.2495,
+          "failed_score": 0.0
+        },
         "cost": {
           "is_param": false,
           "unique_count": 10,
@@ -609,6 +597,18 @@
           "global_score": 0.3494,
           "passed_score": 0.3494,
           "failed_score": 0.0
+        },
+        "j": {
+          "is_param": false,
+          "unique_count": 3,
+          "sample_values": [
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.1683,
+          "passed_score": 0.1683,
+          "failed_score": 0.0
         }
       }
     },
@@ -618,33 +618,6 @@
       "passed_score": 0.1917,
       "failed_score": 0.0,
       "variables": {
-        "j": {
-          "is_param": false,
-          "unique_count": 3,
-          "sample_values": [
-            1,
-            2,
-            3
-          ],
-          "global_score": 0.1676,
-          "passed_score": 0.1676,
-          "failed_score": 0.0
-        },
-        "best_cost": {
-          "is_param": false,
-          "unique_count": 6,
-          "sample_values": [
-            12,
-            14,
-            16,
-            22,
-            26,
-            28
-          ],
-          "global_score": 0.2595,
-          "passed_score": 0.2595,
-          "failed_score": 0.0
-        },
         "n": {
           "is_param": false,
           "unique_count": 3,
@@ -680,6 +653,21 @@
           "passed_score": 0.1787,
           "failed_score": 0.0
         },
+        "best_cost": {
+          "is_param": false,
+          "unique_count": 6,
+          "sample_values": [
+            12,
+            14,
+            16,
+            22,
+            26,
+            28
+          ],
+          "global_score": 0.2595,
+          "passed_score": 0.2595,
+          "failed_score": 0.0
+        },
         "cost": {
           "is_param": false,
           "unique_count": 11,
@@ -698,6 +686,18 @@
           "global_score": 0.3925,
           "passed_score": 0.3925,
           "failed_score": 0.0
+        },
+        "j": {
+          "is_param": false,
+          "unique_count": 3,
+          "sample_values": [
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.1676,
+          "passed_score": 0.1676,
+          "failed_score": 0.0
         }
       }
     },
@@ -707,33 +707,6 @@
       "passed_score": 0.2512,
       "failed_score": 0.0,
       "variables": {
-        "j": {
-          "is_param": false,
-          "unique_count": 3,
-          "sample_values": [
-            1,
-            2,
-            3
-          ],
-          "global_score": 0.1935,
-          "passed_score": 0.1935,
-          "failed_score": 0.0
-        },
-        "best_cost": {
-          "is_param": false,
-          "unique_count": 6,
-          "sample_values": [
-            12,
-            14,
-            16,
-            22,
-            26,
-            28
-          ],
-          "global_score": 0.3441,
-          "passed_score": 0.3441,
-          "failed_score": 0.0
-        },
         "n": {
           "is_param": false,
           "unique_count": 3,
@@ -768,6 +741,21 @@
           "passed_score": 0.1445,
           "failed_score": 0.0
         },
+        "best_cost": {
+          "is_param": false,
+          "unique_count": 6,
+          "sample_values": [
+            12,
+            14,
+            16,
+            22,
+            26,
+            28
+          ],
+          "global_score": 0.3441,
+          "passed_score": 0.3441,
+          "failed_score": 0.0
+        },
         "cost": {
           "is_param": false,
           "unique_count": 11,
@@ -785,6 +773,18 @@
           ],
           "global_score": 0.6383,
           "passed_score": 0.6383,
+          "failed_score": 0.0
+        },
+        "j": {
+          "is_param": false,
+          "unique_count": 3,
+          "sample_values": [
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.1935,
+          "passed_score": 0.1935,
           "failed_score": 0.0
         }
       }
@@ -795,33 +795,6 @@
       "passed_score": 0.2512,
       "failed_score": 0.0,
       "variables": {
-        "j": {
-          "is_param": false,
-          "unique_count": 3,
-          "sample_values": [
-            1,
-            2,
-            3
-          ],
-          "global_score": 0.1935,
-          "passed_score": 0.1935,
-          "failed_score": 0.0
-        },
-        "best_cost": {
-          "is_param": false,
-          "unique_count": 6,
-          "sample_values": [
-            12,
-            14,
-            16,
-            22,
-            26,
-            28
-          ],
-          "global_score": 0.3441,
-          "passed_score": 0.3441,
-          "failed_score": 0.0
-        },
         "n": {
           "is_param": false,
           "unique_count": 3,
@@ -854,6 +827,21 @@
           ],
           "global_score": 0.1445,
           "passed_score": 0.1445,
+          "failed_score": 0.0
+        },
+        "best_cost": {
+          "is_param": false,
+          "unique_count": 6,
+          "sample_values": [
+            12,
+            14,
+            16,
+            22,
+            26,
+            28
+          ],
+          "global_score": 0.3441,
+          "passed_score": 0.3441,
           "failed_score": 0.0
         },
         "cost": {
@@ -874,15 +862,7 @@
           "global_score": 0.6383,
           "passed_score": 0.6383,
           "failed_score": 0.0
-        }
-      }
-    },
-    "45": {
-      "hits": 37,
-      "global_score": 0.2226,
-      "passed_score": 0.2226,
-      "failed_score": 0.0,
-      "variables": {
+        },
         "j": {
           "is_param": false,
           "unique_count": 3,
@@ -894,22 +874,15 @@
           "global_score": 0.1935,
           "passed_score": 0.1935,
           "failed_score": 0.0
-        },
-        "best_cost": {
-          "is_param": false,
-          "unique_count": 6,
-          "sample_values": [
-            12,
-            14,
-            16,
-            22,
-            26,
-            28
-          ],
-          "global_score": 0.3441,
-          "passed_score": 0.3441,
-          "failed_score": 0.0
-        },
+        }
+      }
+    },
+    "45": {
+      "hits": 37,
+      "global_score": 0.2226,
+      "passed_score": 0.2226,
+      "failed_score": 0.0,
+      "variables": {
         "n": {
           "is_param": false,
           "unique_count": 3,
@@ -942,6 +915,21 @@
           ],
           "global_score": 0.1445,
           "passed_score": 0.1445,
+          "failed_score": 0.0
+        },
+        "best_cost": {
+          "is_param": false,
+          "unique_count": 6,
+          "sample_values": [
+            12,
+            14,
+            16,
+            22,
+            26,
+            28
+          ],
+          "global_score": 0.3441,
+          "passed_score": 0.3441,
           "failed_score": 0.0
         },
         "cost": {
@@ -962,6 +950,18 @@
           "global_score": 0.4664,
           "passed_score": 0.4664,
           "failed_score": 0.0
+        },
+        "j": {
+          "is_param": false,
+          "unique_count": 3,
+          "sample_values": [
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.1935,
+          "passed_score": 0.1935,
+          "failed_score": 0.0
         }
       }
     },
@@ -971,12 +971,33 @@
       "passed_score": 0.3671,
       "failed_score": 0.0,
       "variables": {
-        "j": {
+        "n": {
           "is_param": false,
           "unique_count": 2,
           "sample_values": [
-            1,
-            3
+            3,
+            4
+          ],
+          "global_score": 0.2897,
+          "passed_score": 0.2897,
+          "failed_score": 0.0
+        },
+        "trace": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            false
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "i": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            2
           ],
           "global_score": 0.2897,
           "passed_score": 0.2897,
@@ -994,38 +1015,6 @@
           "passed_score": 0.6667,
           "failed_score": 0.0
         },
-        "n": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            3,
-            4
-          ],
-          "global_score": 0.2897,
-          "passed_score": 0.2897,
-          "failed_score": 0.0
-        },
-        "trace": {
-          "is_param": true,
-          "unique_count": 1,
-          "sample_values": [
-            false
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "i": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            2
-          ],
-          "global_score": 0.2897,
-          "passed_score": 0.2897,
-          "failed_score": 0.0
-        },
         "cost": {
           "is_param": false,
           "unique_count": 3,
@@ -1036,6 +1025,17 @@
           ],
           "global_score": 0.6667,
           "passed_score": 0.6667,
+          "failed_score": 0.0
+        },
+        "j": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            1,
+            3
+          ],
+          "global_score": 0.2897,
+          "passed_score": 0.2897,
           "failed_score": 0.0
         }
       }
@@ -1046,29 +1046,6 @@
       "passed_score": 0.3671,
       "failed_score": 0.0,
       "variables": {
-        "j": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            1,
-            3
-          ],
-          "global_score": 0.2897,
-          "passed_score": 0.2897,
-          "failed_score": 0.0
-        },
-        "best_cost": {
-          "is_param": false,
-          "unique_count": 3,
-          "sample_values": [
-            14,
-            16,
-            26
-          ],
-          "global_score": 0.6667,
-          "passed_score": 0.6667,
-          "failed_score": 0.0
-        },
         "n": {
           "is_param": false,
           "unique_count": 2,
@@ -1101,6 +1078,18 @@
           "passed_score": 0.2897,
           "failed_score": 0.0
         },
+        "best_cost": {
+          "is_param": false,
+          "unique_count": 3,
+          "sample_values": [
+            14,
+            16,
+            26
+          ],
+          "global_score": 0.6667,
+          "passed_score": 0.6667,
+          "failed_score": 0.0
+        },
         "cost": {
           "is_param": false,
           "unique_count": 3,
@@ -1112,6 +1101,17 @@
           "global_score": 0.6667,
           "passed_score": 0.6667,
           "failed_score": 0.0
+        },
+        "j": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            1,
+            3
+          ],
+          "global_score": 0.2897,
+          "passed_score": 0.2897,
+          "failed_score": 0.0
         }
       }
     },
@@ -1121,31 +1121,6 @@
       "passed_score": 0.21,
       "failed_score": 0.0,
       "variables": {
-        "j": {
-          "is_param": false,
-          "unique_count": 3,
-          "sample_values": [
-            1,
-            2,
-            3
-          ],
-          "global_score": 0.1995,
-          "passed_score": 0.1995,
-          "failed_score": 0.0
-        },
-        "best_cost": {
-          "is_param": false,
-          "unique_count": 4,
-          "sample_values": [
-            12,
-            14,
-            16,
-            26
-          ],
-          "global_score": 0.2809,
-          "passed_score": 0.2809,
-          "failed_score": 0.0
-        },
         "n": {
           "is_param": false,
           "unique_count": 3,
@@ -1180,6 +1155,19 @@
           "passed_score": 0.1424,
           "failed_score": 0.0
         },
+        "best_cost": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            12,
+            14,
+            16,
+            26
+          ],
+          "global_score": 0.2809,
+          "passed_score": 0.2809,
+          "failed_score": 0.0
+        },
         "cost": {
           "is_param": false,
           "unique_count": 11,
@@ -1198,6 +1186,18 @@
           "global_score": 0.4474,
           "passed_score": 0.4474,
           "failed_score": 0.0
+        },
+        "j": {
+          "is_param": false,
+          "unique_count": 3,
+          "sample_values": [
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.1995,
+          "passed_score": 0.1995,
+          "failed_score": 0.0
         }
       }
     },
@@ -1207,7 +1207,29 @@
       "passed_score": 0.1774,
       "failed_score": 0.0,
       "variables": {
-        "j": {
+        "n": {
+          "is_param": false,
+          "unique_count": 3,
+          "sample_values": [
+            2,
+            3,
+            4
+          ],
+          "global_score": 0.1794,
+          "passed_score": 0.1794,
+          "failed_score": 0.0
+        },
+        "trace": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            false
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "i": {
           "is_param": false,
           "unique_count": 3,
           "sample_values": [
@@ -1232,40 +1254,6 @@
           "passed_score": 0.2602,
           "failed_score": 0.0
         },
-        "n": {
-          "is_param": false,
-          "unique_count": 3,
-          "sample_values": [
-            2,
-            3,
-            4
-          ],
-          "global_score": 0.1794,
-          "passed_score": 0.1794,
-          "failed_score": 0.0
-        },
-        "trace": {
-          "is_param": true,
-          "unique_count": 1,
-          "sample_values": [
-            false
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "i": {
-          "is_param": false,
-          "unique_count": 3,
-          "sample_values": [
-            1,
-            2,
-            3
-          ],
-          "global_score": 0.1794,
-          "passed_score": 0.1794,
-          "failed_score": 0.0
-        },
         "cost": {
           "is_param": false,
           "unique_count": 5,
@@ -1279,6 +1267,18 @@
           "global_score": 0.266,
           "passed_score": 0.266,
           "failed_score": 0.0
+        },
+        "j": {
+          "is_param": false,
+          "unique_count": 3,
+          "sample_values": [
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.1794,
+          "passed_score": 0.1794,
+          "failed_score": 0.0
         }
       }
     },
@@ -1288,29 +1288,6 @@
       "passed_score": 0.3671,
       "failed_score": 0.0,
       "variables": {
-        "j": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            2,
-            3
-          ],
-          "global_score": 0.2897,
-          "passed_score": 0.2897,
-          "failed_score": 0.0
-        },
-        "best_cost": {
-          "is_param": false,
-          "unique_count": 3,
-          "sample_values": [
-            14,
-            16,
-            26
-          ],
-          "global_score": 0.6667,
-          "passed_score": 0.6667,
-          "failed_score": 0.0
-        },
         "n": {
           "is_param": false,
           "unique_count": 2,
@@ -1343,6 +1320,18 @@
           "passed_score": 0.2897,
           "failed_score": 0.0
         },
+        "best_cost": {
+          "is_param": false,
+          "unique_count": 3,
+          "sample_values": [
+            14,
+            16,
+            26
+          ],
+          "global_score": 0.6667,
+          "passed_score": 0.6667,
+          "failed_score": 0.0
+        },
         "cost": {
           "is_param": false,
           "unique_count": 3,
@@ -1353,6 +1342,17 @@
           ],
           "global_score": 0.6667,
           "passed_score": 0.6667,
+          "failed_score": 0.0
+        },
+        "j": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            2,
+            3
+          ],
+          "global_score": 0.2897,
+          "passed_score": 0.2897,
           "failed_score": 0.0
         }
       }
@@ -1363,29 +1363,6 @@
       "passed_score": 0.3671,
       "failed_score": 0.0,
       "variables": {
-        "j": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            2,
-            3
-          ],
-          "global_score": 0.2897,
-          "passed_score": 0.2897,
-          "failed_score": 0.0
-        },
-        "best_cost": {
-          "is_param": false,
-          "unique_count": 3,
-          "sample_values": [
-            14,
-            16,
-            26
-          ],
-          "global_score": 0.6667,
-          "passed_score": 0.6667,
-          "failed_score": 0.0
-        },
         "n": {
           "is_param": false,
           "unique_count": 2,
@@ -1416,6 +1393,18 @@
           ],
           "global_score": 0.2897,
           "passed_score": 0.2897,
+          "failed_score": 0.0
+        },
+        "best_cost": {
+          "is_param": false,
+          "unique_count": 3,
+          "sample_values": [
+            14,
+            16,
+            26
+          ],
+          "global_score": 0.6667,
+          "passed_score": 0.6667,
           "failed_score": 0.0
         },
         "cost": {
@@ -1429,6 +1418,17 @@
           "global_score": 0.6667,
           "passed_score": 0.6667,
           "failed_score": 0.0
+        },
+        "j": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            2,
+            3
+          ],
+          "global_score": 0.2897,
+          "passed_score": 0.2897,
+          "failed_score": 0.0
         }
       }
     },
@@ -1438,31 +1438,6 @@
       "passed_score": 0.1262,
       "failed_score": 0.0,
       "variables": {
-        "j": {
-          "is_param": false,
-          "unique_count": 3,
-          "sample_values": [
-            1,
-            2,
-            3
-          ],
-          "global_score": 0.1194,
-          "passed_score": 0.1194,
-          "failed_score": 0.0
-        },
-        "best_cost": {
-          "is_param": false,
-          "unique_count": 4,
-          "sample_values": [
-            12,
-            14,
-            16,
-            26
-          ],
-          "global_score": 0.1994,
-          "passed_score": 0.1994,
-          "failed_score": 0.0
-        },
         "n": {
           "is_param": false,
           "unique_count": 3,
@@ -1497,6 +1472,19 @@
           "passed_score": 0.1194,
           "failed_score": 0.0
         },
+        "best_cost": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            12,
+            14,
+            16,
+            26
+          ],
+          "global_score": 0.1994,
+          "passed_score": 0.1994,
+          "failed_score": 0.0
+        },
         "cost": {
           "is_param": false,
           "unique_count": 4,
@@ -1508,6 +1496,18 @@
           ],
           "global_score": 0.1994,
           "passed_score": 0.1994,
+          "failed_score": 0.0
+        },
+        "j": {
+          "is_param": false,
+          "unique_count": 3,
+          "sample_values": [
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.1194,
+          "passed_score": 0.1194,
           "failed_score": 0.0
         }
       }
@@ -1518,31 +1518,6 @@
       "passed_score": 0.1262,
       "failed_score": 0.0,
       "variables": {
-        "j": {
-          "is_param": false,
-          "unique_count": 3,
-          "sample_values": [
-            1,
-            2,
-            3
-          ],
-          "global_score": 0.1194,
-          "passed_score": 0.1194,
-          "failed_score": 0.0
-        },
-        "best_cost": {
-          "is_param": false,
-          "unique_count": 4,
-          "sample_values": [
-            12,
-            14,
-            16,
-            26
-          ],
-          "global_score": 0.1994,
-          "passed_score": 0.1994,
-          "failed_score": 0.0
-        },
         "n": {
           "is_param": false,
           "unique_count": 3,
@@ -1577,6 +1552,19 @@
           "passed_score": 0.1194,
           "failed_score": 0.0
         },
+        "best_cost": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            12,
+            14,
+            16,
+            26
+          ],
+          "global_score": 0.1994,
+          "passed_score": 0.1994,
+          "failed_score": 0.0
+        },
         "cost": {
           "is_param": false,
           "unique_count": 4,
@@ -1588,6 +1576,18 @@
           ],
           "global_score": 0.1994,
           "passed_score": 0.1994,
+          "failed_score": 0.0
+        },
+        "j": {
+          "is_param": false,
+          "unique_count": 3,
+          "sample_values": [
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.1194,
+          "passed_score": 0.1194,
           "failed_score": 0.0
         }
       }
@@ -1598,31 +1598,6 @@
       "passed_score": 0.1262,
       "failed_score": 0.0,
       "variables": {
-        "j": {
-          "is_param": false,
-          "unique_count": 3,
-          "sample_values": [
-            1,
-            2,
-            3
-          ],
-          "global_score": 0.1194,
-          "passed_score": 0.1194,
-          "failed_score": 0.0
-        },
-        "best_cost": {
-          "is_param": false,
-          "unique_count": 4,
-          "sample_values": [
-            12,
-            14,
-            16,
-            26
-          ],
-          "global_score": 0.1994,
-          "passed_score": 0.1994,
-          "failed_score": 0.0
-        },
         "n": {
           "is_param": false,
           "unique_count": 3,
@@ -1657,6 +1632,19 @@
           "passed_score": 0.1194,
           "failed_score": 0.0
         },
+        "best_cost": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            12,
+            14,
+            16,
+            26
+          ],
+          "global_score": 0.1994,
+          "passed_score": 0.1994,
+          "failed_score": 0.0
+        },
         "cost": {
           "is_param": false,
           "unique_count": 4,
@@ -1668,6 +1656,18 @@
           ],
           "global_score": 0.1994,
           "passed_score": 0.1994,
+          "failed_score": 0.0
+        },
+        "j": {
+          "is_param": false,
+          "unique_count": 3,
+          "sample_values": [
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.1194,
+          "passed_score": 0.1194,
           "failed_score": 0.0
         }
       }
@@ -1850,16 +1850,6 @@
       "passed_score": 0.1449,
       "failed_score": 0.0,
       "variables": {
-        "best_goal": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            null
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
         "d": {
           "is_param": false,
           "unique_count": 2,
@@ -1869,6 +1859,16 @@
           ],
           "global_score": 0.2897,
           "passed_score": 0.2897,
+          "failed_score": 0.0
+        },
+        "best_goal": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            null
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "best_dist": {
@@ -1900,16 +1900,6 @@
       "passed_score": 0.2632,
       "failed_score": 0.0,
       "variables": {
-        "best_goal": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            null
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
         "d": {
           "is_param": false,
           "unique_count": 7,
@@ -1924,6 +1914,16 @@
           ],
           "global_score": 0.5942,
           "passed_score": 0.5942,
+          "failed_score": 0.0
+        },
+        "best_goal": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            null
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "best_dist": {
@@ -1958,16 +1958,6 @@
       "passed_score": 0.273,
       "failed_score": 0.0,
       "variables": {
-        "best_goal": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            null
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
         "d": {
           "is_param": false,
           "unique_count": 6,
@@ -1981,6 +1971,16 @@
           ],
           "global_score": 0.6581,
           "passed_score": 0.6581,
+          "failed_score": 0.0
+        },
+        "best_goal": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            null
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "best_dist": {
@@ -2014,16 +2014,6 @@
       "passed_score": 0.2841,
       "failed_score": 0.0,
       "variables": {
-        "best_goal": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            null
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
         "d": {
           "is_param": false,
           "unique_count": 7,
@@ -2038,6 +2028,16 @@
           ],
           "global_score": 0.7023,
           "passed_score": 0.7023,
+          "failed_score": 0.0
+        },
+        "best_goal": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            null
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "best_dist": {
@@ -2071,16 +2071,6 @@
       "passed_score": 0.1835,
       "failed_score": 0.0,
       "variables": {
-        "best_goal": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            null
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
         "d": {
           "is_param": false,
           "unique_count": 4,
@@ -2092,6 +2082,16 @@
           ],
           "global_score": 0.5566,
           "passed_score": 0.5566,
+          "failed_score": 0.0
+        },
+        "best_goal": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            null
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "best_dist": {
@@ -2123,16 +2123,6 @@
       "passed_score": 0.2783,
       "failed_score": 0.0,
       "variables": {
-        "best_goal": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            null
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
         "d": {
           "is_param": false,
           "unique_count": 4,
@@ -2144,6 +2134,16 @@
           ],
           "global_score": 0.5566,
           "passed_score": 0.5566,
+          "failed_score": 0.0
+        },
+        "best_goal": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            null
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "best_dist": {
@@ -2513,26 +2513,6 @@
       "passed_score": 0.1562,
       "failed_score": 0.0,
       "variables": {
-        "j": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            3
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "best_cost": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            14
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
         "n": {
           "is_param": false,
           "unique_count": 1,
@@ -2566,21 +2546,11 @@
           "passed_score": 0.75,
           "failed_score": 0.0
         },
-        "best_dist": {
+        "best_cost": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            6
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "d": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            6
+            14
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -2597,6 +2567,36 @@
           "global_score": 0.5,
           "passed_score": 0.5,
           "failed_score": 0.0
+        },
+        "d": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            6
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "best_dist": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            6
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "j": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            3
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
         }
       }
     },
@@ -2606,28 +2606,6 @@
       "passed_score": 0.1563,
       "failed_score": 0.0,
       "variables": {
-        "j": {
-          "is_param": false,
-          "unique_count": 3,
-          "sample_values": [
-            1,
-            2,
-            3
-          ],
-          "global_score": 0.2575,
-          "passed_score": 0.2575,
-          "failed_score": 0.0
-        },
-        "best_cost": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            14
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
         "n": {
           "is_param": false,
           "unique_count": 1,
@@ -2661,21 +2639,11 @@
           "passed_score": 0.4169,
           "failed_score": 0.0
         },
-        "best_dist": {
+        "best_cost": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            6
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "d": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            6
+            14
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -2694,6 +2662,38 @@
           "global_score": 0.5757,
           "passed_score": 0.5757,
           "failed_score": 0.0
+        },
+        "d": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            6
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "best_dist": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            6
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "j": {
+          "is_param": false,
+          "unique_count": 3,
+          "sample_values": [
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.2575,
+          "passed_score": 0.2575,
+          "failed_score": 0.0
         }
       }
     },
@@ -2703,28 +2703,6 @@
       "passed_score": 0.1717,
       "failed_score": 0.0,
       "variables": {
-        "j": {
-          "is_param": false,
-          "unique_count": 3,
-          "sample_values": [
-            1,
-            2,
-            3
-          ],
-          "global_score": 0.3763,
-          "passed_score": 0.3763,
-          "failed_score": 0.0
-        },
-        "best_cost": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            14
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
         "n": {
           "is_param": false,
           "unique_count": 1,
@@ -2757,21 +2735,11 @@
           "passed_score": 0.3763,
           "failed_score": 0.0
         },
-        "best_dist": {
+        "best_cost": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            6
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "d": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            6
+            14
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -2788,6 +2756,38 @@
           ],
           "global_score": 0.6208,
           "passed_score": 0.6208,
+          "failed_score": 0.0
+        },
+        "d": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            6
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "best_dist": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            6
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "j": {
+          "is_param": false,
+          "unique_count": 3,
+          "sample_values": [
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.3763,
+          "passed_score": 0.3763,
           "failed_score": 0.0
         }
       }
@@ -2798,28 +2798,6 @@
       "passed_score": 0.1717,
       "failed_score": 0.0,
       "variables": {
-        "j": {
-          "is_param": false,
-          "unique_count": 3,
-          "sample_values": [
-            1,
-            2,
-            3
-          ],
-          "global_score": 0.3763,
-          "passed_score": 0.3763,
-          "failed_score": 0.0
-        },
-        "best_cost": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            14
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
         "n": {
           "is_param": false,
           "unique_count": 1,
@@ -2852,21 +2830,11 @@
           "passed_score": 0.3763,
           "failed_score": 0.0
         },
-        "best_dist": {
+        "best_cost": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            6
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "d": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            6
+            14
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -2884,15 +2852,27 @@
           "global_score": 0.6208,
           "passed_score": 0.6208,
           "failed_score": 0.0
-        }
-      }
-    },
-    "97": {
-      "hits": 6,
-      "global_score": 0.1812,
-      "passed_score": 0.1812,
-      "failed_score": 0.0,
-      "variables": {
+        },
+        "d": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            6
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "best_dist": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            6
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "j": {
           "is_param": false,
           "unique_count": 3,
@@ -2904,17 +2884,15 @@
           "global_score": 0.3763,
           "passed_score": 0.3763,
           "failed_score": 0.0
-        },
-        "best_cost": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            14
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
+        }
+      }
+    },
+    "97": {
+      "hits": 6,
+      "global_score": 0.1812,
+      "passed_score": 0.1812,
+      "failed_score": 0.0,
+      "variables": {
         "n": {
           "is_param": false,
           "unique_count": 1,
@@ -2947,21 +2925,11 @@
           "passed_score": 0.3763,
           "failed_score": 0.0
         },
-        "best_dist": {
+        "best_cost": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            6
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "d": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            6
+            14
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -2979,6 +2947,38 @@
           ],
           "global_score": 0.6968,
           "passed_score": 0.6968,
+          "failed_score": 0.0
+        },
+        "d": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            6
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "best_dist": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            6
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "j": {
+          "is_param": false,
+          "unique_count": 3,
+          "sample_values": [
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.3763,
+          "passed_score": 0.3763,
           "failed_score": 0.0
         }
       }
@@ -2989,28 +2989,6 @@
       "passed_score": 0.1812,
       "failed_score": 0.0,
       "variables": {
-        "j": {
-          "is_param": false,
-          "unique_count": 3,
-          "sample_values": [
-            1,
-            2,
-            3
-          ],
-          "global_score": 0.3763,
-          "passed_score": 0.3763,
-          "failed_score": 0.0
-        },
-        "best_cost": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            14
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
         "n": {
           "is_param": false,
           "unique_count": 1,
@@ -3043,21 +3021,11 @@
           "passed_score": 0.3763,
           "failed_score": 0.0
         },
-        "best_dist": {
+        "best_cost": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            6
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "d": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            6
+            14
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -3076,6 +3044,38 @@
           "global_score": 0.6968,
           "passed_score": 0.6968,
           "failed_score": 0.0
+        },
+        "d": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            6
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "best_dist": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            6
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "j": {
+          "is_param": false,
+          "unique_count": 3,
+          "sample_values": [
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.3763,
+          "passed_score": 0.3763,
+          "failed_score": 0.0
         }
       }
     },
@@ -3085,26 +3085,6 @@
       "passed_score": 0.0,
       "failed_score": 0.0,
       "variables": {
-        "j": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            3
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "best_cost": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            14
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
         "n": {
           "is_param": false,
           "unique_count": 1,
@@ -3135,11 +3115,21 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "best_dist": {
+        "best_cost": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            6
+            14
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "cost": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            16
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -3155,11 +3145,21 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "cost": {
+        "best_dist": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            16
+            6
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "j": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            3
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -3173,26 +3173,6 @@
       "passed_score": 0.0,
       "failed_score": 0.0,
       "variables": {
-        "j": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            3
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "best_cost": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            14
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
         "n": {
           "is_param": false,
           "unique_count": 1,
@@ -3223,11 +3203,21 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "best_dist": {
+        "best_cost": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            6
+            14
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "cost": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            16
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -3243,11 +3233,21 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "cost": {
+        "best_dist": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            16
+            6
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "j": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            3
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -3261,26 +3261,6 @@
       "passed_score": 0.0,
       "failed_score": 0.0,
       "variables": {
-        "j": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            3
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "best_cost": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            14
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
         "n": {
           "is_param": false,
           "unique_count": 1,
@@ -3311,11 +3291,21 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "best_dist": {
+        "best_cost": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            6
+            14
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "cost": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            16
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -3331,11 +3321,21 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "cost": {
+        "best_dist": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            16
+            6
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "j": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            3
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -3349,26 +3349,6 @@
       "passed_score": 0.0,
       "failed_score": 0.0,
       "variables": {
-        "j": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            3
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "best_cost": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            14
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
         "n": {
           "is_param": false,
           "unique_count": 1,
@@ -3399,11 +3379,21 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "best_dist": {
+        "best_cost": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            6
+            14
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "cost": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            16
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -3419,11 +3409,21 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "cost": {
+        "best_dist": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            16
+            6
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "j": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            3
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -3466,6 +3466,16 @@
       "passed_score": 0.2917,
       "failed_score": 0.0,
       "variables": {
+        "trace": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            false
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "best_cost": {
           "is_param": false,
           "unique_count": 2,
@@ -3475,16 +3485,6 @@
           ],
           "global_score": 0.25,
           "passed_score": 0.25,
-          "failed_score": 0.0
-        },
-        "trace": {
-          "is_param": true,
-          "unique_count": 1,
-          "sample_values": [
-            false
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "cost": {
@@ -3541,6 +3541,16 @@
       "passed_score": 0.3327,
       "failed_score": 0.0,
       "variables": {
+        "trace": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            false
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "best_cost": {
           "is_param": false,
           "unique_count": 2,
@@ -3550,16 +3560,6 @@
           ],
           "global_score": 0.2897,
           "passed_score": 0.2897,
-          "failed_score": 0.0
-        },
-        "trace": {
-          "is_param": true,
-          "unique_count": 1,
-          "sample_values": [
-            false
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "cost": {
@@ -3616,21 +3616,21 @@
       "passed_score": 0.2844,
       "failed_score": 0.0,
       "variables": {
-        "best_cost": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            Infinity
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
         "trace": {
           "is_param": true,
           "unique_count": 1,
           "sample_values": [
             false
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "best_cost": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            Infinity
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -3690,6 +3690,16 @@
       "passed_score": 0.2308,
       "failed_score": 0.0,
       "variables": {
+        "trace": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            false
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "best_cost": {
           "is_param": false,
           "unique_count": 4,
@@ -3701,16 +3711,6 @@
           ],
           "global_score": 0.3882,
           "passed_score": 0.3882,
-          "failed_score": 0.0
-        },
-        "trace": {
-          "is_param": true,
-          "unique_count": 1,
-          "sample_values": [
-            false
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "cost": {
@@ -3768,6 +3768,16 @@
       "passed_score": 0.2752,
       "failed_score": 0.0,
       "variables": {
+        "trace": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            false
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "best_cost": {
           "is_param": false,
           "unique_count": 4,
@@ -3779,16 +3789,6 @@
           ],
           "global_score": 0.4375,
           "passed_score": 0.4375,
-          "failed_score": 0.0
-        },
-        "trace": {
-          "is_param": true,
-          "unique_count": 1,
-          "sample_values": [
-            false
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "cost": {
@@ -3846,6 +3846,16 @@
       "passed_score": 0.2692,
       "failed_score": 0.0,
       "variables": {
+        "trace": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            false
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "best_cost": {
           "is_param": false,
           "unique_count": 4,
@@ -3857,16 +3867,6 @@
           ],
           "global_score": 0.4375,
           "passed_score": 0.4375,
-          "failed_score": 0.0
-        },
-        "trace": {
-          "is_param": true,
-          "unique_count": 1,
-          "sample_values": [
-            false
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "cost": {
@@ -3924,6 +3924,16 @@
       "passed_score": 0.2698,
       "failed_score": 0.0,
       "variables": {
+        "trace": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            false
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "best_cost": {
           "is_param": false,
           "unique_count": 2,
@@ -3933,16 +3943,6 @@
           ],
           "global_score": 0.1555,
           "passed_score": 0.1555,
-          "failed_score": 0.0
-        },
-        "trace": {
-          "is_param": true,
-          "unique_count": 1,
-          "sample_values": [
-            false
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "cost": {
@@ -4000,6 +4000,16 @@
       "passed_score": 0.3167,
       "failed_score": 0.0,
       "variables": {
+        "trace": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            false
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "best_cost": {
           "is_param": false,
           "unique_count": 3,
@@ -4010,16 +4020,6 @@
           ],
           "global_score": 0.437,
           "passed_score": 0.437,
-          "failed_score": 0.0
-        },
-        "trace": {
-          "is_param": true,
-          "unique_count": 1,
-          "sample_values": [
-            false
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "cost": {
@@ -4077,6 +4077,16 @@
       "passed_score": 0.2077,
       "failed_score": 0.0,
       "variables": {
+        "trace": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            false
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "best_cost": {
           "is_param": false,
           "unique_count": 2,
@@ -4086,16 +4096,6 @@
           ],
           "global_score": 0.2897,
           "passed_score": 0.2897,
-          "failed_score": 0.0
-        },
-        "trace": {
-          "is_param": true,
-          "unique_count": 1,
-          "sample_values": [
-            false
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "cost": {
@@ -4149,6 +4149,16 @@
       "passed_score": 0.2983,
       "failed_score": 0.0,
       "variables": {
+        "trace": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            false
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "best_cost": {
           "is_param": false,
           "unique_count": 2,
@@ -4158,16 +4168,6 @@
           ],
           "global_score": 0.25,
           "passed_score": 0.25,
-          "failed_score": 0.0
-        },
-        "trace": {
-          "is_param": true,
-          "unique_count": 1,
-          "sample_values": [
-            false
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "cost": {
@@ -4224,6 +4224,16 @@
       "passed_score": 0.2917,
       "failed_score": 0.0,
       "variables": {
+        "trace": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            false
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "best_cost": {
           "is_param": false,
           "unique_count": 2,
@@ -4233,16 +4243,6 @@
           ],
           "global_score": 0.25,
           "passed_score": 0.25,
-          "failed_score": 0.0
-        },
-        "trace": {
-          "is_param": true,
-          "unique_count": 1,
-          "sample_values": [
-            false
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "cost": {
@@ -4299,6 +4299,16 @@
       "passed_score": 0.2917,
       "failed_score": 0.0,
       "variables": {
+        "trace": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            false
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "best_cost": {
           "is_param": false,
           "unique_count": 2,
@@ -4308,16 +4318,6 @@
           ],
           "global_score": 0.25,
           "passed_score": 0.25,
-          "failed_score": 0.0
-        },
-        "trace": {
-          "is_param": true,
-          "unique_count": 1,
-          "sample_values": [
-            false
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "cost": {
@@ -4374,21 +4374,21 @@
       "passed_score": 0.0833,
       "failed_score": 0.0,
       "variables": {
-        "best_cost": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            10
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
         "trace": {
           "is_param": true,
           "unique_count": 1,
           "sample_values": [
             false
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "best_cost": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            10
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -4443,21 +4443,21 @@
       "passed_score": 0.0,
       "failed_score": 0.0,
       "variables": {
-        "best_cost": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            10
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
         "trace": {
           "is_param": true,
           "unique_count": 1,
           "sample_values": [
             false
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "best_cost": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            10
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -4511,14 +4511,16 @@
       "passed_score": 0.178,
       "failed_score": 0.0,
       "variables": {
-        "best_cost": {
+        "total_distance": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 3,
           "sample_values": [
-            10
+            0,
+            12,
+            24
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.6667,
+          "passed_score": 0.6667,
           "failed_score": 0.0
         },
         "trace": {
@@ -4526,6 +4528,16 @@
           "unique_count": 1,
           "sample_values": [
             false
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "best_cost": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            10
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -4540,18 +4552,6 @@
           ],
           "global_score": 0.2897,
           "passed_score": 0.2897,
-          "failed_score": 0.0
-        },
-        "total_distance": {
-          "is_param": false,
-          "unique_count": 3,
-          "sample_values": [
-            0,
-            12,
-            24
-          ],
-          "global_score": 0.6667,
-          "passed_score": 0.6667,
           "failed_score": 0.0
         },
         "g_idx": {
@@ -4593,14 +4593,15 @@
       "passed_score": 0.2143,
       "failed_score": 0.0,
       "variables": {
-        "best_cost": {
+        "total_distance": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            10
+            0,
+            12
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.5,
+          "passed_score": 0.5,
           "failed_score": 0.0
         },
         "trace": {
@@ -4613,22 +4614,21 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
+        "best_cost": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            10
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "cost": {
           "is_param": false,
           "unique_count": 2,
           "sample_values": [
             10,
-            12
-          ],
-          "global_score": 0.5,
-          "passed_score": 0.5,
-          "failed_score": 0.0
-        },
-        "total_distance": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
             12
           ],
           "global_score": 0.5,
@@ -4674,14 +4674,15 @@
       "passed_score": 0.1429,
       "failed_score": 0.0,
       "variables": {
-        "best_cost": {
+        "total_distance": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            10
+            0,
+            12
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.5,
+          "passed_score": 0.5,
           "failed_score": 0.0
         },
         "trace": {
@@ -4689,6 +4690,16 @@
           "unique_count": 1,
           "sample_values": [
             false
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "best_cost": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            10
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -4702,17 +4713,6 @@
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "total_distance": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            12
-          ],
-          "global_score": 0.5,
-          "passed_score": 0.5,
           "failed_score": 0.0
         },
         "g_idx": {
@@ -4754,14 +4754,15 @@
       "passed_score": 0.1429,
       "failed_score": 0.0,
       "variables": {
-        "best_cost": {
+        "total_distance": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            10
+            12,
+            24
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.5,
+          "passed_score": 0.5,
           "failed_score": 0.0
         },
         "trace": {
@@ -4769,6 +4770,16 @@
           "unique_count": 1,
           "sample_values": [
             false
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "best_cost": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            10
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -4782,17 +4793,6 @@
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "total_distance": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            12,
-            24
-          ],
-          "global_score": 0.5,
-          "passed_score": 0.5,
           "failed_score": 0.0
         },
         "g_idx": {
@@ -4834,11 +4834,11 @@
       "passed_score": 0.0,
       "failed_score": 0.0,
       "variables": {
-        "best_cost": {
+        "total_distance": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            10
+            24
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -4854,21 +4854,21 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "cost": {
+        "best_cost": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            12
+            10
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "total_distance": {
+        "cost": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            24
+            12
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -4959,37 +4959,14 @@
       "passed_score": 0.2222,
       "failed_score": 0.0,
       "variables": {
-        "winner_r_idx": {
+        "winner_g_idx": {
           "is_param": false,
-          "unique_count": 2,
+          "unique_count": 1,
           "sample_values": [
-            0,
-            1
+            0
           ],
-          "global_score": 0.25,
-          "passed_score": 0.25,
-          "failed_score": 0.0
-        },
-        "new_cost": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            12,
-            4
-          ],
-          "global_score": 0.25,
-          "passed_score": 0.25,
-          "failed_score": 0.0
-        },
-        "marginal_cost": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            10,
-            8
-          ],
-          "global_score": 0.25,
-          "passed_score": 0.25,
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "trace": {
@@ -5002,11 +4979,11 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "best_bid": {
+        "marginal_cost": {
           "is_param": false,
           "unique_count": 2,
           "sample_values": [
-            4,
+            10,
             8
           ],
           "global_score": 0.25,
@@ -5024,14 +5001,15 @@
           "passed_score": 0.25,
           "failed_score": 0.0
         },
-        "winner_g_idx": {
+        "winner_r_idx": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            0
+            0,
+            1
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.25,
+          "passed_score": 0.25,
           "failed_score": 0.0
         },
         "g_idx": {
@@ -5045,6 +5023,28 @@
           ],
           "global_score": 0.75,
           "passed_score": 0.75,
+          "failed_score": 0.0
+        },
+        "best_bid": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            4,
+            8
+          ],
+          "global_score": 0.25,
+          "passed_score": 0.25,
+          "failed_score": 0.0
+        },
+        "new_cost": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            12,
+            4
+          ],
+          "global_score": 0.25,
+          "passed_score": 0.25,
           "failed_score": 0.0
         },
         "r_idx": {
@@ -5065,37 +5065,14 @@
       "passed_score": 0.235,
       "failed_score": 0.0,
       "variables": {
-        "winner_r_idx": {
+        "winner_g_idx": {
           "is_param": false,
-          "unique_count": 2,
+          "unique_count": 1,
           "sample_values": [
-            0,
-            1
+            0
           ],
-          "global_score": 0.2897,
-          "passed_score": 0.2897,
-          "failed_score": 0.0
-        },
-        "new_cost": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            12,
-            4
-          ],
-          "global_score": 0.2897,
-          "passed_score": 0.2897,
-          "failed_score": 0.0
-        },
-        "marginal_cost": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            10,
-            8
-          ],
-          "global_score": 0.2897,
-          "passed_score": 0.2897,
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "trace": {
@@ -5108,11 +5085,11 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "best_bid": {
+        "marginal_cost": {
           "is_param": false,
           "unique_count": 2,
           "sample_values": [
-            4,
+            10,
             8
           ],
           "global_score": 0.2897,
@@ -5130,14 +5107,15 @@
           "passed_score": 0.2897,
           "failed_score": 0.0
         },
-        "winner_g_idx": {
+        "winner_r_idx": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            0
+            0,
+            1
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.2897,
+          "passed_score": 0.2897,
           "failed_score": 0.0
         },
         "g_idx": {
@@ -5150,6 +5128,28 @@
           ],
           "global_score": 0.6667,
           "passed_score": 0.6667,
+          "failed_score": 0.0
+        },
+        "best_bid": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            4,
+            8
+          ],
+          "global_score": 0.2897,
+          "passed_score": 0.2897,
+          "failed_score": 0.0
+        },
+        "new_cost": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            12,
+            4
+          ],
+          "global_score": 0.2897,
+          "passed_score": 0.2897,
           "failed_score": 0.0
         },
         "r_idx": {
@@ -5170,26 +5170,24 @@
       "passed_score": 0.2028,
       "failed_score": 0.0,
       "variables": {
-        "winner_r_idx": {
+        "winner_g_idx": {
           "is_param": false,
-          "unique_count": 2,
+          "unique_count": 1,
           "sample_values": [
-            0,
-            1
+            0
           ],
-          "global_score": 0.2897,
-          "passed_score": 0.2897,
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "new_cost": {
-          "is_param": false,
-          "unique_count": 2,
+        "trace": {
+          "is_param": true,
+          "unique_count": 1,
           "sample_values": [
-            12,
-            4
+            false
           ],
-          "global_score": 0.2897,
-          "passed_score": 0.2897,
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "marginal_cost": {
@@ -5203,26 +5201,6 @@
           "passed_score": 0.2897,
           "failed_score": 0.0
         },
-        "trace": {
-          "is_param": true,
-          "unique_count": 1,
-          "sample_values": [
-            false
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "best_bid": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            Infinity
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
         "current_cost": {
           "is_param": false,
           "unique_count": 2,
@@ -5234,14 +5212,15 @@
           "passed_score": 0.2897,
           "failed_score": 0.0
         },
-        "winner_g_idx": {
+        "winner_r_idx": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            0
+            0,
+            1
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.2897,
+          "passed_score": 0.2897,
           "failed_score": 0.0
         },
         "g_idx": {
@@ -5254,6 +5233,27 @@
           ],
           "global_score": 0.6667,
           "passed_score": 0.6667,
+          "failed_score": 0.0
+        },
+        "best_bid": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            Infinity
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "new_cost": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            12,
+            4
+          ],
+          "global_score": 0.2897,
+          "passed_score": 0.2897,
           "failed_score": 0.0
         },
         "r_idx": {
@@ -5274,28 +5274,24 @@
       "passed_score": 0.1833,
       "failed_score": 0.0,
       "variables": {
-        "winner_r_idx": {
+        "winner_g_idx": {
           "is_param": false,
-          "unique_count": 2,
+          "unique_count": 1,
           "sample_values": [
-            0,
-            1
+            0
           ],
-          "global_score": 0.1448,
-          "passed_score": 0.1448,
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "new_cost": {
-          "is_param": false,
-          "unique_count": 4,
+        "trace": {
+          "is_param": true,
+          "unique_count": 1,
           "sample_values": [
-            10,
-            12,
-            16,
-            4
+            false
           ],
-          "global_score": 0.3758,
-          "passed_score": 0.3758,
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "marginal_cost": {
@@ -5311,14 +5307,39 @@
           "passed_score": 0.3523,
           "failed_score": 0.0
         },
-        "trace": {
-          "is_param": true,
-          "unique_count": 1,
+        "current_cost": {
+          "is_param": false,
+          "unique_count": 2,
           "sample_values": [
-            false
+            0,
+            4
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.1203,
+          "passed_score": 0.1203,
+          "failed_score": 0.0
+        },
+        "winner_r_idx": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            1
+          ],
+          "global_score": 0.1448,
+          "passed_score": 0.1448,
+          "failed_score": 0.0
+        },
+        "g_idx": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.3952,
+          "passed_score": 0.3952,
           "failed_score": 0.0
         },
         "best_bid": {
@@ -5333,38 +5354,17 @@
           "passed_score": 0.2614,
           "failed_score": 0.0
         },
-        "current_cost": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            4
-          ],
-          "global_score": 0.1203,
-          "passed_score": 0.1203,
-          "failed_score": 0.0
-        },
-        "winner_g_idx": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            0
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "g_idx": {
+        "new_cost": {
           "is_param": false,
           "unique_count": 4,
           "sample_values": [
-            0,
-            1,
-            2,
-            3
+            10,
+            12,
+            16,
+            4
           ],
-          "global_score": 0.3952,
-          "passed_score": 0.3952,
+          "global_score": 0.3758,
+          "passed_score": 0.3758,
           "failed_score": 0.0
         },
         "r_idx": {
@@ -5385,29 +5385,24 @@
       "passed_score": 0.1803,
       "failed_score": 0.0,
       "variables": {
-        "winner_r_idx": {
+        "winner_g_idx": {
           "is_param": false,
-          "unique_count": 2,
+          "unique_count": 1,
           "sample_values": [
-            0,
-            1
+            0
           ],
-          "global_score": 0.1101,
-          "passed_score": 0.1101,
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "new_cost": {
-          "is_param": false,
-          "unique_count": 5,
+        "trace": {
+          "is_param": true,
+          "unique_count": 1,
           "sample_values": [
-            10,
-            12,
-            16,
-            26,
-            4
+            false
           ],
-          "global_score": 0.3447,
-          "passed_score": 0.3447,
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "marginal_cost": {
@@ -5425,14 +5420,40 @@
           "passed_score": 0.3713,
           "failed_score": 0.0
         },
-        "trace": {
-          "is_param": true,
-          "unique_count": 1,
+        "current_cost": {
+          "is_param": false,
+          "unique_count": 3,
           "sample_values": [
-            false
+            0,
+            12,
+            4
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.1543,
+          "passed_score": 0.1543,
+          "failed_score": 0.0
+        },
+        "winner_r_idx": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            1
+          ],
+          "global_score": 0.1101,
+          "passed_score": 0.1101,
+          "failed_score": 0.0
+        },
+        "g_idx": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.2822,
+          "passed_score": 0.2822,
           "failed_score": 0.0
         },
         "best_bid": {
@@ -5449,39 +5470,18 @@
           "passed_score": 0.2643,
           "failed_score": 0.0
         },
-        "current_cost": {
+        "new_cost": {
           "is_param": false,
-          "unique_count": 3,
+          "unique_count": 5,
           "sample_values": [
-            0,
+            10,
             12,
+            16,
+            26,
             4
           ],
-          "global_score": 0.1543,
-          "passed_score": 0.1543,
-          "failed_score": 0.0
-        },
-        "winner_g_idx": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            0
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "g_idx": {
-          "is_param": false,
-          "unique_count": 4,
-          "sample_values": [
-            0,
-            1,
-            2,
-            3
-          ],
-          "global_score": 0.2822,
-          "passed_score": 0.2822,
+          "global_score": 0.3447,
+          "passed_score": 0.3447,
           "failed_score": 0.0
         },
         "r_idx": {
@@ -5503,29 +5503,24 @@
       "passed_score": 0.2147,
       "failed_score": 0.0,
       "variables": {
-        "winner_r_idx": {
+        "winner_g_idx": {
           "is_param": false,
-          "unique_count": 2,
+          "unique_count": 1,
           "sample_values": [
-            0,
-            1
+            0
           ],
-          "global_score": 0.1281,
-          "passed_score": 0.1281,
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "new_cost": {
-          "is_param": false,
-          "unique_count": 5,
+        "trace": {
+          "is_param": true,
+          "unique_count": 1,
           "sample_values": [
-            10,
-            12,
-            16,
-            26,
-            4
+            false
           ],
-          "global_score": 0.4048,
-          "passed_score": 0.4048,
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "marginal_cost": {
@@ -5543,14 +5538,40 @@
           "passed_score": 0.4433,
           "failed_score": 0.0
         },
-        "trace": {
-          "is_param": true,
-          "unique_count": 1,
+        "current_cost": {
+          "is_param": false,
+          "unique_count": 3,
           "sample_values": [
-            false
+            0,
+            12,
+            4
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.19,
+          "passed_score": 0.19,
+          "failed_score": 0.0
+        },
+        "winner_r_idx": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            1
+          ],
+          "global_score": 0.1281,
+          "passed_score": 0.1281,
+          "failed_score": 0.0
+        },
+        "g_idx": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.3204,
+          "passed_score": 0.3204,
           "failed_score": 0.0
         },
         "best_bid": {
@@ -5567,39 +5588,18 @@
           "passed_score": 0.3298,
           "failed_score": 0.0
         },
-        "current_cost": {
+        "new_cost": {
           "is_param": false,
-          "unique_count": 3,
+          "unique_count": 5,
           "sample_values": [
-            0,
+            10,
             12,
+            16,
+            26,
             4
           ],
-          "global_score": 0.19,
-          "passed_score": 0.19,
-          "failed_score": 0.0
-        },
-        "winner_g_idx": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            0
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "g_idx": {
-          "is_param": false,
-          "unique_count": 4,
-          "sample_values": [
-            0,
-            1,
-            2,
-            3
-          ],
-          "global_score": 0.3204,
-          "passed_score": 0.3204,
+          "global_score": 0.4048,
+          "passed_score": 0.4048,
           "failed_score": 0.0
         },
         "r_idx": {
@@ -5639,29 +5639,24 @@
       "passed_score": 0.2145,
       "failed_score": 0.0,
       "variables": {
-        "winner_r_idx": {
+        "winner_g_idx": {
           "is_param": false,
-          "unique_count": 2,
+          "unique_count": 1,
           "sample_values": [
-            0,
-            1
+            0
           ],
-          "global_score": 0.1281,
-          "passed_score": 0.1281,
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "new_cost": {
-          "is_param": false,
-          "unique_count": 5,
+        "trace": {
+          "is_param": true,
+          "unique_count": 1,
           "sample_values": [
-            10,
-            12,
-            16,
-            26,
-            4
+            false
           ],
-          "global_score": 0.4048,
-          "passed_score": 0.4048,
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "marginal_cost": {
@@ -5679,14 +5674,40 @@
           "passed_score": 0.4433,
           "failed_score": 0.0
         },
-        "trace": {
-          "is_param": true,
-          "unique_count": 1,
+        "current_cost": {
+          "is_param": false,
+          "unique_count": 3,
           "sample_values": [
-            false
+            0,
+            12,
+            4
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.1881,
+          "passed_score": 0.1881,
+          "failed_score": 0.0
+        },
+        "winner_r_idx": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            1
+          ],
+          "global_score": 0.1281,
+          "passed_score": 0.1281,
+          "failed_score": 0.0
+        },
+        "g_idx": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.3204,
+          "passed_score": 0.3204,
           "failed_score": 0.0
         },
         "best_bid": {
@@ -5703,39 +5724,18 @@
           "passed_score": 0.3298,
           "failed_score": 0.0
         },
-        "current_cost": {
+        "new_cost": {
           "is_param": false,
-          "unique_count": 3,
+          "unique_count": 5,
           "sample_values": [
-            0,
+            10,
             12,
+            16,
+            26,
             4
           ],
-          "global_score": 0.1881,
-          "passed_score": 0.1881,
-          "failed_score": 0.0
-        },
-        "winner_g_idx": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            0
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "g_idx": {
-          "is_param": false,
-          "unique_count": 4,
-          "sample_values": [
-            0,
-            1,
-            2,
-            3
-          ],
-          "global_score": 0.3204,
-          "passed_score": 0.3204,
+          "global_score": 0.4048,
+          "passed_score": 0.4048,
           "failed_score": 0.0
         },
         "r_idx": {
@@ -5757,29 +5757,24 @@
       "passed_score": 0.2145,
       "failed_score": 0.0,
       "variables": {
-        "winner_r_idx": {
+        "winner_g_idx": {
           "is_param": false,
-          "unique_count": 2,
+          "unique_count": 1,
           "sample_values": [
-            0,
-            1
+            0
           ],
-          "global_score": 0.1281,
-          "passed_score": 0.1281,
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "new_cost": {
-          "is_param": false,
-          "unique_count": 5,
+        "trace": {
+          "is_param": true,
+          "unique_count": 1,
           "sample_values": [
-            10,
-            12,
-            16,
-            26,
-            4
+            false
           ],
-          "global_score": 0.4048,
-          "passed_score": 0.4048,
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "marginal_cost": {
@@ -5797,14 +5792,40 @@
           "passed_score": 0.4433,
           "failed_score": 0.0
         },
-        "trace": {
-          "is_param": true,
-          "unique_count": 1,
+        "current_cost": {
+          "is_param": false,
+          "unique_count": 3,
           "sample_values": [
-            false
+            0,
+            12,
+            4
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.1881,
+          "passed_score": 0.1881,
+          "failed_score": 0.0
+        },
+        "winner_r_idx": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            1
+          ],
+          "global_score": 0.1281,
+          "passed_score": 0.1281,
+          "failed_score": 0.0
+        },
+        "g_idx": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.3204,
+          "passed_score": 0.3204,
           "failed_score": 0.0
         },
         "best_bid": {
@@ -5821,39 +5842,18 @@
           "passed_score": 0.3298,
           "failed_score": 0.0
         },
-        "current_cost": {
+        "new_cost": {
           "is_param": false,
-          "unique_count": 3,
+          "unique_count": 5,
           "sample_values": [
-            0,
+            10,
             12,
+            16,
+            26,
             4
           ],
-          "global_score": 0.1881,
-          "passed_score": 0.1881,
-          "failed_score": 0.0
-        },
-        "winner_g_idx": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            0
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "g_idx": {
-          "is_param": false,
-          "unique_count": 4,
-          "sample_values": [
-            0,
-            1,
-            2,
-            3
-          ],
-          "global_score": 0.3204,
-          "passed_score": 0.3204,
+          "global_score": 0.4048,
+          "passed_score": 0.4048,
           "failed_score": 0.0
         },
         "r_idx": {
@@ -5893,29 +5893,24 @@
       "passed_score": 0.2124,
       "failed_score": 0.0,
       "variables": {
-        "winner_r_idx": {
+        "winner_g_idx": {
           "is_param": false,
-          "unique_count": 2,
+          "unique_count": 1,
           "sample_values": [
-            0,
-            1
+            0
           ],
-          "global_score": 0.1281,
-          "passed_score": 0.1281,
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "new_cost": {
-          "is_param": false,
-          "unique_count": 5,
+        "trace": {
+          "is_param": true,
+          "unique_count": 1,
           "sample_values": [
-            10,
-            12,
-            16,
-            26,
-            4
+            false
           ],
-          "global_score": 0.3866,
-          "passed_score": 0.3866,
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "marginal_cost": {
@@ -5933,14 +5928,40 @@
           "passed_score": 0.4433,
           "failed_score": 0.0
         },
-        "trace": {
-          "is_param": true,
-          "unique_count": 1,
+        "current_cost": {
+          "is_param": false,
+          "unique_count": 3,
           "sample_values": [
-            false
+            0,
+            12,
+            4
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.1881,
+          "passed_score": 0.1881,
+          "failed_score": 0.0
+        },
+        "winner_r_idx": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            1
+          ],
+          "global_score": 0.1281,
+          "passed_score": 0.1281,
+          "failed_score": 0.0
+        },
+        "g_idx": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.3204,
+          "passed_score": 0.3204,
           "failed_score": 0.0
         },
         "best_bid": {
@@ -5957,39 +5978,18 @@
           "passed_score": 0.3298,
           "failed_score": 0.0
         },
-        "current_cost": {
+        "new_cost": {
           "is_param": false,
-          "unique_count": 3,
+          "unique_count": 5,
           "sample_values": [
-            0,
+            10,
             12,
+            16,
+            26,
             4
           ],
-          "global_score": 0.1881,
-          "passed_score": 0.1881,
-          "failed_score": 0.0
-        },
-        "winner_g_idx": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            0
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "g_idx": {
-          "is_param": false,
-          "unique_count": 4,
-          "sample_values": [
-            0,
-            1,
-            2,
-            3
-          ],
-          "global_score": 0.3204,
-          "passed_score": 0.3204,
+          "global_score": 0.3866,
+          "passed_score": 0.3866,
           "failed_score": 0.0
         },
         "r_idx": {
@@ -6011,29 +6011,24 @@
       "passed_score": 0.2109,
       "failed_score": 0.0,
       "variables": {
-        "winner_r_idx": {
+        "winner_g_idx": {
           "is_param": false,
-          "unique_count": 2,
+          "unique_count": 1,
           "sample_values": [
-            0,
-            1
+            0
           ],
-          "global_score": 0.1281,
-          "passed_score": 0.1281,
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "new_cost": {
-          "is_param": false,
-          "unique_count": 5,
+        "trace": {
+          "is_param": true,
+          "unique_count": 1,
           "sample_values": [
-            10,
-            12,
-            16,
-            26,
-            4
+            false
           ],
-          "global_score": 0.3866,
-          "passed_score": 0.3866,
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "marginal_cost": {
@@ -6051,14 +6046,40 @@
           "passed_score": 0.4292,
           "failed_score": 0.0
         },
-        "trace": {
-          "is_param": true,
-          "unique_count": 1,
+        "current_cost": {
+          "is_param": false,
+          "unique_count": 3,
           "sample_values": [
-            false
+            0,
+            12,
+            4
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.1881,
+          "passed_score": 0.1881,
+          "failed_score": 0.0
+        },
+        "winner_r_idx": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            1
+          ],
+          "global_score": 0.1281,
+          "passed_score": 0.1281,
+          "failed_score": 0.0
+        },
+        "g_idx": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "global_score": 0.3204,
+          "passed_score": 0.3204,
           "failed_score": 0.0
         },
         "best_bid": {
@@ -6075,39 +6096,18 @@
           "passed_score": 0.3298,
           "failed_score": 0.0
         },
-        "current_cost": {
+        "new_cost": {
           "is_param": false,
-          "unique_count": 3,
+          "unique_count": 5,
           "sample_values": [
-            0,
+            10,
             12,
+            16,
+            26,
             4
           ],
-          "global_score": 0.1881,
-          "passed_score": 0.1881,
-          "failed_score": 0.0
-        },
-        "winner_g_idx": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            0
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "g_idx": {
-          "is_param": false,
-          "unique_count": 4,
-          "sample_values": [
-            0,
-            1,
-            2,
-            3
-          ],
-          "global_score": 0.3204,
-          "passed_score": 0.3204,
+          "global_score": 0.3866,
+          "passed_score": 0.3866,
           "failed_score": 0.0
         },
         "r_idx": {
@@ -6129,28 +6129,24 @@
       "passed_score": 0.2384,
       "failed_score": 0.0,
       "variables": {
-        "winner_r_idx": {
+        "winner_g_idx": {
           "is_param": false,
-          "unique_count": 2,
+          "unique_count": 1,
           "sample_values": [
-            0,
-            1
+            0
           ],
-          "global_score": 0.1555,
-          "passed_score": 0.1555,
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "new_cost": {
-          "is_param": false,
-          "unique_count": 4,
+        "trace": {
+          "is_param": true,
+          "unique_count": 1,
           "sample_values": [
-            12,
-            16,
-            26,
-            4
+            false
           ],
-          "global_score": 0.5566,
-          "passed_score": 0.5566,
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "marginal_cost": {
@@ -6166,11 +6162,34 @@
           "passed_score": 0.5566,
           "failed_score": 0.0
         },
-        "trace": {
-          "is_param": true,
+        "current_cost": {
+          "is_param": false,
+          "unique_count": 3,
+          "sample_values": [
+            0,
+            12,
+            4
+          ],
+          "global_score": 0.3763,
+          "passed_score": 0.3763,
+          "failed_score": 0.0
+        },
+        "winner_r_idx": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            1
+          ],
+          "global_score": 0.1555,
+          "passed_score": 0.1555,
+          "failed_score": 0.0
+        },
+        "g_idx": {
+          "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            false
+            0
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -6188,36 +6207,17 @@
           "passed_score": 0.3228,
           "failed_score": 0.0
         },
-        "current_cost": {
+        "new_cost": {
           "is_param": false,
-          "unique_count": 3,
+          "unique_count": 4,
           "sample_values": [
-            0,
             12,
+            16,
+            26,
             4
           ],
-          "global_score": 0.3763,
-          "passed_score": 0.3763,
-          "failed_score": 0.0
-        },
-        "winner_g_idx": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            0
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "g_idx": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            0
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.5566,
+          "passed_score": 0.5566,
           "failed_score": 0.0
         },
         "r_idx": {
@@ -6239,41 +6239,14 @@
       "passed_score": 0.2644,
       "failed_score": 0.0,
       "variables": {
-        "winner_r_idx": {
+        "winner_g_idx": {
           "is_param": false,
-          "unique_count": 2,
+          "unique_count": 1,
           "sample_values": [
-            0,
-            1
+            0
           ],
-          "global_score": 0.1555,
-          "passed_score": 0.1555,
-          "failed_score": 0.0
-        },
-        "new_cost": {
-          "is_param": false,
-          "unique_count": 4,
-          "sample_values": [
-            12,
-            16,
-            26,
-            4
-          ],
-          "global_score": 0.5566,
-          "passed_score": 0.5566,
-          "failed_score": 0.0
-        },
-        "marginal_cost": {
-          "is_param": false,
-          "unique_count": 4,
-          "sample_values": [
-            12,
-            14,
-            4,
-            8
-          ],
-          "global_score": 0.5566,
-          "passed_score": 0.5566,
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "trace": {
@@ -6286,7 +6259,7 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "best_bid": {
+        "marginal_cost": {
           "is_param": false,
           "unique_count": 4,
           "sample_values": [
@@ -6311,14 +6284,15 @@
           "passed_score": 0.3763,
           "failed_score": 0.0
         },
-        "winner_g_idx": {
+        "winner_r_idx": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            0
+            0,
+            1
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.1555,
+          "passed_score": 0.1555,
           "failed_score": 0.0
         },
         "g_idx": {
@@ -6329,6 +6303,32 @@
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "best_bid": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            12,
+            14,
+            4,
+            8
+          ],
+          "global_score": 0.5566,
+          "passed_score": 0.5566,
+          "failed_score": 0.0
+        },
+        "new_cost": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            12,
+            16,
+            26,
+            4
+          ],
+          "global_score": 0.5566,
+          "passed_score": 0.5566,
           "failed_score": 0.0
         },
         "r_idx": {
@@ -6350,28 +6350,24 @@
       "passed_score": 0.1745,
       "failed_score": 0.0,
       "variables": {
-        "winner_r_idx": {
+        "winner_g_idx": {
           "is_param": false,
-          "unique_count": 2,
+          "unique_count": 1,
           "sample_values": [
-            0,
-            1
+            0
           ],
-          "global_score": 0.1755,
-          "passed_score": 0.1755,
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "new_cost": {
-          "is_param": false,
-          "unique_count": 4,
+        "trace": {
+          "is_param": true,
+          "unique_count": 1,
           "sample_values": [
-            10,
-            12,
-            16,
-            4
+            false
           ],
-          "global_score": 0.3403,
-          "passed_score": 0.3403,
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "marginal_cost": {
@@ -6387,27 +6383,6 @@
           "passed_score": 0.3403,
           "failed_score": 0.0
         },
-        "trace": {
-          "is_param": true,
-          "unique_count": 1,
-          "sample_values": [
-            false
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "best_bid": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            4,
-            8
-          ],
-          "global_score": 0.0984,
-          "passed_score": 0.0984,
-          "failed_score": 0.0
-        },
         "current_cost": {
           "is_param": false,
           "unique_count": 2,
@@ -6419,14 +6394,15 @@
           "passed_score": 0.1235,
           "failed_score": 0.0
         },
-        "winner_g_idx": {
+        "winner_r_idx": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            0
+            0,
+            1
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.1755,
+          "passed_score": 0.1755,
           "failed_score": 0.0
         },
         "g_idx": {
@@ -6440,6 +6416,30 @@
           ],
           "global_score": 0.3629,
           "passed_score": 0.3629,
+          "failed_score": 0.0
+        },
+        "best_bid": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            4,
+            8
+          ],
+          "global_score": 0.0984,
+          "passed_score": 0.0984,
+          "failed_score": 0.0
+        },
+        "new_cost": {
+          "is_param": false,
+          "unique_count": 4,
+          "sample_values": [
+            10,
+            12,
+            16,
+            4
+          ],
+          "global_score": 0.3403,
+          "passed_score": 0.3403,
           "failed_score": 0.0
         },
         "r_idx": {
@@ -6461,36 +6461,14 @@
       "passed_score": 0.1352,
       "failed_score": 0.0,
       "variables": {
-        "winner_r_idx": {
+        "winner_g_idx": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            1
+            0
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "new_cost": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            12,
-            4
-          ],
-          "global_score": 0.2028,
-          "passed_score": 0.2028,
-          "failed_score": 0.0
-        },
-        "marginal_cost": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            4,
-            8
-          ],
-          "global_score": 0.2028,
-          "passed_score": 0.2028,
           "failed_score": 0.0
         },
         "trace": {
@@ -6503,7 +6481,7 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "best_bid": {
+        "marginal_cost": {
           "is_param": false,
           "unique_count": 2,
           "sample_values": [
@@ -6525,11 +6503,11 @@
           "passed_score": 0.2028,
           "failed_score": 0.0
         },
-        "winner_g_idx": {
+        "winner_r_idx": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            0
+            1
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -6541,6 +6519,28 @@
           "sample_values": [
             0,
             1
+          ],
+          "global_score": 0.2028,
+          "passed_score": 0.2028,
+          "failed_score": 0.0
+        },
+        "best_bid": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            4,
+            8
+          ],
+          "global_score": 0.2028,
+          "passed_score": 0.2028,
+          "failed_score": 0.0
+        },
+        "new_cost": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            12,
+            4
           ],
           "global_score": 0.2028,
           "passed_score": 0.2028,
@@ -6565,37 +6565,14 @@
       "passed_score": 0.2266,
       "failed_score": 0.0,
       "variables": {
-        "winner_r_idx": {
+        "winner_g_idx": {
           "is_param": false,
-          "unique_count": 2,
+          "unique_count": 1,
           "sample_values": [
-            0,
-            1
+            0
           ],
-          "global_score": 0.2897,
-          "passed_score": 0.2897,
-          "failed_score": 0.0
-        },
-        "new_cost": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            10,
-            12
-          ],
-          "global_score": 0.25,
-          "passed_score": 0.25,
-          "failed_score": 0.0
-        },
-        "marginal_cost": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            10,
-            8
-          ],
-          "global_score": 0.25,
-          "passed_score": 0.25,
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "trace": {
@@ -6608,11 +6585,11 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "best_bid": {
+        "marginal_cost": {
           "is_param": false,
           "unique_count": 2,
           "sample_values": [
-            4,
+            10,
             8
           ],
           "global_score": 0.25,
@@ -6630,14 +6607,15 @@
           "passed_score": 0.25,
           "failed_score": 0.0
         },
-        "winner_g_idx": {
+        "winner_r_idx": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            0
+            0,
+            1
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.2897,
+          "passed_score": 0.2897,
           "failed_score": 0.0
         },
         "g_idx": {
@@ -6651,6 +6629,28 @@
           ],
           "global_score": 0.75,
           "passed_score": 0.75,
+          "failed_score": 0.0
+        },
+        "best_bid": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            4,
+            8
+          ],
+          "global_score": 0.25,
+          "passed_score": 0.25,
+          "failed_score": 0.0
+        },
+        "new_cost": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            10,
+            12
+          ],
+          "global_score": 0.25,
+          "passed_score": 0.25,
           "failed_score": 0.0
         },
         "r_idx": {
@@ -6671,37 +6671,14 @@
       "passed_score": 0.2222,
       "failed_score": 0.0,
       "variables": {
-        "winner_r_idx": {
+        "winner_g_idx": {
           "is_param": false,
-          "unique_count": 2,
+          "unique_count": 1,
           "sample_values": [
-            0,
-            1
+            0
           ],
-          "global_score": 0.25,
-          "passed_score": 0.25,
-          "failed_score": 0.0
-        },
-        "new_cost": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            12,
-            4
-          ],
-          "global_score": 0.25,
-          "passed_score": 0.25,
-          "failed_score": 0.0
-        },
-        "marginal_cost": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            10,
-            8
-          ],
-          "global_score": 0.25,
-          "passed_score": 0.25,
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "trace": {
@@ -6714,11 +6691,11 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "best_bid": {
+        "marginal_cost": {
           "is_param": false,
           "unique_count": 2,
           "sample_values": [
-            4,
+            10,
             8
           ],
           "global_score": 0.25,
@@ -6736,14 +6713,15 @@
           "passed_score": 0.25,
           "failed_score": 0.0
         },
-        "winner_g_idx": {
+        "winner_r_idx": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            0
+            0,
+            1
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.25,
+          "passed_score": 0.25,
           "failed_score": 0.0
         },
         "g_idx": {
@@ -6757,6 +6735,28 @@
           ],
           "global_score": 0.75,
           "passed_score": 0.75,
+          "failed_score": 0.0
+        },
+        "best_bid": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            4,
+            8
+          ],
+          "global_score": 0.25,
+          "passed_score": 0.25,
+          "failed_score": 0.0
+        },
+        "new_cost": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            12,
+            4
+          ],
+          "global_score": 0.25,
+          "passed_score": 0.25,
           "failed_score": 0.0
         },
         "r_idx": {
@@ -6777,37 +6777,14 @@
       "passed_score": 0.2222,
       "failed_score": 0.0,
       "variables": {
-        "winner_r_idx": {
+        "winner_g_idx": {
           "is_param": false,
-          "unique_count": 2,
+          "unique_count": 1,
           "sample_values": [
-            0,
-            1
+            0
           ],
-          "global_score": 0.25,
-          "passed_score": 0.25,
-          "failed_score": 0.0
-        },
-        "new_cost": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            12,
-            4
-          ],
-          "global_score": 0.25,
-          "passed_score": 0.25,
-          "failed_score": 0.0
-        },
-        "marginal_cost": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            10,
-            8
-          ],
-          "global_score": 0.25,
-          "passed_score": 0.25,
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "trace": {
@@ -6820,11 +6797,11 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "best_bid": {
+        "marginal_cost": {
           "is_param": false,
           "unique_count": 2,
           "sample_values": [
-            4,
+            10,
             8
           ],
           "global_score": 0.25,
@@ -6842,14 +6819,15 @@
           "passed_score": 0.25,
           "failed_score": 0.0
         },
-        "winner_g_idx": {
+        "winner_r_idx": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            0
+            0,
+            1
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.25,
+          "passed_score": 0.25,
           "failed_score": 0.0
         },
         "g_idx": {
@@ -6863,6 +6841,28 @@
           ],
           "global_score": 0.75,
           "passed_score": 0.75,
+          "failed_score": 0.0
+        },
+        "best_bid": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            4,
+            8
+          ],
+          "global_score": 0.25,
+          "passed_score": 0.25,
+          "failed_score": 0.0
+        },
+        "new_cost": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            12,
+            4
+          ],
+          "global_score": 0.25,
+          "passed_score": 0.25,
           "failed_score": 0.0
         },
         "r_idx": {
@@ -6883,37 +6883,14 @@
       "passed_score": 0.2222,
       "failed_score": 0.0,
       "variables": {
-        "winner_r_idx": {
+        "winner_g_idx": {
           "is_param": false,
-          "unique_count": 2,
+          "unique_count": 1,
           "sample_values": [
-            0,
-            1
+            0
           ],
-          "global_score": 0.25,
-          "passed_score": 0.25,
-          "failed_score": 0.0
-        },
-        "new_cost": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            12,
-            4
-          ],
-          "global_score": 0.25,
-          "passed_score": 0.25,
-          "failed_score": 0.0
-        },
-        "marginal_cost": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            10,
-            8
-          ],
-          "global_score": 0.25,
-          "passed_score": 0.25,
+          "global_score": 0.0,
+          "passed_score": 0.0,
           "failed_score": 0.0
         },
         "trace": {
@@ -6926,11 +6903,11 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "best_bid": {
+        "marginal_cost": {
           "is_param": false,
           "unique_count": 2,
           "sample_values": [
-            4,
+            10,
             8
           ],
           "global_score": 0.25,
@@ -6948,14 +6925,15 @@
           "passed_score": 0.25,
           "failed_score": 0.0
         },
-        "winner_g_idx": {
+        "winner_r_idx": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            0
+            0,
+            1
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.25,
+          "passed_score": 0.25,
           "failed_score": 0.0
         },
         "g_idx": {
@@ -6969,6 +6947,28 @@
           ],
           "global_score": 0.75,
           "passed_score": 0.75,
+          "failed_score": 0.0
+        },
+        "best_bid": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            4,
+            8
+          ],
+          "global_score": 0.25,
+          "passed_score": 0.25,
+          "failed_score": 0.0
+        },
+        "new_cost": {
+          "is_param": false,
+          "unique_count": 2,
+          "sample_values": [
+            12,
+            4
+          ],
+          "global_score": 0.25,
+          "passed_score": 0.25,
           "failed_score": 0.0
         },
         "r_idx": {
@@ -6989,31 +6989,11 @@
       "passed_score": 0.0,
       "failed_score": 0.0,
       "variables": {
-        "winner_r_idx": {
+        "winner_g_idx": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            1
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "new_cost": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            12
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "marginal_cost": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            8
+            0
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -7029,7 +7009,7 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "best_bid": {
+        "marginal_cost": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
@@ -7049,11 +7029,11 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "winner_g_idx": {
+        "winner_r_idx": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            0
+            1
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -7064,6 +7044,26 @@
           "unique_count": 1,
           "sample_values": [
             0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "best_bid": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            8
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "new_cost": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            12
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -7087,31 +7087,23 @@
       "passed_score": 0.0869,
       "failed_score": 0.0,
       "variables": {
-        "winner_r_idx": {
+        "total_distance": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 3,
           "sample_values": [
-            1
+            0,
+            12,
+            24
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.6667,
+          "passed_score": 0.6667,
           "failed_score": 0.0
         },
-        "new_cost": {
+        "winner_g_idx": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            12
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "marginal_cost": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            8
+            0
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -7127,33 +7119,21 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "cost": {
+        "marginal_cost": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            12
+            8
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "total_distance": {
-          "is_param": false,
-          "unique_count": 3,
-          "sample_values": [
-            0,
-            12,
-            24
-          ],
-          "global_score": 0.6667,
-          "passed_score": 0.6667,
-          "failed_score": 0.0
-        },
-        "best_bid": {
+        "cost": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            8
+            12
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -7169,11 +7149,11 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "winner_g_idx": {
+        "winner_r_idx": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            0
+            1
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -7184,6 +7164,26 @@
           "unique_count": 1,
           "sample_values": [
             0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "best_bid": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            8
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "new_cost": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            12
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -7208,31 +7208,22 @@
       "passed_score": 0.0909,
       "failed_score": 0.0,
       "variables": {
-        "winner_r_idx": {
+        "total_distance": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            1
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "new_cost": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
+            0,
             12
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.5,
+          "passed_score": 0.5,
           "failed_score": 0.0
         },
-        "marginal_cost": {
+        "winner_g_idx": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            8
+            0
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -7248,32 +7239,21 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "cost": {
+        "marginal_cost": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            12
+            8
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "total_distance": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            12
-          ],
-          "global_score": 0.5,
-          "passed_score": 0.5,
-          "failed_score": 0.0
-        },
-        "best_bid": {
+        "cost": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            8
+            12
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -7289,11 +7269,11 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "winner_g_idx": {
+        "winner_r_idx": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            0
+            1
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -7304,6 +7284,26 @@
           "unique_count": 1,
           "sample_values": [
             0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "best_bid": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            8
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "new_cost": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            12
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -7328,31 +7328,22 @@
       "passed_score": 0.0909,
       "failed_score": 0.0,
       "variables": {
-        "winner_r_idx": {
+        "total_distance": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            1
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "new_cost": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
+            0,
             12
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.5,
+          "passed_score": 0.5,
           "failed_score": 0.0
         },
-        "marginal_cost": {
+        "winner_g_idx": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            8
+            0
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -7368,32 +7359,21 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "cost": {
+        "marginal_cost": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            12
+            8
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "total_distance": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            0,
-            12
-          ],
-          "global_score": 0.5,
-          "passed_score": 0.5,
-          "failed_score": 0.0
-        },
-        "best_bid": {
+        "cost": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            8
+            12
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -7409,11 +7389,11 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "winner_g_idx": {
+        "winner_r_idx": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            0
+            1
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -7424,6 +7404,26 @@
           "unique_count": 1,
           "sample_values": [
             0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "best_bid": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            8
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "new_cost": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            12
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -7448,31 +7448,22 @@
       "passed_score": 0.0909,
       "failed_score": 0.0,
       "variables": {
-        "winner_r_idx": {
+        "total_distance": {
           "is_param": false,
-          "unique_count": 1,
+          "unique_count": 2,
           "sample_values": [
-            1
+            12,
+            24
           ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
+          "global_score": 0.5,
+          "passed_score": 0.5,
           "failed_score": 0.0
         },
-        "new_cost": {
+        "winner_g_idx": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            12
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "marginal_cost": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            8
+            0
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -7488,32 +7479,21 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "cost": {
+        "marginal_cost": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            12
+            8
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "total_distance": {
-          "is_param": false,
-          "unique_count": 2,
-          "sample_values": [
-            12,
-            24
-          ],
-          "global_score": 0.5,
-          "passed_score": 0.5,
-          "failed_score": 0.0
-        },
-        "best_bid": {
+        "cost": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            8
+            12
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -7529,11 +7509,11 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
-        "winner_g_idx": {
+        "winner_r_idx": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
-            0
+            1
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -7544,6 +7524,26 @@
           "unique_count": 1,
           "sample_values": [
             0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "best_bid": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            8
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "new_cost": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            12
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -7568,81 +7568,11 @@
       "passed_score": 0.0,
       "failed_score": 0.0,
       "variables": {
-        "winner_r_idx": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            1
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "new_cost": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            12
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "marginal_cost": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            8
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "trace": {
-          "is_param": true,
-          "unique_count": 1,
-          "sample_values": [
-            false
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "cost": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            12
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
         "total_distance": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
             24
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "best_bid": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            8
-          ],
-          "global_score": 0.0,
-          "passed_score": 0.0,
-          "failed_score": 0.0
-        },
-        "current_cost": {
-          "is_param": false,
-          "unique_count": 1,
-          "sample_values": [
-            4
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
@@ -7658,11 +7588,81 @@
           "passed_score": 0.0,
           "failed_score": 0.0
         },
+        "trace": {
+          "is_param": true,
+          "unique_count": 1,
+          "sample_values": [
+            false
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "marginal_cost": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            8
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "cost": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            12
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "current_cost": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            4
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "winner_r_idx": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            1
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
         "g_idx": {
           "is_param": false,
           "unique_count": 1,
           "sample_values": [
             0
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "best_bid": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            8
+          ],
+          "global_score": 0.0,
+          "passed_score": 0.0,
+          "failed_score": 0.0
+        },
+        "new_cost": {
+          "is_param": false,
+          "unique_count": 1,
+          "sample_values": [
+            12
           ],
           "global_score": 0.0,
           "passed_score": 0.0,
