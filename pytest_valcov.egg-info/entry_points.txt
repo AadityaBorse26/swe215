@@ -1,0 +1,2 @@
+[pytest11]
+value_coverage = pytest_valcov.plugin

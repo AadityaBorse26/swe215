@@ -1,0 +1,11 @@
+setup.py
+pytest_valcov.egg-info/PKG-INFO
+pytest_valcov.egg-info/SOURCES.txt
+pytest_valcov.egg-info/dependency_links.txt
+pytest_valcov.egg-info/entry_points.txt
+pytest_valcov.egg-info/requires.txt
+pytest_valcov.egg-info/top_level.txt
+tests/__init__.py
+tests/test_plugin.py
+tests/test_scorer.py
+tests/test_tracer.py
