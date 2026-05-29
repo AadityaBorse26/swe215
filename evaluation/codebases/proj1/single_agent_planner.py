@@ -168,7 +168,7 @@ def a_star(my_map, start_loc, goal_loc, h_values, agent, constraints):
     while len(open_list) > 0:
         curr = pop_node(open_list)
         # Task 1.4: Only accept the goal if we are past all goal-location constraints
-        if curr['loc'] != goal_loc and curr['timestep'] >= earliest_goal_timestep:
+        if curr['loc'] == goal_loc and curr['timestep'] >= earliest_goal_timestep:
             return get_path(curr)
 
         # Prevent infinite loops

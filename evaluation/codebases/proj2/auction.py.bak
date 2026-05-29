@@ -45,7 +45,7 @@ def hill_climbing(start, goals, trace=False):
                 if cost < best_cost:
                     best_cost = cost
                     best_seqs = [new_seq]
-                elif cost != best_cost and cost < path_cost(start, seq):
+                elif cost == best_cost and cost < path_cost(start, seq):
                     best_seqs.append(new_seq)
                     
         if best_seqs:
