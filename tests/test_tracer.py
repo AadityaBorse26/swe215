@@ -31,7 +31,7 @@ def test_tracer_capture():
     found_line_with_vars = False
     for lineno, snapshots in line_data.items():
         for snap in snapshots:
-            if "x" in snap["vars"]:
+            if "x" in snap["vars"] and "y" in snap["vars"]:
                 found_line_with_vars = True
                 assert snap["vars"]["a"] == 5
                 assert snap["vars"]["b"] == 10

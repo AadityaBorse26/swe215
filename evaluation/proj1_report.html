@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Value Coverage Analyzer - Interactive Report</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-main: #0f172a;
+            --bg-sidebar: #1e293b;
+            --bg-card: #1e293b9f;
+            --border-color: #334155;
+            --text-main: #f8fafc;
+            --text-dim: #94a3b8;
+            --text-muted: #64748b;
+            
+            --color-uncovered: #475569;
+            --color-low: #ef4444;
+            --bg-low: rgba(239, 68, 68, 0.12);
+            --color-med: #f59e0b;
+            --bg-med: rgba(245, 158, 11, 0.12);
+            --color-high: #10b981;
+            --bg-high: rgba(16, 185, 129, 0.12);
+            --color-accent: #0d9488;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header Style */
+        header {
+            background-color: var(--bg-sidebar);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo-section h1 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-section h1 span {
+            background: linear-gradient(135deg, #2dd4bf, #0d9488);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .stats-summary {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .stat-badge {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            min-width: 120px;
+        }
+
+        .stat-badge .label {
+            font-size: 0.7rem;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .stat-badge .value {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-top: 0.1rem;
+        }
+
+        .stat-badge.high .value { color: var(--color-high); }
+        .stat-badge.accent .value { color: #2dd4bf; }
+
+        /* Main Layout */
+        .workspace {
+            display: flex;
+            flex: 1;
+            height: calc(100vh - 70px);
+            overflow: hidden;
+        }
+
+        /* Sidebar - File Explorer */
+        .sidebar {
+            width: 320px;
+            background-color: var(--bg-sidebar);
+            border-right: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .sidebar-header {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .file-list {
+            flex: 1;
+            overflow-y: auto;
+            padding: 0.5rem;
+        }
+
+        .file-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-bottom: 0.25rem;
+            border: 1px solid transparent;
+        }
+
+        .file-item:hover {
+            background-color: rgba(255, 255, 255, 0.03);
+            border-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .file-item.active {
+            background-color: rgba(13, 148, 136, 0.15);
+            border-color: var(--color-accent);
+        }
+
+        .file-name {
+            font-size: 0.85rem;
+            font-weight: 500;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 180px;
+        }
+
+        .file-meta {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .score-pill {
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+            min-width: 38px;
+            text-align: center;
+        }
+
+        .score-pill.low { background-color: var(--bg-low); color: var(--color-low); }
+        .score-pill.med { background-color: var(--bg-med); color: var(--color-med); }
+        .score-pill.high { background-color: var(--bg-high); color: var(--color-high); }
+
+        /* Code Viewer */
+        .code-viewer {
+            flex: 1;
+            overflow-y: auto;
+            background-color: var(--bg-main);
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .code-container {
+            font-family: 'Fira Code', monospace;
+            font-size: 0.85rem;
+            line-height: 1.6;
+            background-color: rgba(255, 255, 255, 0.01);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1rem 0;
+            overflow-x: auto;
+        }
+
+        .code-line {
+            display: flex;
+            cursor: pointer;
+            transition: background-color 0.15s ease;
+            position: relative;
+        }
+
+        .code-line:hover {
+            background-color: rgba(255, 255, 255, 0.04);
+        }
+
+        .code-line.active-line {
+            background-color: rgba(13, 148, 136, 0.12);
+        }
+
+        .line-number {
+            width: 50px;
+            text-align: right;
+            padding-right: 1.5rem;
+            color: var(--text-muted);
+            user-select: none;
+            border-right: 1px solid var(--border-color);
+        }
+
+        .line-hits {
+            width: 40px;
+            text-align: right;
+            padding-right: 1rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--text-dim);
+            user-select: none;
+        }
+
+        .line-code {
+            padding-left: 1rem;
+            white-space: pre;
+            flex: 1;
+        }
+
+        /* Color overlays for line coverage & diversity status */
+        .code-line.cov-uncovered .line-number { border-right: 3px solid var(--color-uncovered); }
+        
+        .code-line.cov-low { background-color: var(--bg-low); }
+        .code-line.cov-low .line-number { border-right: 3px solid var(--color-low); color: var(--color-low); }
+        
+        .code-line.cov-med { background-color: var(--bg-med); }
+        .code-line.cov-med .line-number { border-right: 3px solid var(--color-med); color: var(--color-med); }
+        
+        .code-line.cov-high { background-color: var(--bg-high); }
+        .code-line.cov-high .line-number { border-right: 3px solid var(--color-high); color: var(--color-high); }
+
+        /* Details Pane */
+        .details-pane {
+            width: 380px;
+            background-color: var(--bg-sidebar);
+            border-left: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .details-header {
+            padding: 1.25rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .details-header h2 {
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        .details-header .subtitle {
+            font-size: 0.75rem;
+            color: var(--text-dim);
+            margin-top: 0.25rem;
+        }
+
+        .details-body {
+            flex: 1;
+            overflow-y: auto;
+            padding: 1.25rem;
+        }
+
+        .placeholder-text {
+            color: var(--text-muted);
+            text-align: center;
+            margin-top: 4rem;
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+
+        .metric-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 0.75rem;
+            border-radius: 6px;
+        }
+
+        .metric-card {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .metric-card .m-label {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            letter-spacing: 0.05em;
+        }
+
+        .metric-card .m-val {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-top: 0.15rem;
+        }
+
+        /* Variable detail styles */
+        .variables-list {
+            margin-top: 1.5rem;
+        }
+
+        .variables-list h3 {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-dim);
+            margin-bottom: 0.75rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.25rem;
+        }
+
+        .variable-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 0.85rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .var-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .var-name {
+            font-family: 'Fira Code', monospace;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #2dd4bf;
+        }
+
+        .var-type-badge {
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 0.1rem 0.35rem;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.06);
+            color: var(--text-dim);
+        }
+
+        .var-type-badge.param {
+            background: rgba(13, 148, 136, 0.15);
+            color: #2dd4bf;
+            border: 1px solid rgba(13, 148, 136, 0.3);
+        }
+
+        .var-scores {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.4rem;
+            margin-top: 0.5rem;
+            font-size: 0.7rem;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 0.4rem;
+            border-radius: 4px;
+        }
+
+        .var-score-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .var-score-item span.lbl {
+            color: var(--text-muted);
+            font-size: 0.6rem;
+            text-transform: uppercase;
+        }
+
+        .var-score-item span.val {
+            font-weight: 700;
+            margin-top: 0.1rem;
+        }
+
+        .unique-vals-box {
+            margin-top: 0.6rem;
+        }
+
+        .unique-vals-box span.lbl {
+            font-size: 0.7rem;
+            color: var(--text-dim);
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .pills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.25rem;
+            max-height: 80px;
+            overflow-y: auto;
+        }
+
+        .val-pill {
+            font-family: 'Fira Code', monospace;
+            font-size: 0.7rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 0.1rem 0.35rem;
+            border-radius: 4px;
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        /* Scrollbar styles */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--border-color);
+            border-radius: 3px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-section">
+            <h1>Value Coverage <span>Analyzer</span></h1>
+        </div>
+        <div class="stats-summary">
+            <div class="stat-badge accent">
+                <span class="label">Avg Diversity</span>
+                <span class="value">0.21</span>
+            </div>
+            <div class="stat-badge high">
+                <span class="label">Well-Tested Rate</span>
+                <span class="value">5.3%</span>
+            </div>
+            <div class="stat-badge">
+                <span class="label">Covered Lines</span>
+                <span class="value">95</span>
+            </div>
+            <div class="stat-badge">
+                <span class="label">Well-Tested Lines</span>
+                <span class="value">5</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="workspace">
+        <!-- File list sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">Source Files</div>
+            <div class="file-list" id="file-list"></div>
+        </div>
+
+        <!-- Code viewer center panel -->
+        <div class="code-viewer">
+            <div class="code-container" id="code-container">
+                <div class="placeholder-text" style="margin-top: 10rem;">
+                    <h3>Select a file from the sidebar to view source code and value coverage details.</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Details pane right panel -->
+        <div class="details-pane">
+            <div class="details-header">
+                <h2>Line Details</h2>
+                <div class="subtitle" id="details-subtitle">No line selected</div>
+            </div>
+            <div class="details-body" id="details-body">
+                <div class="placeholder-text">
+                    Click on a highlighted line of code to inspect value snapshots and Shannon entropy scoring.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const data = {"single_agent_planner.py": {"lines": {"5": {"hits": 145, "global_score": 0.2464, "passed_score": 0.2464, "failed_score": 0.0, "variables": {"dir": {"is_param": true, "unique_count": 5, "sample_values": [0, 1, 2, 3, 4], "global_score": 0.2464, "passed_score": 0.2464, "failed_score": 0.0}}}, "6": {"hits": 145, "global_score": 0.2464, "passed_score": 0.2464, "failed_score": 0.0, "variables": {"dir": {"is_param": true, "unique_count": 5, "sample_values": [0, 1, 2, 3, 4], "global_score": 0.2464, "passed_score": 0.2464, "failed_score": 0.0}}}, "10": {"hits": 1, "global_score": 0.2, "passed_score": 0.2, "failed_score": 0.0, "variables": {}}, "11": {"hits": 3, "global_score": 0.6667, "passed_score": 0.6667, "failed_score": 0.0, "variables": {"rst": {"is_param": false, "unique_count": 3, "sample_values": [0, 2, 4], "global_score": 0.6667, "passed_score": 0.6667, "failed_score": 0.0}}}, "12": {"hits": 2, "global_score": 0.5, "passed_score": 0.5, "failed_score": 0.0, "variables": {"rst": {"is_param": false, "unique_count": 2, "sample_values": [0, 2], "global_score": 0.5, "passed_score": 0.5, "failed_score": 0.0}}}, "13": {"hits": 1, "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0, "variables": {"rst": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "18": {"hits": 3, "global_score": 0.6, "passed_score": 0.6, "failed_score": 0.0, "variables": {}}, "19": {"hits": 3, "global_score": 0.6, "passed_score": 0.6, "failed_score": 0.0, "variables": {}}, "20": {"hits": 3, "global_score": 0.6, "passed_score": 0.6, "failed_score": 0.0, "variables": {}}, "21": {"hits": 3, "global_score": 0.6, "passed_score": 0.6, "failed_score": 0.0, "variables": {}}, "22": {"hits": 3, "global_score": 0.6, "passed_score": 0.6, "failed_score": 0.0, "variables": {}}, "23": {"hits": 28, "global_score": 0.2569, "passed_score": 0.2569, "failed_score": 0.0, "variables": {"child_cost": {"is_param": false, "unique_count": 5, "sample_values": [1, 2, 3, 4, 5], "global_score": 0.3853, "passed_score": 0.3853, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 1, "sample_values": [3], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "cost": {"is_param": false, "unique_count": 5, "sample_values": [0, 1, 2, 3, 4], "global_score": 0.3853, "passed_score": 0.3853, "failed_score": 0.0}}}, "24": {"hits": 25, "global_score": 0.2175, "passed_score": 0.2175, "failed_score": 0.0, "variables": {"child_cost": {"is_param": false, "unique_count": 4, "sample_values": [1, 2, 3, 4], "global_score": 0.3263, "passed_score": 0.3263, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 1, "sample_values": [3], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "cost": {"is_param": false, "unique_count": 4, "sample_values": [0, 1, 2, 3], "global_score": 0.3263, "passed_score": 0.3263, "failed_score": 0.0}}}, "25": {"hits": 125, "global_score": 0.2406, "passed_score": 0.2406, "failed_score": 0.0, "variables": {"child_cost": {"is_param": false, "unique_count": 5, "sample_values": [1, 2, 3, 4, 5], "global_score": 0.2554, "passed_score": 0.2554, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 4, "sample_values": [0, 1, 2, 3], "global_score": 0.2095, "passed_score": 0.2095, "failed_score": 0.0}, "cost": {"is_param": false, "unique_count": 5, "sample_values": [0, 1, 2, 3, 4], "global_score": 0.2569, "passed_score": 0.2569, "failed_score": 0.0}}}, "26": {"hits": 100, "global_score": 0.2542, "passed_score": 0.2542, "failed_score": 0.0, "variables": {"child_cost": {"is_param": false, "unique_count": 5, "sample_values": [1, 2, 3, 4, 5], "global_score": 0.2674, "passed_score": 0.2674, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 4, "sample_values": [0, 1, 2, 3], "global_score": 0.2258, "passed_score": 0.2258, "failed_score": 0.0}, "cost": {"is_param": false, "unique_count": 5, "sample_values": [0, 1, 2, 3, 4], "global_score": 0.2693, "passed_score": 0.2693, "failed_score": 0.0}}}, "27": {"hits": 100, "global_score": 0.2542, "passed_score": 0.2542, "failed_score": 0.0, "variables": {"child_cost": {"is_param": false, "unique_count": 5, "sample_values": [1, 2, 3, 4, 5], "global_score": 0.2674, "passed_score": 0.2674, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 4, "sample_values": [0, 1, 2, 3], "global_score": 0.2258, "passed_score": 0.2258, "failed_score": 0.0}, "cost": {"is_param": false, "unique_count": 5, "sample_values": [0, 1, 2, 3, 4], "global_score": 0.2693, "passed_score": 0.2693, "failed_score": 0.0}}}, "28": {"hits": 100, "global_score": 0.2548, "passed_score": 0.2548, "failed_score": 0.0, "variables": {"child_cost": {"is_param": false, "unique_count": 5, "sample_values": [1, 2, 3, 4, 5], "global_score": 0.2693, "passed_score": 0.2693, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 4, "sample_values": [0, 1, 2, 3], "global_score": 0.2258, "passed_score": 0.2258, "failed_score": 0.0}, "cost": {"is_param": false, "unique_count": 5, "sample_values": [0, 1, 2, 3, 4], "global_score": 0.2693, "passed_score": 0.2693, "failed_score": 0.0}}}, "29": {"hits": 82, "global_score": 0.2631, "passed_score": 0.2631, "failed_score": 0.0, "variables": {"child_cost": {"is_param": false, "unique_count": 5, "sample_values": [1, 2, 3, 4, 5], "global_score": 0.2788, "passed_score": 0.2788, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 4, "sample_values": [0, 1, 2, 3], "global_score": 0.2318, "passed_score": 0.2318, "failed_score": 0.0}, "cost": {"is_param": false, "unique_count": 5, "sample_values": [0, 1, 2, 3, 4], "global_score": 0.2788, "passed_score": 0.2788, "failed_score": 0.0}}}, "31": {"hits": 64, "global_score": 0.2762, "passed_score": 0.2762, "failed_score": 0.0, "variables": {"child_cost": {"is_param": false, "unique_count": 5, "sample_values": [1, 2, 3, 4, 5], "global_score": 0.2893, "passed_score": 0.2893, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 4, "sample_values": [0, 1, 2, 3], "global_score": 0.25, "passed_score": 0.25, "failed_score": 0.0}, "cost": {"is_param": false, "unique_count": 5, "sample_values": [0, 1, 2, 3, 4], "global_score": 0.2893, "passed_score": 0.2893, "failed_score": 0.0}}}, "33": {"hits": 56, "global_score": 0.2888, "passed_score": 0.2888, "failed_score": 0.0, "variables": {"child_cost": {"is_param": false, "unique_count": 5, "sample_values": [1, 2, 3, 4, 5], "global_score": 0.304, "passed_score": 0.304, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 4, "sample_values": [0, 1, 2, 3], "global_score": 0.2583, "passed_score": 0.2583, "failed_score": 0.0}, "cost": {"is_param": false, "unique_count": 5, "sample_values": [0, 1, 2, 3, 4], "global_score": 0.304, "passed_score": 0.304, "failed_score": 0.0}}}, "34": {"hits": 56, "global_score": 0.2888, "passed_score": 0.2888, "failed_score": 0.0, "variables": {"child_cost": {"is_param": false, "unique_count": 5, "sample_values": [1, 2, 3, 4, 5], "global_score": 0.304, "passed_score": 0.304, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 4, "sample_values": [0, 1, 2, 3], "global_score": 0.2583, "passed_score": 0.2583, "failed_score": 0.0}, "cost": {"is_param": false, "unique_count": 5, "sample_values": [0, 1, 2, 3, 4], "global_score": 0.304, "passed_score": 0.304, "failed_score": 0.0}}}, "41": {"hits": 22, "global_score": 0.2529, "passed_score": 0.2529, "failed_score": 0.0, "variables": {"child_cost": {"is_param": false, "unique_count": 4, "sample_values": [1, 2, 3, 4], "global_score": 0.3263, "passed_score": 0.3263, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 2, "sample_values": [0, 3], "global_score": 0.106, "passed_score": 0.106, "failed_score": 0.0}, "cost": {"is_param": false, "unique_count": 4, "sample_values": [0, 1, 2, 3], "global_score": 0.3263, "passed_score": 0.3263, "failed_score": 0.0}}}, "42": {"hits": 22, "global_score": 0.2529, "passed_score": 0.2529, "failed_score": 0.0, "variables": {"child_cost": {"is_param": false, "unique_count": 4, "sample_values": [1, 2, 3, 4], "global_score": 0.3263, "passed_score": 0.3263, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 2, "sample_values": [0, 3], "global_score": 0.106, "passed_score": 0.106, "failed_score": 0.0}, "cost": {"is_param": false, "unique_count": 4, "sample_values": [0, 1, 2, 3], "global_score": 0.3263, "passed_score": 0.3263, "failed_score": 0.0}}}, "30": {"hits": 36, "global_score": 0.329, "passed_score": 0.329, "failed_score": 0.0, "variables": {"child_cost": {"is_param": false, "unique_count": 5, "sample_values": [1, 2, 3, 4, 5], "global_score": 0.3484, "passed_score": 0.3484, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 4, "sample_values": [0, 1, 2, 3], "global_score": 0.2901, "passed_score": 0.2901, "failed_score": 0.0}, "cost": {"is_param": false, "unique_count": 5, "sample_values": [0, 1, 2, 3, 4], "global_score": 0.3484, "passed_score": 0.3484, "failed_score": 0.0}}}, "32": {"hits": 8, "global_score": 0.2778, "passed_score": 0.2778, "failed_score": 0.0, "variables": {"child_cost": {"is_param": false, "unique_count": 2, "sample_values": [2, 4], "global_score": 0.1667, "passed_score": 0.1667, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 4, "sample_values": [0, 1, 2, 3], "global_score": 0.5, "passed_score": 0.5, "failed_score": 0.0}, "cost": {"is_param": false, "unique_count": 2, "sample_values": [1, 3], "global_score": 0.1667, "passed_score": 0.1667, "failed_score": 0.0}}}, "35": {"hits": 34, "global_score": 0.2577, "passed_score": 0.2577, "failed_score": 0.0, "variables": {"child_cost": {"is_param": false, "unique_count": 4, "sample_values": [2, 3, 4, 5], "global_score": 0.2885, "passed_score": 0.2885, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 3, "sample_values": [1, 2, 3], "global_score": 0.196, "passed_score": 0.196, "failed_score": 0.0}, "cost": {"is_param": false, "unique_count": 4, "sample_values": [1, 2, 3, 4], "global_score": 0.2885, "passed_score": 0.2885, "failed_score": 0.0}}}, "36": {"hits": 34, "global_score": 0.2577, "passed_score": 0.2577, "failed_score": 0.0, "variables": {"child_cost": {"is_param": false, "unique_count": 4, "sample_values": [2, 3, 4, 5], "global_score": 0.2885, "passed_score": 0.2885, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 3, "sample_values": [1, 2, 3], "global_score": 0.196, "passed_score": 0.196, "failed_score": 0.0}, "cost": {"is_param": false, "unique_count": 4, "sample_values": [1, 2, 3, 4], "global_score": 0.2885, "passed_score": 0.2885, "failed_score": 0.0}}}, "45": {"hits": 3, "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0, "variables": {"child_cost": {"is_param": false, "unique_count": 1, "sample_values": [5], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 1, "sample_values": [3], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "cost": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "46": {"hits": 28, "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0, "variables": {"child_cost": {"is_param": false, "unique_count": 1, "sample_values": [5], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 1, "sample_values": [3], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "cost": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "47": {"hits": 25, "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0, "variables": {"child_cost": {"is_param": false, "unique_count": 1, "sample_values": [5], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 1, "sample_values": [3], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "cost": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "48": {"hits": 3, "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0, "variables": {"child_cost": {"is_param": false, "unique_count": 1, "sample_values": [5], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 1, "sample_values": [3], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "cost": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "58": {"hits": 3, "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0, "variables": {"agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "59": {"hits": 8, "global_score": 0.1046, "passed_score": 0.1046, "failed_score": 0.0, "variables": {"agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "timestep": {"is_param": false, "unique_count": 2, "sample_values": [1, 2], "global_score": 0.2091, "passed_score": 0.2091, "failed_score": 0.0}}}, "60": {"hits": 5, "global_score": 0.1449, "passed_score": 0.1449, "failed_score": 0.0, "variables": {"agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "timestep": {"is_param": false, "unique_count": 2, "sample_values": [1, 2], "global_score": 0.2897, "passed_score": 0.2897, "failed_score": 0.0}}}, "61": {"hits": 4, "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0, "variables": {"agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "timestep": {"is_param": false, "unique_count": 1, "sample_values": [1], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "62": {"hits": 4, "global_score": 0.125, "passed_score": 0.125, "failed_score": 0.0, "variables": {"agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "timestep": {"is_param": false, "unique_count": 2, "sample_values": [1, 2], "global_score": 0.25, "passed_score": 0.25, "failed_score": 0.0}}}, "63": {"hits": 4, "global_score": 0.125, "passed_score": 0.125, "failed_score": 0.0, "variables": {"agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "timestep": {"is_param": false, "unique_count": 2, "sample_values": [1, 2], "global_score": 0.25, "passed_score": 0.25, "failed_score": 0.0}}}, "64": {"hits": 4, "global_score": 0.125, "passed_score": 0.125, "failed_score": 0.0, "variables": {"agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "timestep": {"is_param": false, "unique_count": 2, "sample_values": [1, 2], "global_score": 0.25, "passed_score": 0.25, "failed_score": 0.0}}}, "65": {"hits": 3, "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0, "variables": {"agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "timestep": {"is_param": false, "unique_count": 1, "sample_values": [2], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "96": {"hits": 29, "global_score": 0.3073, "passed_score": 0.3073, "failed_score": 0.0, "variables": {"next_time": {"is_param": true, "unique_count": 4, "sample_values": [1, 2, 3, 4], "global_score": 0.3073, "passed_score": 0.3073, "failed_score": 0.0}}}, "97": {"hits": 18, "global_score": 0.1199, "passed_score": 0.1199, "failed_score": 0.0, "variables": {"next_time": {"is_param": true, "unique_count": 2, "sample_values": [1, 2], "global_score": 0.1199, "passed_score": 0.1199, "failed_score": 0.0}}}, "98": {"hits": 10, "global_score": 0.1505, "passed_score": 0.1505, "failed_score": 0.0, "variables": {"next_time": {"is_param": true, "unique_count": 2, "sample_values": [1, 2], "global_score": 0.1505, "passed_score": 0.1505, "failed_score": 0.0}}}, "100": {"hits": 9, "global_score": 0.1563, "passed_score": 0.1563, "failed_score": 0.0, "variables": {"next_time": {"is_param": true, "unique_count": 2, "sample_values": [1, 2], "global_score": 0.1563, "passed_score": 0.1563, "failed_score": 0.0}}}, "101": {"hits": 1, "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0, "variables": {"next_time": {"is_param": true, "unique_count": 1, "sample_values": [1], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "106": {"hits": 27, "global_score": 0.315, "passed_score": 0.315, "failed_score": 0.0, "variables": {"next_time": {"is_param": true, "unique_count": 4, "sample_values": [1, 2, 3, 4], "global_score": 0.315, "passed_score": 0.315, "failed_score": 0.0}}}, "104": {"hits": 1, "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0, "variables": {"next_time": {"is_param": true, "unique_count": 1, "sample_values": [2], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "105": {"hits": 1, "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0, "variables": {"next_time": {"is_param": true, "unique_count": 1, "sample_values": [2], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "137": {"hits": 2, "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0, "variables": {"agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "138": {"hits": 2, "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0, "variables": {"agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "139": {"hits": 2, "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0, "variables": {"agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "140": {"hits": 2, "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0, "variables": {"agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "143": {"hits": 2, "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0, "variables": {"h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "149": {"hits": 4, "global_score": 0.25, "passed_score": 0.25, "failed_score": 0.0, "variables": {"h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "timestep": {"is_param": false, "unique_count": 2, "sample_values": [1, 2], "global_score": 0.5, "passed_score": 0.5, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 3, "sample_values": [0, 2, 3], "global_score": 0.5, "passed_score": 0.5, "failed_score": 0.0}}}, "157": {"hits": 2, "global_score": 0.125, "passed_score": 0.125, "failed_score": 0.0, "variables": {"h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "timestep": {"is_param": false, "unique_count": 1, "sample_values": [2], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 3], "global_score": 0.5, "passed_score": 0.5, "failed_score": 0.0}}}, "158": {"hits": 4, "global_score": 0.1406, "passed_score": 0.1406, "failed_score": 0.0, "variables": {"timestep": {"is_param": false, "unique_count": 1, "sample_values": [2], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "max_timestep": {"is_param": false, "unique_count": 3, "sample_values": [0, 1, 2], "global_score": 0.5, "passed_score": 0.5, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 3], "global_score": 0.2028, "passed_score": 0.2028, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "161": {"hits": 2, "global_score": 0.2, "passed_score": 0.2, "failed_score": 0.0, "variables": {"timestep": {"is_param": false, "unique_count": 1, "sample_values": [2], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "max_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 2], "global_score": 0.5, "passed_score": 0.5, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 3], "global_score": 0.5, "passed_score": 0.5, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "164": {"hits": 2, "global_score": 0.1667, "passed_score": 0.1667, "failed_score": 0.0, "variables": {"timestep": {"is_param": false, "unique_count": 1, "sample_values": [2], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "max_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 2], "global_score": 0.5, "passed_score": 0.5, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 3], "global_score": 0.5, "passed_score": 0.5, "failed_score": 0.0}, "upper_bound": {"is_param": false, "unique_count": 1, "sample_values": [18], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "165": {"hits": 2, "global_score": 0.1667, "passed_score": 0.1667, "failed_score": 0.0, "variables": {"timestep": {"is_param": false, "unique_count": 1, "sample_values": [2], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "max_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 2], "global_score": 0.5, "passed_score": 0.5, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 3], "global_score": 0.5, "passed_score": 0.5, "failed_score": 0.0}, "upper_bound": {"is_param": false, "unique_count": 1, "sample_values": [18], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "110": {"hits": 28, "global_score": 1.0, "passed_score": 1.0, "failed_score": 0.0, "variables": {}}, "167": {"hits": 2, "global_score": 0.1667, "passed_score": 0.1667, "failed_score": 0.0, "variables": {"timestep": {"is_param": false, "unique_count": 1, "sample_values": [2], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "max_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 2], "global_score": 0.5, "passed_score": 0.5, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 3], "global_score": 0.5, "passed_score": 0.5, "failed_score": 0.0}, "upper_bound": {"is_param": false, "unique_count": 1, "sample_values": [18], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "168": {"hits": 10, "global_score": 0.043, "passed_score": 0.043, "failed_score": 0.0, "variables": {"timestep": {"is_param": false, "unique_count": 1, "sample_values": [2], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "max_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 2], "global_score": 0.1505, "passed_score": 0.1505, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 3], "global_score": 0.1505, "passed_score": 0.1505, "failed_score": 0.0}, "upper_bound": {"is_param": false, "unique_count": 1, "sample_values": [18], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "169": {"hits": 10, "global_score": 0.043, "passed_score": 0.043, "failed_score": 0.0, "variables": {"timestep": {"is_param": false, "unique_count": 1, "sample_values": [2], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "max_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 2], "global_score": 0.1505, "passed_score": 0.1505, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 3], "global_score": 0.1505, "passed_score": 0.1505, "failed_score": 0.0}, "upper_bound": {"is_param": false, "unique_count": 1, "sample_values": [18], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "114": {"hits": 10, "global_score": 1.0, "passed_score": 1.0, "failed_score": 0.0, "variables": {}}, "115": {"hits": 10, "global_score": 1.0, "passed_score": 1.0, "failed_score": 0.0, "variables": {}}, "171": {"hits": 10, "global_score": 0.043, "passed_score": 0.043, "failed_score": 0.0, "variables": {"timestep": {"is_param": false, "unique_count": 1, "sample_values": [2], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "max_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 2], "global_score": 0.1505, "passed_score": 0.1505, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 3], "global_score": 0.1505, "passed_score": 0.1505, "failed_score": 0.0}, "upper_bound": {"is_param": false, "unique_count": 1, "sample_values": [18], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "175": {"hits": 8, "global_score": 0.0476, "passed_score": 0.0476, "failed_score": 0.0, "variables": {"timestep": {"is_param": false, "unique_count": 1, "sample_values": [2], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "max_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 2], "global_score": 0.1667, "passed_score": 0.1667, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 3], "global_score": 0.1667, "passed_score": 0.1667, "failed_score": 0.0}, "upper_bound": {"is_param": false, "unique_count": 1, "sample_values": [18], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "179": {"hits": 48, "global_score": 0.0727, "passed_score": 0.0727, "failed_score": 0.0, "variables": {"timestep": {"is_param": false, "unique_count": 1, "sample_values": [2], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 5, "sample_values": [0, 1, 2, 3, 4], "global_score": 0.3299, "passed_score": 0.3299, "failed_score": 0.0}, "max_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 2], "global_score": 0.0895, "passed_score": 0.0895, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 3], "global_score": 0.0895, "passed_score": 0.0895, "failed_score": 0.0}, "upper_bound": {"is_param": false, "unique_count": 1, "sample_values": [18], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "180": {"hits": 40, "global_score": 0.0767, "passed_score": 0.0767, "failed_score": 0.0, "variables": {"timestep": {"is_param": false, "unique_count": 1, "sample_values": [2], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 5, "sample_values": [0, 1, 2, 3, 4], "global_score": 0.349, "passed_score": 0.349, "failed_score": 0.0}, "max_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 2], "global_score": 0.094, "passed_score": 0.094, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 3], "global_score": 0.094, "passed_score": 0.094, "failed_score": 0.0}, "upper_bound": {"is_param": false, "unique_count": 1, "sample_values": [18], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "182": {"hits": 40, "global_score": 0.0767, "passed_score": 0.0767, "failed_score": 0.0, "variables": {"timestep": {"is_param": false, "unique_count": 1, "sample_values": [2], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 5, "sample_values": [0, 1, 2, 3, 4], "global_score": 0.349, "passed_score": 0.349, "failed_score": 0.0}, "max_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 2], "global_score": 0.094, "passed_score": 0.094, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 3], "global_score": 0.094, "passed_score": 0.094, "failed_score": 0.0}, "upper_bound": {"is_param": false, "unique_count": 1, "sample_values": [18], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "183": {"hits": 34, "global_score": 0.0776, "passed_score": 0.0776, "failed_score": 0.0, "variables": {"timestep": {"is_param": false, "unique_count": 1, "sample_values": [2], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 5, "sample_values": [0, 1, 2, 3, 4], "global_score": 0.3468, "passed_score": 0.3468, "failed_score": 0.0}, "max_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 2], "global_score": 0.0983, "passed_score": 0.0983, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 3], "global_score": 0.0983, "passed_score": 0.0983, "failed_score": 0.0}, "upper_bound": {"is_param": false, "unique_count": 1, "sample_values": [18], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "184": {"hits": 12, "global_score": 0.0786, "passed_score": 0.0786, "failed_score": 0.0, "variables": {"timestep": {"is_param": false, "unique_count": 1, "sample_values": [2], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 3, "sample_values": [0, 2, 3], "global_score": 0.2713, "passed_score": 0.2713, "failed_score": 0.0}, "max_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 2], "global_score": 0.1395, "passed_score": 0.1395, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 3], "global_score": 0.1395, "passed_score": 0.1395, "failed_score": 0.0}, "upper_bound": {"is_param": false, "unique_count": 1, "sample_values": [18], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "185": {"hits": 28, "global_score": 0.0816, "passed_score": 0.0816, "failed_score": 0.0, "variables": {"timestep": {"is_param": false, "unique_count": 1, "sample_values": [2], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 5, "sample_values": [0, 1, 2, 3, 4], "global_score": 0.3631, "passed_score": 0.3631, "failed_score": 0.0}, "max_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 2], "global_score": 0.104, "passed_score": 0.104, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 3], "global_score": 0.104, "passed_score": 0.104, "failed_score": 0.0}, "upper_bound": {"is_param": false, "unique_count": 1, "sample_values": [18], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "187": {"hits": 52, "global_score": 0.0689, "passed_score": 0.0689, "failed_score": 0.0, "variables": {"timestep": {"is_param": false, "unique_count": 1, "sample_values": [2], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 5, "sample_values": [0, 1, 2, 3, 4], "global_score": 0.3074, "passed_score": 0.3074, "failed_score": 0.0}, "max_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 2], "global_score": 0.0873, "passed_score": 0.0873, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 3], "global_score": 0.0873, "passed_score": 0.0873, "failed_score": 0.0}, "upper_bound": {"is_param": false, "unique_count": 1, "sample_values": [18], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "188": {"hits": 26, "global_score": 0.0835, "passed_score": 0.0835, "failed_score": 0.0, "variables": {"timestep": {"is_param": false, "unique_count": 1, "sample_values": [2], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 5, "sample_values": [0, 1, 2, 3, 4], "global_score": 0.3728, "passed_score": 0.3728, "failed_score": 0.0}, "max_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 2], "global_score": 0.1059, "passed_score": 0.1059, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 3], "global_score": 0.1059, "passed_score": 0.1059, "failed_score": 0.0}, "upper_bound": {"is_param": false, "unique_count": 1, "sample_values": [18], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "189": {"hits": 26, "global_score": 0.0835, "passed_score": 0.0835, "failed_score": 0.0, "variables": {"timestep": {"is_param": false, "unique_count": 1, "sample_values": [2], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 5, "sample_values": [0, 1, 2, 3, 4], "global_score": 0.3728, "passed_score": 0.3728, "failed_score": 0.0}, "max_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 2], "global_score": 0.1059, "passed_score": 0.1059, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 3], "global_score": 0.1059, "passed_score": 0.1059, "failed_score": 0.0}, "upper_bound": {"is_param": false, "unique_count": 1, "sample_values": [18], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "190": {"hits": 26, "global_score": 0.0835, "passed_score": 0.0835, "failed_score": 0.0, "variables": {"timestep": {"is_param": false, "unique_count": 1, "sample_values": [2], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 5, "sample_values": [0, 1, 2, 3, 4], "global_score": 0.3728, "passed_score": 0.3728, "failed_score": 0.0}, "max_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 2], "global_score": 0.1059, "passed_score": 0.1059, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 3], "global_score": 0.1059, "passed_score": 0.1059, "failed_score": 0.0}, "upper_bound": {"is_param": false, "unique_count": 1, "sample_values": [18], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "191": {"hits": 26, "global_score": 0.0835, "passed_score": 0.0835, "failed_score": 0.0, "variables": {"timestep": {"is_param": false, "unique_count": 1, "sample_values": [2], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 5, "sample_values": [0, 1, 2, 3, 4], "global_score": 0.3728, "passed_score": 0.3728, "failed_score": 0.0}, "max_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 2], "global_score": 0.1059, "passed_score": 0.1059, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 3], "global_score": 0.1059, "passed_score": 0.1059, "failed_score": 0.0}, "upper_bound": {"is_param": false, "unique_count": 1, "sample_values": [18], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "194": {"hits": 26, "global_score": 0.0835, "passed_score": 0.0835, "failed_score": 0.0, "variables": {"timestep": {"is_param": false, "unique_count": 1, "sample_values": [2], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 5, "sample_values": [0, 1, 2, 3, 4], "global_score": 0.3728, "passed_score": 0.3728, "failed_score": 0.0}, "max_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 2], "global_score": 0.1059, "passed_score": 0.1059, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 3], "global_score": 0.1059, "passed_score": 0.1059, "failed_score": 0.0}, "upper_bound": {"is_param": false, "unique_count": 1, "sample_values": [18], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "197": {"hits": 26, "global_score": 0.0835, "passed_score": 0.0835, "failed_score": 0.0, "variables": {"timestep": {"is_param": false, "unique_count": 1, "sample_values": [2], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 5, "sample_values": [0, 1, 2, 3, 4], "global_score": 0.3728, "passed_score": 0.3728, "failed_score": 0.0}, "max_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 2], "global_score": 0.1059, "passed_score": 0.1059, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 3], "global_score": 0.1059, "passed_score": 0.1059, "failed_score": 0.0}, "upper_bound": {"is_param": false, "unique_count": 1, "sample_values": [18], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "203": {"hits": 26, "global_score": 0.0835, "passed_score": 0.0835, "failed_score": 0.0, "variables": {"timestep": {"is_param": false, "unique_count": 1, "sample_values": [2], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 5, "sample_values": [0, 1, 2, 3, 4], "global_score": 0.3728, "passed_score": 0.3728, "failed_score": 0.0}, "max_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 2], "global_score": 0.1059, "passed_score": 0.1059, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 3], "global_score": 0.1059, "passed_score": 0.1059, "failed_score": 0.0}, "upper_bound": {"is_param": false, "unique_count": 1, "sample_values": [18], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "204": {"hits": 26, "global_score": 0.0835, "passed_score": 0.0835, "failed_score": 0.0, "variables": {"timestep": {"is_param": false, "unique_count": 1, "sample_values": [2], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 5, "sample_values": [0, 1, 2, 3, 4], "global_score": 0.3728, "passed_score": 0.3728, "failed_score": 0.0}, "max_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 2], "global_score": 0.1059, "passed_score": 0.1059, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 3], "global_score": 0.1059, "passed_score": 0.1059, "failed_score": 0.0}, "upper_bound": {"is_param": false, "unique_count": 1, "sample_values": [18], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "186": {"hits": 2, "global_score": 0.0833, "passed_score": 0.0833, "failed_score": 0.0, "variables": {"h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 2, "sample_values": [0, 1], "global_score": 0.5, "passed_score": 0.5, "failed_score": 0.0}, "max_timestep": {"is_param": false, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "upper_bound": {"is_param": false, "unique_count": 1, "sample_values": [18], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "172": {"hits": 2, "global_score": 0.1429, "passed_score": 0.1429, "failed_score": 0.0, "variables": {"timestep": {"is_param": false, "unique_count": 1, "sample_values": [2], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "dir": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "max_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 2], "global_score": 0.5, "passed_score": 0.5, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 3], "global_score": 0.5, "passed_score": 0.5, "failed_score": 0.0}, "upper_bound": {"is_param": false, "unique_count": 1, "sample_values": [18], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "78": {"hits": 2, "global_score": 0.4, "passed_score": 0.4, "failed_score": 0.0, "variables": {}}, "79": {"hits": 2, "global_score": 0.4, "passed_score": 0.4, "failed_score": 0.0, "variables": {}}, "80": {"hits": 12, "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0, "variables": {"curr": {"is_param": false, "unique_count": 1, "sample_values": [null], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "81": {"hits": 10, "global_score": 1.0, "passed_score": 1.0, "failed_score": 0.0, "variables": {}}, "82": {"hits": 10, "global_score": 1.0, "passed_score": 1.0, "failed_score": 0.0, "variables": {}}, "83": {"hits": 2, "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0, "variables": {"curr": {"is_param": false, "unique_count": 1, "sample_values": [null], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "84": {"hits": 2, "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0, "variables": {"curr": {"is_param": false, "unique_count": 1, "sample_values": [null], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "150": {"hits": 4, "global_score": 0.1875, "passed_score": 0.1875, "failed_score": 0.0, "variables": {"h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "timestep": {"is_param": false, "unique_count": 2, "sample_values": [1, 2], "global_score": 0.25, "passed_score": 0.25, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 3, "sample_values": [0, 2, 3], "global_score": 0.5, "passed_score": 0.5, "failed_score": 0.0}}}, "151": {"hits": 2, "global_score": 0.25, "passed_score": 0.25, "failed_score": 0.0, "variables": {"h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "timestep": {"is_param": false, "unique_count": 2, "sample_values": [1, 2], "global_score": 0.5, "passed_score": 0.5, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 2], "global_score": 0.5, "passed_score": 0.5, "failed_score": 0.0}}}, "152": {"hits": 2, "global_score": 0.25, "passed_score": 0.25, "failed_score": 0.0, "variables": {"h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "timestep": {"is_param": false, "unique_count": 2, "sample_values": [1, 2], "global_score": 0.5, "passed_score": 0.5, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 2], "global_score": 0.5, "passed_score": 0.5, "failed_score": 0.0}}}, "159": {"hits": 2, "global_score": 0.1, "passed_score": 0.1, "failed_score": 0.0, "variables": {"timestep": {"is_param": false, "unique_count": 1, "sample_values": [2], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "max_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 1], "global_score": 0.5, "passed_score": 0.5, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 1, "sample_values": [3], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}, "160": {"hits": 2, "global_score": 0.1, "passed_score": 0.1, "failed_score": 0.0, "variables": {"timestep": {"is_param": false, "unique_count": 1, "sample_values": [2], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "h_value": {"is_param": false, "unique_count": 1, "sample_values": [4], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "max_timestep": {"is_param": false, "unique_count": 2, "sample_values": [0, 1], "global_score": 0.5, "passed_score": 0.5, "failed_score": 0.0}, "earliest_goal_timestep": {"is_param": false, "unique_count": 1, "sample_values": [3], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}, "agent": {"is_param": true, "unique_count": 1, "sample_values": [0], "global_score": 0.0, "passed_score": 0.0, "failed_score": 0.0}}}}, "code": ["import heapq", "", "def move(loc, dir):", "    # Directions: up, right, down, left, wait (Task 1.1: added wait action)", "    directions = [(0, -1), (1, 0), (0, 1), (-1, 0), (0, 0)]", "    return loc[0] + directions[dir][0], loc[1] + directions[dir][1]", "", "", "def get_sum_of_cost(paths):", "    rst = 0", "    for path in paths:", "        rst += len(path) - 1", "    return rst", "", "", "def compute_heuristics(my_map, goal):", "    # Use Dijkstra to build a shortest-path tree rooted at the goal location", "    open_list = []", "    closed_list = dict()", "    root = {'loc': goal, 'cost': 0}", "    heapq.heappush(open_list, (root['cost'], goal, root))", "    closed_list[goal] = root", "    while len(open_list) > 0:", "        (cost, loc, curr) = heapq.heappop(open_list)", "        for dir in range(4):", "            child_loc = move(loc, dir)", "            child_cost = cost + 1", "            if child_loc[0] < 0 or child_loc[0] >= len(my_map) \\", "               or child_loc[1] < 0 or child_loc[1] >= len(my_map[0]):", "               continue", "            if my_map[child_loc[0]][child_loc[1]]:", "                continue", "            child = {'loc': child_loc, 'cost': child_cost}", "            if child_loc in closed_list:", "                existing_node = closed_list[child_loc]", "                if existing_node['cost'] > child_cost:", "                    closed_list[child_loc] = child", "                    # open_list.delete((existing_node['cost'], existing_node['loc'], existing_node))", "                    heapq.heappush(open_list, (child_cost, child_loc, child))", "            else:", "                closed_list[child_loc] = child", "                heapq.heappush(open_list, (child_cost, child_loc, child))", "", "    # build the heuristics table", "    h_values = dict()", "    for loc, node in closed_list.items():", "        h_values[loc] = node['cost']", "    return h_values", "", "", "def build_constraint_table(constraints, agent):", "    \"\"\"Build a lookup table of constraints indexed by timestep for the given agent.", "    ", "    Task 1.2/1.3: Filters all constraints to only those belonging to 'agent',", "    then groups them by timestep for O(1) lookup during A* expansion.", "    Returns: dict mapping timestep -> list of constraint dicts for that timestep.", "    \"\"\"", "    constraint_table = {}", "    for constraint in constraints:", "        if constraint['agent'] == agent:", "            timestep = constraint['timestep']", "            if timestep not in constraint_table:", "                constraint_table[timestep] = []", "            constraint_table[timestep].append(constraint)", "    return constraint_table", "", "", "def get_location(path, time):", "    if time < 0:", "        return path[0]", "    elif time < len(path):", "        return path[time]", "    else:", "        return path[-1]  # wait at the goal location", "", "", "def get_path(goal_node):", "    path = []", "    curr = goal_node", "    while curr is not None:", "        path.append(curr['loc'])", "        curr = curr['parent']", "    path.reverse()", "    return path", "", "", "def is_constrained(curr_loc, next_loc, next_time, constraint_table):", "    \"\"\"Check if moving from curr_loc to next_loc at next_time violates any constraint.", "    ", "    Task 1.2: Vertex constraints have loc = [(x,y)] \u2014 the agent cannot be at (x,y)", "              at the given timestep.", "    Task 1.3: Edge constraints have loc = [(x1,y1), (x2,y2)] \u2014 the agent cannot move", "              from (x1,y1) to (x2,y2) at the given timestep.", "    Returns True if the move is constrained (should be pruned).", "    \"\"\"", "    if next_time in constraint_table:", "        for constraint in constraint_table[next_time]:", "            if len(constraint['loc']) == 1:", "                # Vertex constraint: agent cannot occupy this cell at this time", "                if constraint['loc'][0] == next_loc:", "                    return True", "            else:", "                # Edge constraint: agent cannot traverse this edge at this time", "                if constraint['loc'][0] == curr_loc and constraint['loc'][1] == next_loc:", "                    return True", "    return False", "", "", "def push_node(open_list, node):", "    heapq.heappush(open_list, (node['g_val'] + node['h_val'], node['h_val'], node['loc'], node))", "", "", "def pop_node(open_list):", "    _, _, _, curr = heapq.heappop(open_list)", "    return curr", "", "", "def compare_nodes(n1, n2):", "    \"\"\"Return true is n1 is better than n2.\"\"\"", "    return n1['g_val'] + n1['h_val'] < n2['g_val'] + n2['h_val']", "", "", "def a_star(my_map, start_loc, goal_loc, h_values, agent, constraints):", "    \"\"\" my_map      - binary obstacle map", "        start_loc   - start position", "        goal_loc    - goal position", "        agent       - the agent that is being re-planned", "        constraints - constraints defining where robot should or cannot go at each timestep", "    \"\"\"", "", "    ##############################", "    # Task 1.1: Extend A* to search in the space-time domain.", "    #   - Each node now includes a 'timestep' key (root starts at 0, children increment by 1)", "    #   - closed_list is indexed by (cell, timestep) tuples instead of just cell", "    #   - We generate a 5th child for each node where the agent waits in place (dir=4)", "", "    open_list = []", "    closed_list = dict()", "    earliest_goal_timestep = 0", "    h_value = h_values[start_loc]", "", "    # Pre-process constraints into a table indexed by timestep for O(1) lookup", "    constraint_table = build_constraint_table(constraints, agent)", "", "    # Task 1.4: The agent must not declare \"goal reached\" if there are future vertex", "    # constraints on the goal cell. Find the latest such constraint and require the", "    # agent to arrive strictly after it. This prevents the agent from \"arriving\" at", "    # the goal and then being in violation at a later constrained timestep.", "    for timestep, constraint_list in constraint_table.items():", "        for constraint in constraint_list:", "            if len(constraint['loc']) == 1 and constraint['loc'][0] == goal_loc:", "                earliest_goal_timestep = max(earliest_goal_timestep, timestep + 1)", "", "    # Task 2.4: Compute an upper bound on the search depth to prevent infinite loops.", "    # The longest possible shortest path is bounded by the grid size plus any", "    # constraint-imposed delays.", "    max_timestep = 0", "    for constraint in constraints:", "        if constraint['timestep'] > max_timestep:", "            max_timestep = constraint['timestep']", "    upper_bound = max(max_timestep + 1, len(my_map) * len(my_map[0])) + len(my_map) * len(my_map[0])", "", "    # Task 1.1: Root node now includes timestep=0", "    root = {'loc': start_loc, 'g_val': 0, 'h_val': h_value, 'parent': None, 'timestep': 0}", "    push_node(open_list, root)", "    # Task 1.1: closed_list indexed by (cell, timestep) for space-time search", "    closed_list[(root['loc'], 0)] = root", "    while len(open_list) > 0:", "        curr = pop_node(open_list)", "        # Task 1.4: Only accept the goal if we are past all goal-location constraints", "        if curr['loc'] == goal_loc and curr['timestep'] >= earliest_goal_timestep:", "            return get_path(curr)", "", "        # Prevent infinite loops", "        if curr['timestep'] >= upper_bound:", "            continue", "", "        # Task 1.1: 5 actions \u2014 4 cardinal moves + 1 wait action", "        for dir in range(5):", "            child_loc = move(curr['loc'], dir)", "            # Check bounds", "            if child_loc[0] < 0 or child_loc[0] >= len(my_map) \\", "               or child_loc[1] < 0 or child_loc[1] >= len(my_map[0]):", "                continue", "            if my_map[child_loc[0]][child_loc[1]]:", "                continue", "            child = {'loc': child_loc,", "                    'g_val': curr['g_val'] + 1,", "                    'h_val': h_values[child_loc],", "                    'parent': curr,", "                    'timestep': curr['timestep'] + 1}", "", "            # Check constraints", "            if is_constrained(curr['loc'], child['loc'], child['timestep'], constraint_table):", "                continue", "", "            if (child['loc'], child['timestep']) in closed_list:", "                existing_node = closed_list[(child['loc'], child['timestep'])]", "                if compare_nodes(child, existing_node):", "                    closed_list[(child['loc'], child['timestep'])] = child", "                    push_node(open_list, child)", "            else:", "                closed_list[(child['loc'], child['timestep'])] = child", "                push_node(open_list, child)", "", "    return None  # Failed to find solutions"]}};
+        let selectedFile = null;
+        let selectedLine = null;
+
+        // Render file list
+        const fileList = document.getElementById('file-list');
+        Object.keys(data).forEach(filename => {
+            const fileInfo = data[filename];
+            const coveredCount = Object.keys(fileInfo.lines).length;
+            
+            let fileAvg = 0.0;
+            if (coveredCount > 0) {
+                const sum = Object.values(fileInfo.lines).reduce((acc, curr) => acc + curr.global_score, 0);
+                fileAvg = sum / coveredCount;
+            }
+
+            let statusClass = 'low';
+            if (fileAvg >= 0.7) statusClass = 'high';
+            else if (fileAvg >= 0.35) statusClass = 'med';
+
+            const item = document.createElement('div');
+            item.className = 'file-item';
+            item.onclick = () => selectFile(filename, item);
+            item.innerHTML = `
+                <span class="file-name" title="${filename}">${filename}</span>
+                <div class="file-meta">
+                    <span class="score-pill ${statusClass}" title="Average diversity score">${fileAvg.toFixed(2)}</span>
+                </div>
+            `;
+            fileList.appendChild(item);
+        });
+
+        function selectFile(filename, element) {
+            // Deactivate previous active file
+            document.querySelectorAll('.file-item').forEach(el => el.classList.remove('active'));
+            element.classList.add('active');
+            
+            selectedFile = filename;
+            selectedLine = null;
+            
+            // Clear details pane
+            document.getElementById('details-subtitle').innerText = "No line selected";
+            document.getElementById('details-body').innerHTML = `
+                <div class="placeholder-text">
+                    Click on a highlighted line of code to inspect value snapshots and Shannon entropy scoring.
+                </div>
+            `;
+
+            renderCode(filename);
+        }
+
+        function renderCode(filename) {
+            const fileInfo = data[filename];
+            const codeContainer = document.getElementById('code-container');
+            codeContainer.innerHTML = '';
+
+            fileInfo.code.forEach((lineText, index) => {
+                const lineno = index + 1;
+                const lineInfo = fileInfo.lines[lineno];
+
+                const lineDiv = document.createElement('div');
+                lineDiv.className = 'code-line';
+                
+                if (lineInfo) {
+                    const score = lineInfo.global_score;
+                    if (score >= 0.7) lineDiv.classList.add('cov-high');
+                    else if (score >= 0.35) lineDiv.classList.add('cov-med');
+                    else lineDiv.classList.add('cov-low');
+                    
+                    lineDiv.onclick = () => selectLine(lineno, lineDiv);
+                } else {
+                    lineDiv.classList.add('cov-uncovered');
+                }
+
+                const hitsText = lineInfo ? lineInfo.hits : '';
+
+                lineDiv.innerHTML = `
+                    <span class="line-number">${lineno}</span>
+                    <span class="line-hits">${hitsText}</span>
+                    <span class="line-code">${escapeHtml(lineText)}</span>
+                `;
+                codeContainer.appendChild(lineDiv);
+            });
+        }
+
+        function selectLine(lineno, element) {
+            document.querySelectorAll('.code-line').forEach(el => el.classList.remove('active-line'));
+            element.classList.add('active-line');
+            selectedLine = lineno;
+
+            const lineInfo = data[selectedFile].lines[lineno];
+            document.getElementById('details-subtitle').innerText = `${selectedFile} : Line ${lineno}`;
+            
+            const detailsBody = document.getElementById('details-body');
+            
+            let varsHtml = '';
+            const varKeys = Object.keys(lineInfo.variables);
+            
+            if (varKeys.length === 0) {
+                varsHtml = `
+                    <div class="placeholder-text" style="margin-top: 2rem;">
+                        This line contains no primitive local variables or input parameters.
+                    </div>
+                `;
+            } else {
+                varKeys.forEach(varname => {
+                    const v = lineInfo.variables[varname];
+                    const typeClass = v.is_param ? 'param' : 'local';
+                    const typeLabel = v.is_param ? 'Parameter' : 'Local';
+                    
+                    let pills = '';
+                    v.sample_values.forEach(val => {
+                        let displayVal = val === null ? 'None' : val;
+                        if (typeof val === 'string') displayVal = `"${val}"`;
+                        pills += `<span class="val-pill" title="${escapeHtml(String(val))}">${escapeHtml(String(displayVal))}</span>`;
+                    });
+
+                    varsHtml += `
+                        <div class="variable-card">
+                            <div class="var-header">
+                                <span class="var-name">${varname}</span>
+                                <span class="var-type-badge ${typeClass}">${typeLabel}</span>
+                            </div>
+                            <div class="var-scores">
+                                <div class="var-score-item">
+                                    <span class="lbl">Global</span>
+                                    <span class="val" style="color: ${getScoreColor(v.global_score)}">${v.global_score.toFixed(2)}</span>
+                                </div>
+                                <div class="var-score-item">
+                                    <span class="lbl">Passed</span>
+                                    <span class="val" style="color: ${getScoreColor(v.passed_score)}">${v.passed_score.toFixed(2)}</span>
+                                </div>
+                                <div class="var-score-item">
+                                    <span class="lbl">Failed</span>
+                                    <span class="val" style="color: ${getScoreColor(v.failed_score)}">${v.failed_score.toFixed(2)}</span>
+                                </div>
+                            </div>
+                            <div class="unique-vals-box">
+                                <span class="lbl">Unique values seen (${v.unique_count}):</span>
+                                <div class="pills-container">
+                                    ${pills}
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                });
+            }
+
+            detailsBody.innerHTML = `
+                <div class="metric-row">
+                    <div class="metric-card">
+                        <span class="m-label">Execution Hits</span>
+                        <span class="m-val">${lineInfo.hits}</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="m-label">Diversity Score</span>
+                        <span class="m-val" style="color: ${getScoreColor(lineInfo.global_score)}">${lineInfo.global_score.toFixed(2)}</span>
+                    </div>
+                </div>
+                
+                <div class="metric-row">
+                    <div class="metric-card">
+                        <span class="m-label">Passed Diversity</span>
+                        <span class="m-val" style="color: ${getScoreColor(lineInfo.passed_score)}">${lineInfo.passed_score.toFixed(2)}</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="m-label">Failed Diversity</span>
+                        <span class="m-val" style="color: ${getScoreColor(lineInfo.failed_score)}">${lineInfo.failed_score.toFixed(2)}</span>
+                    </div>
+                </div>
+
+                <div class="variables-list">
+                    <h3>Tracked Variables</h3>
+                    ${varsHtml}
+                </div>
+            `;
+        }
+
+        function getScoreColor(score) {
+            if (score >= 0.7) return 'var(--color-high)';
+            if (score >= 0.35) return 'var(--color-med)';
+            return 'var(--color-low)';
+        }
+
+        function escapeHtml(text) {
+            const map = {
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                '"': '&quot;',
+                "'": '&#039;'
+            };
+            return String(text).replace(/[&<>"']/g, function(m) { return map[m]; });
+        }
+    </script>
+</body>
+</html>
